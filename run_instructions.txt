@@ -1,0 +1,22 @@
+hello, this is a quick reference for running the program - just in case. 
+
+---------------------------
+if you want to run via the bat file, just use this command :: 
+
+.\run_rand.bat <FILE_NAME.txt> <K_values> <iteration> <convergence> <num_of_runs>
+
+make sure to replace all the <....> with their actual values
+
+---------------------------
+if you want to run via the cpp file itself, i included the path info. 
+there are comments in my cpp main function that include : 
+    * path for running via bat file
+    * path for running via cpp file
+
+if you run the cpp file instead of the bat, just make sure to uncomment them. 
+
+---------------------------
+everything else is pretty straight forward. 
+
+- code_and_files has the cpp code and the input files
+- output_files has the output_files
