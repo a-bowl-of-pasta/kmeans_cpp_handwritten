@@ -1,0 +1,1434 @@
+
+run 1
+------------------------
+
+iteration 1 SSE :: 18.3516
+iteration 2 SSE :: 17.6685
+iteration 3 SSE :: 16.9981
+iteration 4 SSE :: 16.55
+iteration 5 SSE :: 16.1094
+iteration 6 SSE :: 15.7596
+iteration 7 SSE :: 15.3338
+iteration 8 SSE :: 15.186
+iteration 9 SSE :: 15.0512
+iteration 10 SSE :: 14.9094
+iteration 11 SSE :: 14.62
+iteration 12 SSE :: 14.3487
+iteration 13 SSE :: 14.2054
+iteration 14 SSE :: 14.0639
+iteration 15 SSE :: 14.0199
+iteration 16 SSE :: 13.9765
+iteration 17 SSE :: 13.971
+
+run 2
+------------------------
+
+iteration 1 SSE :: 17.5019
+iteration 2 SSE :: 16.7739
+iteration 3 SSE :: 16.4337
+iteration 4 SSE :: 16.344
+iteration 5 SSE :: 16.313
+iteration 6 SSE :: 16.3063
+
+run 3
+------------------------
+
+iteration 1 SSE :: 21.7258
+iteration 2 SSE :: 18.7938
+iteration 3 SSE :: 17.7894
+iteration 4 SSE :: 16.9677
+iteration 5 SSE :: 16.0698
+iteration 6 SSE :: 15.4476
+iteration 7 SSE :: 15.2963
+iteration 8 SSE :: 15.2197
+iteration 9 SSE :: 15.113
+iteration 10 SSE :: 15.0251
+iteration 11 SSE :: 15.0225
+
+run 4
+------------------------
+
+iteration 1 SSE :: 17.4748
+iteration 2 SSE :: 16.8098
+iteration 3 SSE :: 16.4971
+iteration 4 SSE :: 16.28
+iteration 5 SSE :: 16.1726
+iteration 6 SSE :: 16.1136
+iteration 7 SSE :: 16.0623
+iteration 8 SSE :: 16.0419
+iteration 9 SSE :: 16.0222
+iteration 10 SSE :: 16.0171
+
+run 5
+------------------------
+
+iteration 1 SSE :: 16.7487
+iteration 2 SSE :: 16.3358
+iteration 3 SSE :: 16.2011
+iteration 4 SSE :: 16.1678
+iteration 5 SSE :: 16.1485
+iteration 6 SSE :: 16.1382
+
+run 6
+------------------------
+
+iteration 1 SSE :: 16.2845
+iteration 2 SSE :: 15.5615
+iteration 3 SSE :: 15.3505
+iteration 4 SSE :: 15.2192
+iteration 5 SSE :: 15.1536
+iteration 6 SSE :: 15.0668
+iteration 7 SSE :: 15.0414
+iteration 8 SSE :: 15.0379
+
+run 7
+------------------------
+
+iteration 1 SSE :: 18.2826
+iteration 2 SSE :: 16.0987
+iteration 3 SSE :: 15.2518
+iteration 4 SSE :: 15.0138
+iteration 5 SSE :: 14.9234
+iteration 6 SSE :: 14.8618
+iteration 7 SSE :: 14.815
+iteration 8 SSE :: 14.7739
+iteration 9 SSE :: 14.7518
+iteration 10 SSE :: 14.7087
+iteration 11 SSE :: 14.6684
+iteration 12 SSE :: 14.6616
+
+run 8
+------------------------
+
+iteration 1 SSE :: 20.2986
+iteration 2 SSE :: 17.4294
+iteration 3 SSE :: 16.8786
+iteration 4 SSE :: 16.7285
+iteration 5 SSE :: 16.6661
+iteration 6 SSE :: 16.6004
+iteration 7 SSE :: 16.5344
+iteration 8 SSE :: 16.471
+iteration 9 SSE :: 16.4284
+iteration 10 SSE :: 16.4136
+
+run 9
+------------------------
+
+iteration 1 SSE :: 17.2289
+iteration 2 SSE :: 16.6681
+iteration 3 SSE :: 16.3478
+iteration 4 SSE :: 16.144
+iteration 5 SSE :: 16.0097
+iteration 6 SSE :: 15.7198
+iteration 7 SSE :: 15.5046
+iteration 8 SSE :: 15.2055
+iteration 9 SSE :: 14.9142
+iteration 10 SSE :: 14.6295
+iteration 11 SSE :: 14.4491
+iteration 12 SSE :: 14.3383
+iteration 13 SSE :: 14.0217
+iteration 14 SSE :: 13.968
+iteration 15 SSE :: 13.968
+
+run 10
+------------------------
+
+iteration 1 SSE :: 18.6554
+iteration 2 SSE :: 17.8666
+iteration 3 SSE :: 17.1661
+iteration 4 SSE :: 16.8048
+iteration 5 SSE :: 16.6948
+iteration 6 SSE :: 16.5938
+iteration 7 SSE :: 16.0324
+iteration 8 SSE :: 15.542
+iteration 9 SSE :: 15.3449
+iteration 10 SSE :: 15.2926
+iteration 11 SSE :: 15.2477
+iteration 12 SSE :: 15.1783
+iteration 13 SSE :: 15.0501
+iteration 14 SSE :: 14.9131
+iteration 15 SSE :: 14.5674
+iteration 16 SSE :: 14.2645
+iteration 17 SSE :: 14.0543
+iteration 18 SSE :: 13.9929
+iteration 19 SSE :: 13.9795
+
+run 11
+------------------------
+
+iteration 1 SSE :: 19.8329
+iteration 2 SSE :: 17.23
+iteration 3 SSE :: 16.7988
+iteration 4 SSE :: 16.5853
+iteration 5 SSE :: 16.2263
+iteration 6 SSE :: 16.0594
+iteration 7 SSE :: 16.0107
+iteration 8 SSE :: 15.9318
+iteration 9 SSE :: 15.8189
+iteration 10 SSE :: 15.6472
+iteration 11 SSE :: 15.2708
+iteration 12 SSE :: 15.1846
+iteration 13 SSE :: 15.081
+iteration 14 SSE :: 14.9657
+iteration 15 SSE :: 14.808
+iteration 16 SSE :: 14.5103
+iteration 17 SSE :: 14.303
+iteration 18 SSE :: 14.054
+iteration 19 SSE :: 14.0015
+iteration 20 SSE :: 13.9983
+
+run 12
+------------------------
+
+iteration 1 SSE :: 17.7629
+iteration 2 SSE :: 16.7095
+iteration 3 SSE :: 16.3535
+iteration 4 SSE :: 16.0963
+iteration 5 SSE :: 16.0298
+iteration 6 SSE :: 15.9717
+iteration 7 SSE :: 15.9492
+iteration 8 SSE :: 15.926
+iteration 9 SSE :: 15.8599
+iteration 10 SSE :: 15.6778
+iteration 11 SSE :: 15.5006
+iteration 12 SSE :: 15.4615
+iteration 13 SSE :: 15.3942
+iteration 14 SSE :: 15.3521
+iteration 15 SSE :: 15.3211
+iteration 16 SSE :: 15.3082
+
+run 13
+------------------------
+
+iteration 1 SSE :: 18.8057
+iteration 2 SSE :: 17.7703
+iteration 3 SSE :: 16.8439
+iteration 4 SSE :: 15.9576
+iteration 5 SSE :: 15.3631
+iteration 6 SSE :: 14.7749
+iteration 7 SSE :: 14.5021
+iteration 8 SSE :: 14.2541
+iteration 9 SSE :: 14.1585
+iteration 10 SSE :: 14.1015
+iteration 11 SSE :: 14.019
+iteration 12 SSE :: 14.0007
+iteration 13 SSE :: 13.9995
+
+run 14
+------------------------
+
+iteration 1 SSE :: 19.0978
+iteration 2 SSE :: 16.9091
+iteration 3 SSE :: 16.5982
+iteration 4 SSE :: 16.3834
+iteration 5 SSE :: 16.157
+iteration 6 SSE :: 15.7221
+iteration 7 SSE :: 15.1741
+iteration 8 SSE :: 14.9082
+iteration 9 SSE :: 14.8137
+iteration 10 SSE :: 14.7673
+iteration 11 SSE :: 14.7472
+iteration 12 SSE :: 14.7387
+
+run 15
+------------------------
+
+iteration 1 SSE :: 17.7972
+iteration 2 SSE :: 16.8239
+iteration 3 SSE :: 16.3534
+iteration 4 SSE :: 16.0575
+iteration 5 SSE :: 15.9622
+iteration 6 SSE :: 15.9388
+iteration 7 SSE :: 15.9296
+
+run 16
+------------------------
+
+iteration 1 SSE :: 17.9951
+iteration 2 SSE :: 17.6139
+iteration 3 SSE :: 17.358
+iteration 4 SSE :: 17.2426
+iteration 5 SSE :: 17.1671
+iteration 6 SSE :: 17.06
+iteration 7 SSE :: 17.0118
+iteration 8 SSE :: 17.0094
+
+run 17
+------------------------
+
+iteration 1 SSE :: 16.7611
+iteration 2 SSE :: 16.0771
+iteration 3 SSE :: 15.8213
+iteration 4 SSE :: 15.6838
+iteration 5 SSE :: 15.5792
+iteration 6 SSE :: 15.5579
+iteration 7 SSE :: 15.553
+
+run 18
+------------------------
+
+iteration 1 SSE :: 16.8604
+iteration 2 SSE :: 15.7833
+iteration 3 SSE :: 15.3327
+iteration 4 SSE :: 14.9394
+iteration 5 SSE :: 14.8435
+iteration 6 SSE :: 14.7883
+iteration 7 SSE :: 14.7767
+
+run 19
+------------------------
+
+iteration 1 SSE :: 19.5036
+iteration 2 SSE :: 16.7967
+iteration 3 SSE :: 15.755
+iteration 4 SSE :: 15.2766
+iteration 5 SSE :: 14.9862
+iteration 6 SSE :: 14.6415
+iteration 7 SSE :: 14.5719
+iteration 8 SSE :: 14.5015
+iteration 9 SSE :: 14.2751
+iteration 10 SSE :: 14.0614
+iteration 11 SSE :: 14.0574
+
+run 20
+------------------------
+
+iteration 1 SSE :: 18.5958
+iteration 2 SSE :: 17.1327
+iteration 3 SSE :: 16.7926
+iteration 4 SSE :: 16.5035
+iteration 5 SSE :: 16.1946
+iteration 6 SSE :: 15.6875
+iteration 7 SSE :: 15.2599
+iteration 8 SSE :: 15.0042
+iteration 9 SSE :: 14.7597
+iteration 10 SSE :: 14.5976
+iteration 11 SSE :: 14.575
+iteration 12 SSE :: 14.5457
+iteration 13 SSE :: 14.4688
+iteration 14 SSE :: 14.4481
+iteration 15 SSE :: 14.3607
+iteration 16 SSE :: 13.996
+iteration 17 SSE :: 13.9927
+
+run 21
+------------------------
+
+iteration 1 SSE :: 16.6625
+iteration 2 SSE :: 16.0286
+iteration 3 SSE :: 15.755
+iteration 4 SSE :: 15.5295
+iteration 5 SSE :: 15.4298
+iteration 6 SSE :: 15.3921
+iteration 7 SSE :: 15.3752
+iteration 8 SSE :: 15.3431
+iteration 9 SSE :: 15.3053
+iteration 10 SSE :: 15.2984
+
+run 22
+------------------------
+
+iteration 1 SSE :: 17.696
+iteration 2 SSE :: 17.1175
+iteration 3 SSE :: 16.9625
+iteration 4 SSE :: 16.907
+iteration 5 SSE :: 16.833
+iteration 6 SSE :: 16.8163
+
+run 23
+------------------------
+
+iteration 1 SSE :: 18.2476
+iteration 2 SSE :: 16.8356
+iteration 3 SSE :: 16.4347
+iteration 4 SSE :: 16.0798
+iteration 5 SSE :: 15.7788
+iteration 6 SSE :: 15.5695
+iteration 7 SSE :: 15.5565
+
+run 24
+------------------------
+
+iteration 1 SSE :: 18.9251
+iteration 2 SSE :: 18.3057
+iteration 3 SSE :: 17.765
+iteration 4 SSE :: 17.0779
+iteration 5 SSE :: 16.1021
+iteration 6 SSE :: 15.2933
+iteration 7 SSE :: 15.0751
+iteration 8 SSE :: 14.9203
+iteration 9 SSE :: 14.6853
+iteration 10 SSE :: 14.6057
+iteration 11 SSE :: 14.463
+iteration 12 SSE :: 14.2659
+iteration 13 SSE :: 14.1598
+iteration 14 SSE :: 14.0783
+iteration 15 SSE :: 14.0266
+iteration 16 SSE :: 14.0152
+
+run 25
+------------------------
+
+iteration 1 SSE :: 16.8096
+iteration 2 SSE :: 16.0296
+iteration 3 SSE :: 15.726
+iteration 4 SSE :: 15.3271
+iteration 5 SSE :: 15.0195
+iteration 6 SSE :: 14.8245
+iteration 7 SSE :: 14.5943
+iteration 8 SSE :: 14.5171
+iteration 9 SSE :: 14.4592
+iteration 10 SSE :: 14.3875
+iteration 11 SSE :: 14.3294
+iteration 12 SSE :: 14.0656
+iteration 13 SSE :: 13.9662
+iteration 14 SSE :: 13.9662
+
+run 26
+------------------------
+
+iteration 1 SSE :: 21.0809
+iteration 2 SSE :: 17.2938
+iteration 3 SSE :: 16.5444
+iteration 4 SSE :: 16.2009
+iteration 5 SSE :: 16.1077
+iteration 6 SSE :: 16.0924
+
+run 27
+------------------------
+
+iteration 1 SSE :: 16.9775
+iteration 2 SSE :: 15.9804
+iteration 3 SSE :: 15.1155
+iteration 4 SSE :: 14.5707
+iteration 5 SSE :: 14.2408
+iteration 6 SSE :: 14.0735
+iteration 7 SSE :: 14.0041
+iteration 8 SSE :: 13.9891
+iteration 9 SSE :: 13.9891
+
+run 28
+------------------------
+
+iteration 1 SSE :: 19.2893
+iteration 2 SSE :: 16.4747
+iteration 3 SSE :: 15.9058
+iteration 4 SSE :: 15.6069
+iteration 5 SSE :: 15.4695
+iteration 6 SSE :: 15.4392
+iteration 7 SSE :: 15.422
+iteration 8 SSE :: 15.3795
+iteration 9 SSE :: 15.3498
+iteration 10 SSE :: 15.3312
+iteration 11 SSE :: 15.3177
+
+run 29
+------------------------
+
+iteration 1 SSE :: 20.7707
+iteration 2 SSE :: 17.1446
+iteration 3 SSE :: 16.4943
+iteration 4 SSE :: 16.0948
+iteration 5 SSE :: 15.6105
+iteration 6 SSE :: 15.3905
+iteration 7 SSE :: 15.2635
+iteration 8 SSE :: 15.0369
+iteration 9 SSE :: 14.8245
+iteration 10 SSE :: 14.6756
+iteration 11 SSE :: 14.66
+iteration 12 SSE :: 14.6588
+
+run 30
+------------------------
+
+iteration 1 SSE :: 16.315
+iteration 2 SSE :: 15.5796
+iteration 3 SSE :: 15.0849
+iteration 4 SSE :: 14.8927
+iteration 5 SSE :: 14.806
+iteration 6 SSE :: 14.7523
+iteration 7 SSE :: 14.713
+iteration 8 SSE :: 14.6856
+iteration 9 SSE :: 14.6767
+
+run 31
+------------------------
+
+iteration 1 SSE :: 17.2803
+iteration 2 SSE :: 16.6437
+iteration 3 SSE :: 16.3518
+iteration 4 SSE :: 16.1411
+iteration 5 SSE :: 15.9913
+iteration 6 SSE :: 15.8271
+iteration 7 SSE :: 15.716
+iteration 8 SSE :: 15.4606
+iteration 9 SSE :: 15.2716
+iteration 10 SSE :: 15.2001
+iteration 11 SSE :: 15.1762
+iteration 12 SSE :: 15.1742
+
+run 32
+------------------------
+
+iteration 1 SSE :: 17.7551
+iteration 2 SSE :: 16.6695
+iteration 3 SSE :: 16.1253
+iteration 4 SSE :: 15.9946
+iteration 5 SSE :: 15.9583
+iteration 6 SSE :: 15.9147
+iteration 7 SSE :: 15.8998
+
+run 33
+------------------------
+
+iteration 1 SSE :: 17.5594
+iteration 2 SSE :: 16.9521
+iteration 3 SSE :: 16.5811
+iteration 4 SSE :: 16.4377
+iteration 5 SSE :: 16.0915
+iteration 6 SSE :: 15.8715
+iteration 7 SSE :: 15.7087
+iteration 8 SSE :: 15.442
+iteration 9 SSE :: 15.2932
+iteration 10 SSE :: 15.26
+iteration 11 SSE :: 15.256
+
+run 34
+------------------------
+
+iteration 1 SSE :: 16.7948
+iteration 2 SSE :: 16.0751
+iteration 3 SSE :: 15.631
+iteration 4 SSE :: 15.4097
+iteration 5 SSE :: 15.3563
+iteration 6 SSE :: 15.3533
+
+run 35
+------------------------
+
+iteration 1 SSE :: 17.3278
+iteration 2 SSE :: 15.9918
+iteration 3 SSE :: 15.5918
+iteration 4 SSE :: 15.3088
+iteration 5 SSE :: 15.0156
+iteration 6 SSE :: 14.7008
+iteration 7 SSE :: 14.2643
+iteration 8 SSE :: 14.0918
+iteration 9 SSE :: 13.9729
+iteration 10 SSE :: 13.9571
+iteration 11 SSE :: 13.9335
+iteration 12 SSE :: 13.9266
+
+run 36
+------------------------
+
+iteration 1 SSE :: 16.8735
+iteration 2 SSE :: 15.456
+iteration 3 SSE :: 14.8233
+iteration 4 SSE :: 14.2241
+iteration 5 SSE :: 14.134
+iteration 6 SSE :: 14.1022
+iteration 7 SSE :: 14.044
+iteration 8 SSE :: 14.0343
+
+run 37
+------------------------
+
+iteration 1 SSE :: 17.4648
+iteration 2 SSE :: 15.7533
+iteration 3 SSE :: 15.1649
+iteration 4 SSE :: 14.9282
+iteration 5 SSE :: 14.9034
+iteration 6 SSE :: 14.8966
+
+run 38
+------------------------
+
+iteration 1 SSE :: 18.7919
+iteration 2 SSE :: 18.4456
+iteration 3 SSE :: 18.3578
+iteration 4 SSE :: 18.2768
+iteration 5 SSE :: 18.2127
+iteration 6 SSE :: 18.1577
+iteration 7 SSE :: 17.9775
+iteration 8 SSE :: 17.7302
+iteration 9 SSE :: 17.3214
+iteration 10 SSE :: 17.0651
+iteration 11 SSE :: 16.8064
+iteration 12 SSE :: 16.6662
+iteration 13 SSE :: 16.6345
+iteration 14 SSE :: 16.6157
+iteration 15 SSE :: 16.6014
+
+run 39
+------------------------
+
+iteration 1 SSE :: 16.531
+iteration 2 SSE :: 15.6823
+iteration 3 SSE :: 15.3872
+iteration 4 SSE :: 15.2489
+iteration 5 SSE :: 15.2004
+iteration 6 SSE :: 15.1705
+iteration 7 SSE :: 15.1591
+
+run 40
+------------------------
+
+iteration 1 SSE :: 19.9856
+iteration 2 SSE :: 17.4688
+iteration 3 SSE :: 16.8232
+iteration 4 SSE :: 15.9663
+iteration 5 SSE :: 15.5432
+iteration 6 SSE :: 15.2585
+iteration 7 SSE :: 14.8955
+iteration 8 SSE :: 14.8186
+iteration 9 SSE :: 14.8186
+
+run 41
+------------------------
+
+iteration 1 SSE :: 15.771
+iteration 2 SSE :: 15.0022
+iteration 3 SSE :: 14.9123
+iteration 4 SSE :: 14.8581
+iteration 5 SSE :: 14.8368
+iteration 6 SSE :: 14.8105
+iteration 7 SSE :: 14.7957
+
+run 42
+------------------------
+
+iteration 1 SSE :: 17.4005
+iteration 2 SSE :: 16.9021
+iteration 3 SSE :: 16.526
+iteration 4 SSE :: 16.3586
+iteration 5 SSE :: 16.2619
+iteration 6 SSE :: 16.1362
+iteration 7 SSE :: 16.1019
+iteration 8 SSE :: 16.0818
+iteration 9 SSE :: 15.9882
+iteration 10 SSE :: 15.8938
+iteration 11 SSE :: 15.8625
+iteration 12 SSE :: 15.8144
+iteration 13 SSE :: 15.6256
+iteration 14 SSE :: 15.5361
+iteration 15 SSE :: 15.5233
+
+run 43
+------------------------
+
+iteration 1 SSE :: 17.1992
+iteration 2 SSE :: 16.4482
+iteration 3 SSE :: 16.1225
+iteration 4 SSE :: 16.0649
+iteration 5 SSE :: 15.9273
+iteration 6 SSE :: 15.4089
+iteration 7 SSE :: 14.6184
+iteration 8 SSE :: 14.4866
+iteration 9 SSE :: 14.4684
+iteration 10 SSE :: 14.4678
+
+run 44
+------------------------
+
+iteration 1 SSE :: 20.6431
+iteration 2 SSE :: 17.2578
+iteration 3 SSE :: 16.6897
+iteration 4 SSE :: 16.2466
+iteration 5 SSE :: 16.1226
+iteration 6 SSE :: 16.0437
+iteration 7 SSE :: 15.9605
+iteration 8 SSE :: 15.8516
+iteration 9 SSE :: 15.7214
+iteration 10 SSE :: 15.568
+iteration 11 SSE :: 15.3909
+iteration 12 SSE :: 15.1068
+iteration 13 SSE :: 14.8935
+iteration 14 SSE :: 14.721
+iteration 15 SSE :: 14.687
+iteration 16 SSE :: 14.6714
+iteration 17 SSE :: 14.6641
+
+run 45
+------------------------
+
+iteration 1 SSE :: 17.2626
+iteration 2 SSE :: 15.8934
+iteration 3 SSE :: 15.3685
+iteration 4 SSE :: 14.8423
+iteration 5 SSE :: 14.621
+iteration 6 SSE :: 14.5004
+iteration 7 SSE :: 14.4689
+iteration 8 SSE :: 14.4239
+iteration 9 SSE :: 14.1771
+iteration 10 SSE :: 13.9749
+iteration 11 SSE :: 13.9749
+
+run 46
+------------------------
+
+iteration 1 SSE :: 16.9443
+iteration 2 SSE :: 16.1276
+iteration 3 SSE :: 15.7901
+iteration 4 SSE :: 15.5528
+iteration 5 SSE :: 15.3967
+iteration 6 SSE :: 15.3339
+iteration 7 SSE :: 15.3149
+iteration 8 SSE :: 15.3052
+
+run 47
+------------------------
+
+iteration 1 SSE :: 17.5904
+iteration 2 SSE :: 16.6973
+iteration 3 SSE :: 16.5524
+iteration 4 SSE :: 16.4741
+iteration 5 SSE :: 16.4126
+iteration 6 SSE :: 16.3678
+iteration 7 SSE :: 16.2992
+iteration 8 SSE :: 16.2738
+iteration 9 SSE :: 16.229
+iteration 10 SSE :: 16.1719
+iteration 11 SSE :: 16.1599
+
+run 48
+------------------------
+
+iteration 1 SSE :: 21.5341
+iteration 2 SSE :: 17.6239
+iteration 3 SSE :: 16.694
+iteration 4 SSE :: 16.4931
+iteration 5 SSE :: 16.4515
+iteration 6 SSE :: 16.4168
+iteration 7 SSE :: 16.3972
+iteration 8 SSE :: 16.3786
+iteration 9 SSE :: 16.3732
+
+run 49
+------------------------
+
+iteration 1 SSE :: 16.4036
+iteration 2 SSE :: 15.4651
+iteration 3 SSE :: 15.1494
+iteration 4 SSE :: 14.9583
+iteration 5 SSE :: 14.8111
+iteration 6 SSE :: 14.622
+iteration 7 SSE :: 14.5046
+iteration 8 SSE :: 14.4229
+iteration 9 SSE :: 14.2698
+iteration 10 SSE :: 13.9858
+iteration 11 SSE :: 13.9858
+
+run 50
+------------------------
+
+iteration 1 SSE :: 20.5424
+iteration 2 SSE :: 17.1424
+iteration 3 SSE :: 16.5014
+iteration 4 SSE :: 16.2435
+iteration 5 SSE :: 16.1426
+iteration 6 SSE :: 16.017
+iteration 7 SSE :: 15.9503
+iteration 8 SSE :: 15.9355
+
+run 51
+------------------------
+
+iteration 1 SSE :: 20.9961
+iteration 2 SSE :: 17.7013
+iteration 3 SSE :: 16.7885
+iteration 4 SSE :: 16.4789
+iteration 5 SSE :: 16.4176
+iteration 6 SSE :: 16.3942
+iteration 7 SSE :: 16.379
+
+run 52
+------------------------
+
+iteration 1 SSE :: 15.9776
+iteration 2 SSE :: 15.3061
+iteration 3 SSE :: 14.7052
+iteration 4 SSE :: 14.4073
+iteration 5 SSE :: 14.2872
+iteration 6 SSE :: 14.0852
+iteration 7 SSE :: 14.0442
+iteration 8 SSE :: 14.0345
+
+run 53
+------------------------
+
+iteration 1 SSE :: 19.1003
+iteration 2 SSE :: 16.4438
+iteration 3 SSE :: 15.7733
+iteration 4 SSE :: 15.6763
+iteration 5 SSE :: 15.6547
+iteration 6 SSE :: 15.6522
+
+run 54
+------------------------
+
+iteration 1 SSE :: 20.5836
+iteration 2 SSE :: 17.9313
+iteration 3 SSE :: 16.94
+iteration 4 SSE :: 16.6699
+iteration 5 SSE :: 16.5462
+iteration 6 SSE :: 16.5075
+iteration 7 SSE :: 16.4735
+iteration 8 SSE :: 16.4244
+iteration 9 SSE :: 16.3889
+iteration 10 SSE :: 16.3456
+iteration 11 SSE :: 16.3057
+iteration 12 SSE :: 16.1759
+iteration 13 SSE :: 16.0355
+iteration 14 SSE :: 15.7523
+iteration 15 SSE :: 15.4706
+iteration 16 SSE :: 15.3169
+iteration 17 SSE :: 15.1555
+iteration 18 SSE :: 15.1051
+iteration 19 SSE :: 15.0992
+
+run 55
+------------------------
+
+iteration 1 SSE :: 17.5772
+iteration 2 SSE :: 16.7631
+iteration 3 SSE :: 16.4816
+iteration 4 SSE :: 16.1755
+iteration 5 SSE :: 15.9128
+iteration 6 SSE :: 15.7023
+iteration 7 SSE :: 15.4362
+iteration 8 SSE :: 15.0861
+iteration 9 SSE :: 14.9829
+iteration 10 SSE :: 14.8392
+iteration 11 SSE :: 14.7998
+iteration 12 SSE :: 14.7899
+
+run 56
+------------------------
+
+iteration 1 SSE :: 17.6619
+iteration 2 SSE :: 16.9303
+iteration 3 SSE :: 16.8244
+iteration 4 SSE :: 16.7595
+iteration 5 SSE :: 16.7242
+iteration 6 SSE :: 16.6525
+iteration 7 SSE :: 16.5957
+iteration 8 SSE :: 16.5274
+iteration 9 SSE :: 16.4773
+iteration 10 SSE :: 16.4668
+
+run 57
+------------------------
+
+iteration 1 SSE :: 18.2804
+iteration 2 SSE :: 16.9453
+iteration 3 SSE :: 16.5669
+iteration 4 SSE :: 16.3594
+iteration 5 SSE :: 16.1646
+iteration 6 SSE :: 16.0784
+iteration 7 SSE :: 16.042
+iteration 8 SSE :: 16.0302
+
+run 58
+------------------------
+
+iteration 1 SSE :: 15.8457
+iteration 2 SSE :: 15.009
+iteration 3 SSE :: 14.7878
+iteration 4 SSE :: 14.6874
+iteration 5 SSE :: 14.5801
+iteration 6 SSE :: 14.4929
+iteration 7 SSE :: 14.2483
+iteration 8 SSE :: 14.0039
+iteration 9 SSE :: 13.9801
+iteration 10 SSE :: 13.9623
+iteration 11 SSE :: 13.9623
+
+run 59
+------------------------
+
+iteration 1 SSE :: 17.3834
+iteration 2 SSE :: 16.573
+iteration 3 SSE :: 16.461
+iteration 4 SSE :: 16.3964
+iteration 5 SSE :: 16.3639
+iteration 6 SSE :: 16.3525
+
+run 60
+------------------------
+
+iteration 1 SSE :: 16.9761
+iteration 2 SSE :: 15.7261
+iteration 3 SSE :: 15.4718
+iteration 4 SSE :: 15.4387
+iteration 5 SSE :: 15.3741
+iteration 6 SSE :: 15.3525
+iteration 7 SSE :: 15.3202
+iteration 8 SSE :: 15.2713
+iteration 9 SSE :: 15.2542
+iteration 10 SSE :: 15.2542
+
+run 61
+------------------------
+
+iteration 1 SSE :: 18.7447
+iteration 2 SSE :: 18.3639
+iteration 3 SSE :: 18.0553
+iteration 4 SSE :: 17.8128
+iteration 5 SSE :: 17.4897
+iteration 6 SSE :: 17.001
+iteration 7 SSE :: 16.4792
+iteration 8 SSE :: 16.2991
+iteration 9 SSE :: 16.1024
+iteration 10 SSE :: 16.0001
+iteration 11 SSE :: 15.9032
+iteration 12 SSE :: 15.8342
+iteration 13 SSE :: 15.8103
+iteration 14 SSE :: 15.7998
+
+run 62
+------------------------
+
+iteration 1 SSE :: 16.6582
+iteration 2 SSE :: 16.0708
+iteration 3 SSE :: 15.7451
+iteration 4 SSE :: 15.5244
+iteration 5 SSE :: 15.3289
+iteration 6 SSE :: 15.1338
+iteration 7 SSE :: 15.092
+iteration 8 SSE :: 15.0859
+
+run 63
+------------------------
+
+iteration 1 SSE :: 18.2722
+iteration 2 SSE :: 16.6264
+iteration 3 SSE :: 15.9254
+iteration 4 SSE :: 15.4406
+iteration 5 SSE :: 15.2641
+iteration 6 SSE :: 14.9969
+iteration 7 SSE :: 14.9078
+iteration 8 SSE :: 14.8914
+iteration 9 SSE :: 14.8878
+
+run 64
+------------------------
+
+iteration 1 SSE :: 19.5836
+iteration 2 SSE :: 17.2902
+iteration 3 SSE :: 16.8615
+iteration 4 SSE :: 16.5672
+iteration 5 SSE :: 16.4361
+iteration 6 SSE :: 16.3628
+iteration 7 SSE :: 16.3095
+iteration 8 SSE :: 16.2866
+iteration 9 SSE :: 16.2778
+
+run 65
+------------------------
+
+iteration 1 SSE :: 17.1222
+iteration 2 SSE :: 16.6204
+iteration 3 SSE :: 16.5303
+iteration 4 SSE :: 16.4827
+iteration 5 SSE :: 16.4744
+
+run 66
+------------------------
+
+iteration 1 SSE :: 18.7785
+iteration 2 SSE :: 17.8296
+iteration 3 SSE :: 17.2592
+iteration 4 SSE :: 16.819
+iteration 5 SSE :: 16.6253
+iteration 6 SSE :: 16.4632
+iteration 7 SSE :: 16.368
+iteration 8 SSE :: 16.3028
+iteration 9 SSE :: 16.2163
+iteration 10 SSE :: 16.1998
+iteration 11 SSE :: 16.1816
+iteration 12 SSE :: 16.1675
+
+run 67
+------------------------
+
+iteration 1 SSE :: 17.9775
+iteration 2 SSE :: 16.0254
+iteration 3 SSE :: 15.5437
+iteration 4 SSE :: 15.3493
+iteration 5 SSE :: 15.2878
+iteration 6 SSE :: 15.2417
+iteration 7 SSE :: 15.2202
+iteration 8 SSE :: 15.217
+
+run 68
+------------------------
+
+iteration 1 SSE :: 28.3646
+iteration 2 SSE :: 26.2044
+iteration 3 SSE :: 22.2574
+iteration 4 SSE :: 18.7201
+iteration 5 SSE :: 17.9648
+iteration 6 SSE :: 17.8138
+iteration 7 SSE :: 17.755
+iteration 8 SSE :: 17.6856
+iteration 9 SSE :: 17.6362
+iteration 10 SSE :: 17.5498
+iteration 11 SSE :: 17.5132
+iteration 12 SSE :: 17.4868
+iteration 13 SSE :: 17.4534
+iteration 14 SSE :: 17.4334
+iteration 15 SSE :: 17.4287
+
+run 69
+------------------------
+
+iteration 1 SSE :: 19.0758
+iteration 2 SSE :: 18.0147
+iteration 3 SSE :: 17.6379
+iteration 4 SSE :: 17.5027
+iteration 5 SSE :: 17.4631
+iteration 6 SSE :: 17.4631
+
+run 70
+------------------------
+
+iteration 1 SSE :: 18.586
+iteration 2 SSE :: 16.377
+iteration 3 SSE :: 15.58
+iteration 4 SSE :: 15.3245
+iteration 5 SSE :: 15.138
+iteration 6 SSE :: 15.115
+iteration 7 SSE :: 15.1133
+
+run 71
+------------------------
+
+iteration 1 SSE :: 18.3652
+iteration 2 SSE :: 17.4788
+iteration 3 SSE :: 17.0161
+iteration 4 SSE :: 16.8634
+iteration 5 SSE :: 16.7819
+iteration 6 SSE :: 16.745
+iteration 7 SSE :: 16.6406
+iteration 8 SSE :: 16.4771
+iteration 9 SSE :: 16.3025
+iteration 10 SSE :: 16.1635
+iteration 11 SSE :: 15.9489
+iteration 12 SSE :: 15.6679
+iteration 13 SSE :: 15.4534
+iteration 14 SSE :: 15.3679
+iteration 15 SSE :: 15.336
+iteration 16 SSE :: 15.321
+
+run 72
+------------------------
+
+iteration 1 SSE :: 16.8208
+iteration 2 SSE :: 16.18
+iteration 3 SSE :: 15.7708
+iteration 4 SSE :: 15.4588
+iteration 5 SSE :: 15.3043
+iteration 6 SSE :: 15.2392
+iteration 7 SSE :: 15.2248
+
+run 73
+------------------------
+
+iteration 1 SSE :: 17.9769
+iteration 2 SSE :: 17.4995
+iteration 3 SSE :: 17.3073
+iteration 4 SSE :: 17.2013
+iteration 5 SSE :: 17.1265
+iteration 6 SSE :: 17.1
+iteration 7 SSE :: 17.0511
+iteration 8 SSE :: 16.6627
+iteration 9 SSE :: 15.7375
+iteration 10 SSE :: 15.4952
+iteration 11 SSE :: 15.4788
+iteration 12 SSE :: 15.4775
+
+run 74
+------------------------
+
+iteration 1 SSE :: 16.7482
+iteration 2 SSE :: 16.2749
+iteration 3 SSE :: 15.838
+iteration 4 SSE :: 15.534
+iteration 5 SSE :: 15.4181
+iteration 6 SSE :: 15.3325
+iteration 7 SSE :: 15.2257
+iteration 8 SSE :: 15.1796
+iteration 9 SSE :: 15.1312
+iteration 10 SSE :: 15.0811
+iteration 11 SSE :: 14.9654
+iteration 12 SSE :: 14.8461
+iteration 13 SSE :: 14.687
+iteration 14 SSE :: 14.3602
+iteration 15 SSE :: 14.1958
+iteration 16 SSE :: 13.9898
+iteration 17 SSE :: 13.9451
+iteration 18 SSE :: 13.9392
+
+run 75
+------------------------
+
+iteration 1 SSE :: 16.3332
+iteration 2 SSE :: 15.6627
+iteration 3 SSE :: 15.3613
+iteration 4 SSE :: 15.284
+iteration 5 SSE :: 15.247
+iteration 6 SSE :: 15.1966
+iteration 7 SSE :: 15.1235
+iteration 8 SSE :: 15.1078
+iteration 9 SSE :: 15.0892
+iteration 10 SSE :: 15.0441
+iteration 11 SSE :: 15.011
+iteration 12 SSE :: 14.9926
+iteration 13 SSE :: 14.9728
+iteration 14 SSE :: 14.9708
+
+run 76
+------------------------
+
+iteration 1 SSE :: 17.688
+iteration 2 SSE :: 17.1186
+iteration 3 SSE :: 16.9259
+iteration 4 SSE :: 16.805
+iteration 5 SSE :: 16.6776
+iteration 6 SSE :: 16.6404
+iteration 7 SSE :: 16.632
+
+run 77
+------------------------
+
+iteration 1 SSE :: 18.0323
+iteration 2 SSE :: 16.4924
+iteration 3 SSE :: 15.4162
+iteration 4 SSE :: 14.7189
+iteration 5 SSE :: 14.3489
+iteration 6 SSE :: 14.1769
+iteration 7 SSE :: 14.0508
+iteration 8 SSE :: 14.0321
+iteration 9 SSE :: 14.0321
+
+run 78
+------------------------
+
+iteration 1 SSE :: 16.0431
+iteration 2 SSE :: 14.6879
+iteration 3 SSE :: 14.2036
+iteration 4 SSE :: 14.0052
+iteration 5 SSE :: 13.898
+iteration 6 SSE :: 13.8747
+iteration 7 SSE :: 13.8747
+
+run 79
+------------------------
+
+iteration 1 SSE :: 17.9387
+iteration 2 SSE :: 17.1738
+iteration 3 SSE :: 16.953
+iteration 4 SSE :: 16.7685
+iteration 5 SSE :: 16.181
+iteration 6 SSE :: 15.8481
+iteration 7 SSE :: 15.6572
+iteration 8 SSE :: 15.5842
+iteration 9 SSE :: 15.5113
+iteration 10 SSE :: 15.4997
+
+run 80
+------------------------
+
+iteration 1 SSE :: 16.422
+iteration 2 SSE :: 16.133
+iteration 3 SSE :: 15.9528
+iteration 4 SSE :: 15.8409
+iteration 5 SSE :: 15.7983
+iteration 6 SSE :: 15.7698
+iteration 7 SSE :: 15.7549
+
+run 81
+------------------------
+
+iteration 1 SSE :: 16.8731
+iteration 2 SSE :: 15.7213
+iteration 3 SSE :: 15.3367
+iteration 4 SSE :: 15.155
+iteration 5 SSE :: 15.1112
+iteration 6 SSE :: 15.1112
+
+run 82
+------------------------
+
+iteration 1 SSE :: 20.0641
+iteration 2 SSE :: 16.7361
+iteration 3 SSE :: 16.1144
+iteration 4 SSE :: 15.7692
+iteration 5 SSE :: 15.5978
+iteration 6 SSE :: 15.5356
+iteration 7 SSE :: 15.4886
+iteration 8 SSE :: 15.4282
+iteration 9 SSE :: 15.3622
+iteration 10 SSE :: 15.2984
+iteration 11 SSE :: 15.2692
+iteration 12 SSE :: 15.1907
+iteration 13 SSE :: 15.1523
+iteration 14 SSE :: 15.1449
+
+run 83
+------------------------
+
+iteration 1 SSE :: 20.8841
+iteration 2 SSE :: 17.7327
+iteration 3 SSE :: 16.3545
+iteration 4 SSE :: 16.0416
+iteration 5 SSE :: 15.8974
+iteration 6 SSE :: 15.8435
+iteration 7 SSE :: 15.7398
+iteration 8 SSE :: 15.708
+iteration 9 SSE :: 15.6866
+iteration 10 SSE :: 15.6789
+
+run 84
+------------------------
+
+iteration 1 SSE :: 15.6789
+iteration 2 SSE :: 14.9853
+iteration 3 SSE :: 14.772
+iteration 4 SSE :: 14.6844
+iteration 5 SSE :: 14.652
+iteration 6 SSE :: 14.6419
+
+run 85
+------------------------
+
+iteration 1 SSE :: 18.1486
+iteration 2 SSE :: 16.5165
+iteration 3 SSE :: 15.7294
+iteration 4 SSE :: 15.2119
+iteration 5 SSE :: 14.9877
+iteration 6 SSE :: 14.8983
+iteration 7 SSE :: 14.7395
+iteration 8 SSE :: 14.5953
+iteration 9 SSE :: 14.5579
+iteration 10 SSE :: 14.5
+iteration 11 SSE :: 14.4289
+iteration 12 SSE :: 14.3376
+iteration 13 SSE :: 13.9728
+iteration 14 SSE :: 13.9695
+
+run 86
+------------------------
+
+iteration 1 SSE :: 17.7028
+iteration 2 SSE :: 15.395
+iteration 3 SSE :: 15.1348
+iteration 4 SSE :: 15.0316
+iteration 5 SSE :: 14.9745
+iteration 6 SSE :: 14.9392
+iteration 7 SSE :: 14.8967
+iteration 8 SSE :: 14.8579
+iteration 9 SSE :: 14.8225
+iteration 10 SSE :: 14.7941
+iteration 11 SSE :: 14.7709
+iteration 12 SSE :: 14.7578
+
+run 87
+------------------------
+
+iteration 1 SSE :: 18.9671
+iteration 2 SSE :: 17.5217
+iteration 3 SSE :: 16.5863
+iteration 4 SSE :: 16.1073
+iteration 5 SSE :: 15.9558
+iteration 6 SSE :: 15.9285
+iteration 7 SSE :: 15.9285
+
+run 88
+------------------------
+
+iteration 1 SSE :: 18.6337
+iteration 2 SSE :: 17.9217
+iteration 3 SSE :: 17.3706
+iteration 4 SSE :: 16.9169
+iteration 5 SSE :: 16.6472
+iteration 6 SSE :: 16.524
+iteration 7 SSE :: 16.3067
+iteration 8 SSE :: 16.032
+iteration 9 SSE :: 15.9373
+iteration 10 SSE :: 15.8535
+iteration 11 SSE :: 15.8209
+iteration 12 SSE :: 15.8028
+iteration 13 SSE :: 15.6349
+iteration 14 SSE :: 15.3417
+iteration 15 SSE :: 15.0255
+iteration 16 SSE :: 14.7094
+iteration 17 SSE :: 14.5434
+iteration 18 SSE :: 14.5078
+iteration 19 SSE :: 14.4841
+iteration 20 SSE :: 14.4671
+iteration 21 SSE :: 14.4626
+
+run 89
+------------------------
+
+iteration 1 SSE :: 17.5551
+iteration 2 SSE :: 16.6884
+iteration 3 SSE :: 16.3864
+iteration 4 SSE :: 16.1809
+iteration 5 SSE :: 15.8418
+iteration 6 SSE :: 15.6478
+iteration 7 SSE :: 15.5624
+iteration 8 SSE :: 15.4413
+iteration 9 SSE :: 15.3431
+iteration 10 SSE :: 15.2945
+iteration 11 SSE :: 15.2753
+iteration 12 SSE :: 15.2719
+
+run 90
+------------------------
+
+iteration 1 SSE :: 16.4605
+iteration 2 SSE :: 14.9955
+iteration 3 SSE :: 14.2948
+iteration 4 SSE :: 14.0904
+iteration 5 SSE :: 13.9929
+iteration 6 SSE :: 13.9713
+iteration 7 SSE :: 13.9646
+
+run 91
+------------------------
+
+iteration 1 SSE :: 17.2499
+iteration 2 SSE :: 15.8161
+iteration 3 SSE :: 15.1655
+iteration 4 SSE :: 14.9456
+iteration 5 SSE :: 14.9321
+
+run 92
+------------------------
+
+iteration 1 SSE :: 21.2377
+iteration 2 SSE :: 16.985
+iteration 3 SSE :: 16.3288
+iteration 4 SSE :: 16.1247
+iteration 5 SSE :: 16.0535
+iteration 6 SSE :: 16.0011
+iteration 7 SSE :: 15.9942
+
+run 93
+------------------------
+
+iteration 1 SSE :: 15.629
+iteration 2 SSE :: 15.1799
+iteration 3 SSE :: 14.9326
+iteration 4 SSE :: 14.8339
+iteration 5 SSE :: 14.7631
+iteration 6 SSE :: 14.7346
+iteration 7 SSE :: 14.7272
+
+run 94
+------------------------
+
+iteration 1 SSE :: 17.9472
+iteration 2 SSE :: 16.9966
+iteration 3 SSE :: 16.3955
+iteration 4 SSE :: 15.8078
+iteration 5 SSE :: 15.6202
+iteration 6 SSE :: 15.5527
+iteration 7 SSE :: 15.4563
+iteration 8 SSE :: 15.419
+iteration 9 SSE :: 15.4116
+
+run 95
+------------------------
+
+iteration 1 SSE :: 18.6198
+iteration 2 SSE :: 17.1779
+iteration 3 SSE :: 16.7341
+iteration 4 SSE :: 16.6692
+iteration 5 SSE :: 16.6589
+
+run 96
+------------------------
+
+iteration 1 SSE :: 17.0606
+iteration 2 SSE :: 16.4932
+iteration 3 SSE :: 16.3774
+iteration 4 SSE :: 16.34
+iteration 5 SSE :: 16.2975
+iteration 6 SSE :: 16.1898
+iteration 7 SSE :: 16.1507
+iteration 8 SSE :: 16.1155
+iteration 9 SSE :: 16.0921
+iteration 10 SSE :: 16.0781
+
+run 97
+------------------------
+
+iteration 1 SSE :: 20.4086
+iteration 2 SSE :: 17.9193
+iteration 3 SSE :: 17.5476
+iteration 4 SSE :: 17.3966
+iteration 5 SSE :: 17.1957
+iteration 6 SSE :: 16.9605
+iteration 7 SSE :: 16.8205
+iteration 8 SSE :: 16.7233
+iteration 9 SSE :: 16.5674
+iteration 10 SSE :: 16.2222
+iteration 11 SSE :: 15.9354
+iteration 12 SSE :: 15.5737
+iteration 13 SSE :: 15.3414
+iteration 14 SSE :: 15.1613
+iteration 15 SSE :: 15.0962
+iteration 16 SSE :: 15.0833
+
+run 98
+------------------------
+
+iteration 1 SSE :: 16.8624
+iteration 2 SSE :: 16.3826
+iteration 3 SSE :: 15.7552
+iteration 4 SSE :: 15.4051
+iteration 5 SSE :: 15.259
+iteration 6 SSE :: 15.2023
+iteration 7 SSE :: 15.1884
+
+run 99
+------------------------
+
+iteration 1 SSE :: 19.0368
+iteration 2 SSE :: 18.6002
+iteration 3 SSE :: 18.4933
+iteration 4 SSE :: 18.4524
+iteration 5 SSE :: 18.4233
+iteration 6 SSE :: 18.3716
+iteration 7 SSE :: 18.2812
+iteration 8 SSE :: 18.2075
+iteration 9 SSE :: 18.0505
+iteration 10 SSE :: 17.8798
+iteration 11 SSE :: 17.5222
+iteration 12 SSE :: 17.2767
+iteration 13 SSE :: 17.044
+iteration 14 SSE :: 16.9437
+iteration 15 SSE :: 16.9393
+
+run 100
+------------------------
+
+iteration 1 SSE :: 18.8508
+iteration 2 SSE :: 16.2859
+iteration 3 SSE :: 15.6108
+iteration 4 SSE :: 15.1551
+iteration 5 SSE :: 14.9188
+iteration 6 SSE :: 14.6511
+iteration 7 SSE :: 14.491
+iteration 8 SSE :: 14.4054
+iteration 9 SSE :: 14.1907
+iteration 10 SSE :: 14.0535
+iteration 11 SSE :: 14.009
+iteration 12 SSE :: 14.009
+
+Run 78 is best run :: iteration SSE	13.8747
+total time taken for algorithm :: 1.18249 s

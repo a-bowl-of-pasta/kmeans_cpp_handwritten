@@ -1,0 +1,1283 @@
+
+run 1
+------------------------
+
+iteration 1 SSE :: 627.482
+iteration 2 SSE :: 492.809
+iteration 3 SSE :: 469.225
+iteration 4 SSE :: 462.821
+iteration 5 SSE :: 460.681
+iteration 6 SSE :: 459.874
+iteration 7 SSE :: 459.409
+iteration 8 SSE :: 459.045
+
+run 2
+------------------------
+
+iteration 1 SSE :: 491.605
+iteration 2 SSE :: 425.211
+iteration 3 SSE :: 399.601
+iteration 4 SSE :: 383.864
+iteration 5 SSE :: 382.105
+iteration 6 SSE :: 381.558
+iteration 7 SSE :: 381.558
+
+run 3
+------------------------
+
+iteration 1 SSE :: 468.923
+iteration 2 SSE :: 436.753
+iteration 3 SSE :: 423.896
+iteration 4 SSE :: 421.721
+iteration 5 SSE :: 418.977
+iteration 6 SSE :: 416.578
+iteration 7 SSE :: 415.775
+iteration 8 SSE :: 415.493
+
+run 4
+------------------------
+
+iteration 1 SSE :: 692.873
+iteration 2 SSE :: 597.589
+iteration 3 SSE :: 491.814
+iteration 4 SSE :: 405.347
+iteration 5 SSE :: 386.939
+iteration 6 SSE :: 382.639
+iteration 7 SSE :: 381.763
+iteration 8 SSE :: 381.698
+
+run 5
+------------------------
+
+iteration 1 SSE :: 632.064
+iteration 2 SSE :: 480.481
+iteration 3 SSE :: 431.079
+iteration 4 SSE :: 397.718
+iteration 5 SSE :: 385.14
+iteration 6 SSE :: 384.72
+iteration 7 SSE :: 384.302
+iteration 8 SSE :: 384.181
+
+run 6
+------------------------
+
+iteration 1 SSE :: 449.951
+iteration 2 SSE :: 430.947
+iteration 3 SSE :: 428.246
+iteration 4 SSE :: 426.301
+iteration 5 SSE :: 420.648
+iteration 6 SSE :: 415.218
+iteration 7 SSE :: 411.046
+iteration 8 SSE :: 406.855
+iteration 9 SSE :: 396.385
+iteration 10 SSE :: 376.169
+iteration 11 SSE :: 346.845
+iteration 12 SSE :: 337.953
+iteration 13 SSE :: 336.293
+iteration 14 SSE :: 336.293
+
+run 7
+------------------------
+
+iteration 1 SSE :: 711.4
+iteration 2 SSE :: 538.274
+iteration 3 SSE :: 407.611
+iteration 4 SSE :: 389.257
+iteration 5 SSE :: 385.58
+iteration 6 SSE :: 384.548
+iteration 7 SSE :: 384.343
+
+run 8
+------------------------
+
+iteration 1 SSE :: 678.781
+iteration 2 SSE :: 662.65
+iteration 3 SSE :: 613.573
+iteration 4 SSE :: 572.541
+iteration 5 SSE :: 566.812
+iteration 6 SSE :: 566.649
+
+run 9
+------------------------
+
+iteration 1 SSE :: 696.116
+iteration 2 SSE :: 658.366
+iteration 3 SSE :: 550.018
+iteration 4 SSE :: 470.261
+iteration 5 SSE :: 462.587
+iteration 6 SSE :: 460.003
+iteration 7 SSE :: 459.098
+iteration 8 SSE :: 458.622
+iteration 9 SSE :: 458.388
+
+run 10
+------------------------
+
+iteration 1 SSE :: 583.124
+iteration 2 SSE :: 479.569
+iteration 3 SSE :: 460.377
+iteration 4 SSE :: 455.512
+iteration 5 SSE :: 453.853
+iteration 6 SSE :: 452.844
+iteration 7 SSE :: 451.543
+iteration 8 SSE :: 449.51
+iteration 9 SSE :: 447.564
+iteration 10 SSE :: 444.087
+iteration 11 SSE :: 437.521
+iteration 12 SSE :: 390.272
+iteration 13 SSE :: 380.488
+iteration 14 SSE :: 377.537
+iteration 15 SSE :: 377.19
+
+run 11
+------------------------
+
+iteration 1 SSE :: 486.132
+iteration 2 SSE :: 448.662
+iteration 3 SSE :: 433.328
+iteration 4 SSE :: 430.544
+iteration 5 SSE :: 422.946
+iteration 6 SSE :: 405.532
+iteration 7 SSE :: 397.93
+iteration 8 SSE :: 393.99
+iteration 9 SSE :: 385.003
+iteration 10 SSE :: 358.33
+iteration 11 SSE :: 341.121
+iteration 12 SSE :: 336.629
+iteration 13 SSE :: 336.629
+
+run 12
+------------------------
+
+iteration 1 SSE :: 428.707
+iteration 2 SSE :: 379.865
+iteration 3 SSE :: 372.507
+iteration 4 SSE :: 362.792
+iteration 5 SSE :: 353.724
+iteration 6 SSE :: 344.063
+iteration 7 SSE :: 340.181
+iteration 8 SSE :: 338.745
+iteration 9 SSE :: 338.745
+
+run 13
+------------------------
+
+iteration 1 SSE :: 916.681
+iteration 2 SSE :: 615.354
+iteration 3 SSE :: 572.736
+iteration 4 SSE :: 567.484
+iteration 5 SSE :: 563.812
+iteration 6 SSE :: 563.223
+iteration 7 SSE :: 562.918
+
+run 14
+------------------------
+
+iteration 1 SSE :: 654.816
+iteration 2 SSE :: 480.071
+iteration 3 SSE :: 404.378
+iteration 4 SSE :: 386.987
+iteration 5 SSE :: 382.734
+iteration 6 SSE :: 382.541
+
+run 15
+------------------------
+
+iteration 1 SSE :: 482.169
+iteration 2 SSE :: 398.758
+iteration 3 SSE :: 385.528
+iteration 4 SSE :: 383.973
+iteration 5 SSE :: 383.719
+
+run 16
+------------------------
+
+iteration 1 SSE :: 793.845
+iteration 2 SSE :: 678.466
+iteration 3 SSE :: 662.872
+iteration 4 SSE :: 611.517
+iteration 5 SSE :: 583.141
+iteration 6 SSE :: 576.646
+iteration 7 SSE :: 570.222
+iteration 8 SSE :: 553.563
+iteration 9 SSE :: 542.668
+iteration 10 SSE :: 541.647
+iteration 11 SSE :: 540.498
+iteration 12 SSE :: 540.066
+
+run 17
+------------------------
+
+iteration 1 SSE :: 646.688
+iteration 2 SSE :: 580.448
+iteration 3 SSE :: 473.963
+iteration 4 SSE :: 421.216
+iteration 5 SSE :: 398.794
+iteration 6 SSE :: 359.891
+iteration 7 SSE :: 338.547
+iteration 8 SSE :: 336.425
+iteration 9 SSE :: 336.33
+
+run 18
+------------------------
+
+iteration 1 SSE :: 568.993
+iteration 2 SSE :: 560.189
+iteration 3 SSE :: 481.295
+iteration 4 SSE :: 399.891
+iteration 5 SSE :: 386.478
+iteration 6 SSE :: 382.47
+iteration 7 SSE :: 381.819
+iteration 8 SSE :: 381.819
+
+run 19
+------------------------
+
+iteration 1 SSE :: 521.151
+iteration 2 SSE :: 463.084
+iteration 3 SSE :: 441.63
+iteration 4 SSE :: 406.937
+iteration 5 SSE :: 356.631
+iteration 6 SSE :: 340.762
+iteration 7 SSE :: 337.322
+iteration 8 SSE :: 336.33
+iteration 9 SSE :: 336.293
+
+run 20
+------------------------
+
+iteration 1 SSE :: 696.125
+iteration 2 SSE :: 686.157
+iteration 3 SSE :: 681.807
+iteration 4 SSE :: 673
+iteration 5 SSE :: 667.903
+iteration 6 SSE :: 664.849
+iteration 7 SSE :: 646.177
+iteration 8 SSE :: 616.285
+iteration 9 SSE :: 574.793
+iteration 10 SSE :: 569.202
+iteration 11 SSE :: 568.753
+
+run 21
+------------------------
+
+iteration 1 SSE :: 726.39
+iteration 2 SSE :: 461.809
+iteration 3 SSE :: 406.615
+iteration 4 SSE :: 389.572
+iteration 5 SSE :: 383.175
+iteration 6 SSE :: 382.33
+iteration 7 SSE :: 382.133
+
+run 22
+------------------------
+
+iteration 1 SSE :: 694.127
+iteration 2 SSE :: 595.991
+iteration 3 SSE :: 583.674
+iteration 4 SSE :: 575.828
+iteration 5 SSE :: 571.594
+iteration 6 SSE :: 571.107
+
+run 23
+------------------------
+
+iteration 1 SSE :: 644.497
+iteration 2 SSE :: 394.691
+iteration 3 SSE :: 374.507
+iteration 4 SSE :: 372.666
+iteration 5 SSE :: 371.864
+iteration 6 SSE :: 371.864
+
+run 24
+------------------------
+
+iteration 1 SSE :: 506.076
+iteration 2 SSE :: 453.342
+iteration 3 SSE :: 427.793
+iteration 4 SSE :: 386.426
+iteration 5 SSE :: 379.136
+iteration 6 SSE :: 379.035
+
+run 25
+------------------------
+
+iteration 1 SSE :: 508.28
+iteration 2 SSE :: 459.284
+iteration 3 SSE :: 412.369
+iteration 4 SSE :: 391.045
+iteration 5 SSE :: 381.457
+iteration 6 SSE :: 379.423
+iteration 7 SSE :: 377.141
+iteration 8 SSE :: 372.137
+iteration 9 SSE :: 367.261
+iteration 10 SSE :: 366.589
+iteration 11 SSE :: 366.589
+
+run 26
+------------------------
+
+iteration 1 SSE :: 489.228
+iteration 2 SSE :: 457.063
+iteration 3 SSE :: 452.362
+iteration 4 SSE :: 449.994
+iteration 5 SSE :: 447.684
+iteration 6 SSE :: 444.588
+iteration 7 SSE :: 440.261
+iteration 8 SSE :: 439.042
+iteration 9 SSE :: 439.042
+
+run 27
+------------------------
+
+iteration 1 SSE :: 503.95
+iteration 2 SSE :: 405.781
+iteration 3 SSE :: 356.156
+iteration 4 SSE :: 340.762
+iteration 5 SSE :: 337.322
+iteration 6 SSE :: 336.33
+iteration 7 SSE :: 336.293
+
+run 28
+------------------------
+
+iteration 1 SSE :: 601.674
+iteration 2 SSE :: 586.183
+iteration 3 SSE :: 583.725
+iteration 4 SSE :: 581.842
+iteration 5 SSE :: 581.448
+
+run 29
+------------------------
+
+iteration 1 SSE :: 543.392
+iteration 2 SSE :: 495.947
+iteration 3 SSE :: 465.511
+iteration 4 SSE :: 461.219
+iteration 5 SSE :: 458.239
+iteration 6 SSE :: 456.457
+iteration 7 SSE :: 455.569
+iteration 8 SSE :: 454.726
+iteration 9 SSE :: 454.133
+iteration 10 SSE :: 453.518
+iteration 11 SSE :: 452.314
+iteration 12 SSE :: 450.75
+iteration 13 SSE :: 448.589
+iteration 14 SSE :: 446.743
+iteration 15 SSE :: 440.186
+iteration 16 SSE :: 394.683
+iteration 17 SSE :: 385.891
+iteration 18 SSE :: 384.271
+iteration 19 SSE :: 384.271
+
+run 30
+------------------------
+
+iteration 1 SSE :: 756.154
+iteration 2 SSE :: 686.22
+iteration 3 SSE :: 614.555
+iteration 4 SSE :: 584.547
+iteration 5 SSE :: 572.777
+iteration 6 SSE :: 567.152
+iteration 7 SSE :: 563.808
+iteration 8 SSE :: 562.944
+iteration 9 SSE :: 562.636
+
+run 31
+------------------------
+
+iteration 1 SSE :: 732.249
+iteration 2 SSE :: 646.189
+iteration 3 SSE :: 563.367
+iteration 4 SSE :: 552.79
+iteration 5 SSE :: 522.818
+iteration 6 SSE :: 427.137
+iteration 7 SSE :: 385.838
+iteration 8 SSE :: 378.97
+iteration 9 SSE :: 378.404
+iteration 10 SSE :: 377.741
+iteration 11 SSE :: 377.741
+
+run 32
+------------------------
+
+iteration 1 SSE :: 593.555
+iteration 2 SSE :: 472.65
+iteration 3 SSE :: 456.114
+iteration 4 SSE :: 446.349
+iteration 5 SSE :: 443.082
+iteration 6 SSE :: 439.85
+iteration 7 SSE :: 433.653
+iteration 8 SSE :: 387.703
+iteration 9 SSE :: 378.803
+iteration 10 SSE :: 377.19
+iteration 11 SSE :: 377.19
+
+run 33
+------------------------
+
+iteration 1 SSE :: 411.832
+iteration 2 SSE :: 384.649
+iteration 3 SSE :: 372.373
+iteration 4 SSE :: 360.235
+iteration 5 SSE :: 348.032
+iteration 6 SSE :: 341.743
+iteration 7 SSE :: 337.766
+iteration 8 SSE :: 336.293
+iteration 9 SSE :: 336.293
+
+run 34
+------------------------
+
+iteration 1 SSE :: 521.605
+iteration 2 SSE :: 464.565
+iteration 3 SSE :: 455.947
+iteration 4 SSE :: 452.673
+iteration 5 SSE :: 450.905
+iteration 6 SSE :: 449.177
+iteration 7 SSE :: 442.197
+iteration 8 SSE :: 435.697
+iteration 9 SSE :: 433.316
+iteration 10 SSE :: 424.914
+iteration 11 SSE :: 378.612
+iteration 12 SSE :: 372.263
+iteration 13 SSE :: 372.179
+
+run 35
+------------------------
+
+iteration 1 SSE :: 551.486
+iteration 2 SSE :: 449.571
+iteration 3 SSE :: 417.31
+iteration 4 SSE :: 374.061
+iteration 5 SSE :: 349.367
+iteration 6 SSE :: 341.61
+iteration 7 SSE :: 337.729
+iteration 8 SSE :: 336.293
+iteration 9 SSE :: 336.293
+
+run 36
+------------------------
+
+iteration 1 SSE :: 630.165
+iteration 2 SSE :: 498.25
+iteration 3 SSE :: 399.797
+iteration 4 SSE :: 384.156
+iteration 5 SSE :: 382.53
+iteration 6 SSE :: 381.997
+iteration 7 SSE :: 381.769
+
+run 37
+------------------------
+
+iteration 1 SSE :: 534.834
+iteration 2 SSE :: 469.237
+iteration 3 SSE :: 420.996
+iteration 4 SSE :: 386.454
+iteration 5 SSE :: 381.491
+iteration 6 SSE :: 380.493
+iteration 7 SSE :: 380.453
+
+run 38
+------------------------
+
+iteration 1 SSE :: 480.115
+iteration 2 SSE :: 416.92
+iteration 3 SSE :: 389.867
+iteration 4 SSE :: 385.385
+iteration 5 SSE :: 381.516
+iteration 6 SSE :: 380.87
+iteration 7 SSE :: 380.346
+iteration 8 SSE :: 380.096
+
+run 39
+------------------------
+
+iteration 1 SSE :: 424.877
+iteration 2 SSE :: 354.349
+iteration 3 SSE :: 340.192
+iteration 4 SSE :: 339.019
+iteration 5 SSE :: 338.987
+
+run 40
+------------------------
+
+iteration 1 SSE :: 597.231
+iteration 2 SSE :: 437.713
+iteration 3 SSE :: 418.183
+iteration 4 SSE :: 412.295
+iteration 5 SSE :: 410.599
+iteration 6 SSE :: 409.772
+iteration 7 SSE :: 409.676
+
+run 41
+------------------------
+
+iteration 1 SSE :: 497.137
+iteration 2 SSE :: 453.209
+iteration 3 SSE :: 441.335
+iteration 4 SSE :: 430.837
+iteration 5 SSE :: 393.693
+iteration 6 SSE :: 381.236
+iteration 7 SSE :: 379.417
+iteration 8 SSE :: 378.439
+iteration 9 SSE :: 377.19
+iteration 10 SSE :: 377.19
+
+run 42
+------------------------
+
+iteration 1 SSE :: 525.792
+iteration 2 SSE :: 481.024
+iteration 3 SSE :: 468.67
+iteration 4 SSE :: 448.738
+iteration 5 SSE :: 435.857
+iteration 6 SSE :: 429.815
+iteration 7 SSE :: 421.843
+iteration 8 SSE :: 420.279
+iteration 9 SSE :: 417.928
+iteration 10 SSE :: 415.495
+iteration 11 SSE :: 413.604
+iteration 12 SSE :: 411.842
+iteration 13 SSE :: 409.533
+iteration 14 SSE :: 407.652
+iteration 15 SSE :: 401.553
+iteration 16 SSE :: 349.508
+iteration 17 SSE :: 338.85
+iteration 18 SSE :: 336.293
+iteration 19 SSE :: 336.293
+
+run 43
+------------------------
+
+iteration 1 SSE :: 571.368
+iteration 2 SSE :: 461.182
+iteration 3 SSE :: 388.255
+iteration 4 SSE :: 375.832
+iteration 5 SSE :: 375.184
+iteration 6 SSE :: 374.479
+iteration 7 SSE :: 374.084
+iteration 8 SSE :: 373.447
+iteration 9 SSE :: 372.09
+iteration 10 SSE :: 369.18
+iteration 11 SSE :: 364.124
+iteration 12 SSE :: 359.231
+iteration 13 SSE :: 358.559
+iteration 14 SSE :: 358.559
+
+run 44
+------------------------
+
+iteration 1 SSE :: 686.766
+iteration 2 SSE :: 630.103
+iteration 3 SSE :: 514.378
+iteration 4 SSE :: 429.865
+iteration 5 SSE :: 393.4
+iteration 6 SSE :: 385.755
+iteration 7 SSE :: 382.841
+iteration 8 SSE :: 382.763
+
+run 45
+------------------------
+
+iteration 1 SSE :: 495.598
+iteration 2 SSE :: 480.356
+iteration 3 SSE :: 440.29
+iteration 4 SSE :: 385.298
+iteration 5 SSE :: 356.636
+iteration 6 SSE :: 343.168
+iteration 7 SSE :: 336.963
+iteration 8 SSE :: 336.802
+
+run 46
+------------------------
+
+iteration 1 SSE :: 456.298
+iteration 2 SSE :: 432.513
+iteration 3 SSE :: 415.071
+iteration 4 SSE :: 409.574
+iteration 5 SSE :: 408.833
+iteration 6 SSE :: 407.875
+iteration 7 SSE :: 407.281
+iteration 8 SSE :: 406.159
+iteration 9 SSE :: 405.394
+iteration 10 SSE :: 403.504
+iteration 11 SSE :: 400.749
+iteration 12 SSE :: 392.886
+iteration 13 SSE :: 346.774
+iteration 14 SSE :: 337.906
+iteration 15 SSE :: 336.293
+iteration 16 SSE :: 336.293
+
+run 47
+------------------------
+
+iteration 1 SSE :: 703.026
+iteration 2 SSE :: 644.512
+iteration 3 SSE :: 591.687
+iteration 4 SSE :: 576.06
+iteration 5 SSE :: 572.673
+iteration 6 SSE :: 562.373
+iteration 7 SSE :: 549.271
+iteration 8 SSE :: 546.884
+iteration 9 SSE :: 545.677
+iteration 10 SSE :: 545.659
+
+run 48
+------------------------
+
+iteration 1 SSE :: 458.445
+iteration 2 SSE :: 430.813
+iteration 3 SSE :: 425.684
+iteration 4 SSE :: 422.877
+iteration 5 SSE :: 418.118
+iteration 6 SSE :: 407.311
+iteration 7 SSE :: 385.121
+iteration 8 SSE :: 381.488
+iteration 9 SSE :: 380.427
+iteration 10 SSE :: 380.242
+
+run 49
+------------------------
+
+iteration 1 SSE :: 583.921
+iteration 2 SSE :: 448.8
+iteration 3 SSE :: 419.94
+iteration 4 SSE :: 392.56
+iteration 5 SSE :: 380.018
+iteration 6 SSE :: 379.192
+iteration 7 SSE :: 378.439
+iteration 8 SSE :: 377.19
+iteration 9 SSE :: 377.19
+
+run 50
+------------------------
+
+iteration 1 SSE :: 553.467
+iteration 2 SSE :: 463.508
+iteration 3 SSE :: 443.783
+iteration 4 SSE :: 405.9
+iteration 5 SSE :: 387.718
+iteration 6 SSE :: 381.636
+iteration 7 SSE :: 379.133
+iteration 8 SSE :: 376.763
+iteration 9 SSE :: 371.265
+iteration 10 SSE :: 367.041
+iteration 11 SSE :: 367.041
+
+run 51
+------------------------
+
+iteration 1 SSE :: 586.4
+iteration 2 SSE :: 462.766
+iteration 3 SSE :: 405.696
+iteration 4 SSE :: 379.519
+iteration 5 SSE :: 357.02
+iteration 6 SSE :: 339.158
+iteration 7 SSE :: 337.322
+iteration 8 SSE :: 336.33
+iteration 9 SSE :: 336.293
+
+run 52
+------------------------
+
+iteration 1 SSE :: 687.349
+iteration 2 SSE :: 520.745
+iteration 3 SSE :: 423.698
+iteration 4 SSE :: 388.58
+iteration 5 SSE :: 384.758
+iteration 6 SSE :: 381.419
+iteration 7 SSE :: 380.68
+iteration 8 SSE :: 380.096
+iteration 9 SSE :: 380.048
+
+run 53
+------------------------
+
+iteration 1 SSE :: 477.936
+iteration 2 SSE :: 436.134
+iteration 3 SSE :: 382.823
+iteration 4 SSE :: 380.151
+iteration 5 SSE :: 379.257
+iteration 6 SSE :: 375.325
+iteration 7 SSE :: 372.43
+iteration 8 SSE :: 372.046
+iteration 9 SSE :: 372.046
+
+run 54
+------------------------
+
+iteration 1 SSE :: 458.277
+iteration 2 SSE :: 413.877
+iteration 3 SSE :: 383.967
+iteration 4 SSE :: 373.722
+iteration 5 SSE :: 372.945
+iteration 6 SSE :: 372.945
+
+run 55
+------------------------
+
+iteration 1 SSE :: 701.275
+iteration 2 SSE :: 673.87
+iteration 3 SSE :: 662.661
+iteration 4 SSE :: 622.335
+iteration 5 SSE :: 543.388
+iteration 6 SSE :: 540.807
+iteration 7 SSE :: 540.749
+
+run 56
+------------------------
+
+iteration 1 SSE :: 526.207
+iteration 2 SSE :: 455.723
+iteration 3 SSE :: 444.245
+iteration 4 SSE :: 432.089
+iteration 5 SSE :: 427.016
+iteration 6 SSE :: 422.679
+iteration 7 SSE :: 411.84
+iteration 8 SSE :: 399.653
+iteration 9 SSE :: 382.426
+iteration 10 SSE :: 357.018
+iteration 11 SSE :: 357.018
+
+run 57
+------------------------
+
+iteration 1 SSE :: 770.843
+iteration 2 SSE :: 602.89
+iteration 3 SSE :: 580.924
+iteration 4 SSE :: 570.229
+iteration 5 SSE :: 564.813
+iteration 6 SSE :: 564.236
+iteration 7 SSE :: 563.908
+
+run 58
+------------------------
+
+iteration 1 SSE :: 480.163
+iteration 2 SSE :: 416.818
+iteration 3 SSE :: 391.984
+iteration 4 SSE :: 388.178
+iteration 5 SSE :: 386.149
+iteration 6 SSE :: 384.064
+iteration 7 SSE :: 382.309
+iteration 8 SSE :: 381.713
+iteration 9 SSE :: 378.904
+iteration 10 SSE :: 377.475
+iteration 11 SSE :: 377.192
+
+run 59
+------------------------
+
+iteration 1 SSE :: 683.697
+iteration 2 SSE :: 666.413
+iteration 3 SSE :: 611.19
+iteration 4 SSE :: 577.517
+iteration 5 SSE :: 575.416
+iteration 6 SSE :: 575.359
+
+run 60
+------------------------
+
+iteration 1 SSE :: 610.254
+iteration 2 SSE :: 455.12
+iteration 3 SSE :: 402.201
+iteration 4 SSE :: 384.072
+iteration 5 SSE :: 382.216
+iteration 6 SSE :: 381.628
+iteration 7 SSE :: 381.435
+
+run 61
+------------------------
+
+iteration 1 SSE :: 454.357
+iteration 2 SSE :: 410.764
+iteration 3 SSE :: 375.35
+iteration 4 SSE :: 346.379
+iteration 5 SSE :: 336.716
+iteration 6 SSE :: 336.269
+iteration 7 SSE :: 336.269
+
+run 62
+------------------------
+
+iteration 1 SSE :: 771.862
+iteration 2 SSE :: 446.791
+iteration 3 SSE :: 397.945
+iteration 4 SSE :: 384.082
+iteration 5 SSE :: 379.103
+iteration 6 SSE :: 375.24
+iteration 7 SSE :: 372.43
+iteration 8 SSE :: 372.046
+iteration 9 SSE :: 372.046
+
+run 63
+------------------------
+
+iteration 1 SSE :: 599.842
+iteration 2 SSE :: 431.991
+iteration 3 SSE :: 397.911
+iteration 4 SSE :: 385.118
+iteration 5 SSE :: 381.76
+iteration 6 SSE :: 381.482
+
+run 64
+------------------------
+
+iteration 1 SSE :: 621.485
+iteration 2 SSE :: 515.859
+iteration 3 SSE :: 477.32
+iteration 4 SSE :: 457.26
+iteration 5 SSE :: 445.94
+iteration 6 SSE :: 438.406
+iteration 7 SSE :: 428.597
+iteration 8 SSE :: 409.555
+iteration 9 SSE :: 376.112
+iteration 10 SSE :: 367.324
+iteration 11 SSE :: 365.71
+iteration 12 SSE :: 365.71
+
+run 65
+------------------------
+
+iteration 1 SSE :: 721.834
+iteration 2 SSE :: 593.083
+iteration 3 SSE :: 547.766
+iteration 4 SSE :: 440.065
+iteration 5 SSE :: 385.082
+iteration 6 SSE :: 378.293
+iteration 7 SSE :: 375.811
+iteration 8 SSE :: 375.569
+
+run 66
+------------------------
+
+iteration 1 SSE :: 488.837
+iteration 2 SSE :: 474.4
+iteration 3 SSE :: 459.538
+iteration 4 SSE :: 456.845
+iteration 5 SSE :: 450.102
+iteration 6 SSE :: 428.259
+iteration 7 SSE :: 390.339
+iteration 8 SSE :: 379.03
+iteration 9 SSE :: 379.03
+
+run 67
+------------------------
+
+iteration 1 SSE :: 681.336
+iteration 2 SSE :: 619.036
+iteration 3 SSE :: 560.355
+iteration 4 SSE :: 471.833
+iteration 5 SSE :: 396.573
+iteration 6 SSE :: 381.296
+iteration 7 SSE :: 379.55
+iteration 8 SSE :: 378.9
+iteration 9 SSE :: 378.9
+
+run 68
+------------------------
+
+iteration 1 SSE :: 437.47
+iteration 2 SSE :: 400.367
+iteration 3 SSE :: 394.954
+iteration 4 SSE :: 392.584
+iteration 5 SSE :: 390.121
+iteration 6 SSE :: 379.695
+iteration 7 SSE :: 378.689
+iteration 8 SSE :: 378.55
+
+run 69
+------------------------
+
+iteration 1 SSE :: 512.044
+iteration 2 SSE :: 495.113
+iteration 3 SSE :: 483.846
+iteration 4 SSE :: 476.047
+iteration 5 SSE :: 468.094
+iteration 6 SSE :: 427.672
+iteration 7 SSE :: 416.15
+iteration 8 SSE :: 406.152
+iteration 9 SSE :: 402.315
+iteration 10 SSE :: 401.92
+
+run 70
+------------------------
+
+iteration 1 SSE :: 361.906
+iteration 2 SSE :: 357.55
+iteration 3 SSE :: 357.156
+iteration 4 SSE :: 357.044
+
+run 71
+------------------------
+
+iteration 1 SSE :: 488.716
+iteration 2 SSE :: 471.318
+iteration 3 SSE :: 461.97
+iteration 4 SSE :: 456.387
+iteration 5 SSE :: 453.561
+iteration 6 SSE :: 450.06
+iteration 7 SSE :: 444.17
+iteration 8 SSE :: 441.752
+iteration 9 SSE :: 440.998
+iteration 10 SSE :: 440.232
+iteration 11 SSE :: 439.087
+iteration 12 SSE :: 438.512
+iteration 13 SSE :: 435.697
+iteration 14 SSE :: 433.316
+iteration 15 SSE :: 424.914
+iteration 16 SSE :: 378.612
+iteration 17 SSE :: 372.263
+iteration 18 SSE :: 372.179
+
+run 72
+------------------------
+
+iteration 1 SSE :: 673.018
+iteration 2 SSE :: 623.811
+iteration 3 SSE :: 586.124
+iteration 4 SSE :: 583.115
+iteration 5 SSE :: 581.81
+iteration 6 SSE :: 581.405
+
+run 73
+------------------------
+
+iteration 1 SSE :: 460.986
+iteration 2 SSE :: 405.846
+iteration 3 SSE :: 391.652
+iteration 4 SSE :: 385.458
+iteration 5 SSE :: 382.478
+iteration 6 SSE :: 381.651
+iteration 7 SSE :: 381.303
+
+run 74
+------------------------
+
+iteration 1 SSE :: 505.29
+iteration 2 SSE :: 423.22
+iteration 3 SSE :: 390.749
+iteration 4 SSE :: 383.426
+iteration 5 SSE :: 382.398
+iteration 6 SSE :: 382.185
+
+run 75
+------------------------
+
+iteration 1 SSE :: 677.548
+iteration 2 SSE :: 666.857
+iteration 3 SSE :: 662.686
+iteration 4 SSE :: 646.478
+iteration 5 SSE :: 636.926
+iteration 6 SSE :: 635.648
+iteration 7 SSE :: 632.064
+iteration 8 SSE :: 607.589
+iteration 9 SSE :: 584.811
+iteration 10 SSE :: 580.351
+iteration 11 SSE :: 579.938
+
+run 76
+------------------------
+
+iteration 1 SSE :: 482.385
+iteration 2 SSE :: 390.271
+iteration 3 SSE :: 381.996
+iteration 4 SSE :: 380.666
+iteration 5 SSE :: 380.382
+
+run 77
+------------------------
+
+iteration 1 SSE :: 464.553
+iteration 2 SSE :: 419.109
+iteration 3 SSE :: 408.782
+iteration 4 SSE :: 360.272
+iteration 5 SSE :: 343.066
+iteration 6 SSE :: 336.496
+iteration 7 SSE :: 336.425
+
+run 78
+------------------------
+
+iteration 1 SSE :: 482.73
+iteration 2 SSE :: 400.111
+iteration 3 SSE :: 369.701
+iteration 4 SSE :: 350.634
+iteration 5 SSE :: 344.337
+iteration 6 SSE :: 340.423
+iteration 7 SSE :: 338.987
+iteration 8 SSE :: 338.987
+
+run 79
+------------------------
+
+iteration 1 SSE :: 658.728
+iteration 2 SSE :: 626.741
+iteration 3 SSE :: 616.664
+iteration 4 SSE :: 584.687
+iteration 5 SSE :: 568.905
+iteration 6 SSE :: 567.928
+iteration 7 SSE :: 567.863
+
+run 80
+------------------------
+
+iteration 1 SSE :: 470.631
+iteration 2 SSE :: 449.38
+iteration 3 SSE :: 391.846
+iteration 4 SSE :: 382.254
+iteration 5 SSE :: 380.571
+iteration 6 SSE :: 380.571
+
+run 81
+------------------------
+
+iteration 1 SSE :: 609.695
+iteration 2 SSE :: 575.739
+iteration 3 SSE :: 568.668
+iteration 4 SSE :: 567.775
+iteration 5 SSE :: 567.107
+iteration 6 SSE :: 567.024
+
+run 82
+------------------------
+
+iteration 1 SSE :: 485.38
+iteration 2 SSE :: 465.003
+iteration 3 SSE :: 458.059
+iteration 4 SSE :: 451.923
+iteration 5 SSE :: 441.179
+iteration 6 SSE :: 432.887
+iteration 7 SSE :: 430.288
+iteration 8 SSE :: 430.006
+
+run 83
+------------------------
+
+iteration 1 SSE :: 689.166
+iteration 2 SSE :: 598.82
+iteration 3 SSE :: 555.205
+iteration 4 SSE :: 466.667
+iteration 5 SSE :: 396.2
+iteration 6 SSE :: 383.473
+iteration 7 SSE :: 382.505
+iteration 8 SSE :: 381.854
+iteration 9 SSE :: 381.854
+
+run 84
+------------------------
+
+iteration 1 SSE :: 722.595
+iteration 2 SSE :: 533.521
+iteration 3 SSE :: 397.903
+iteration 4 SSE :: 386.856
+iteration 5 SSE :: 384.329
+iteration 6 SSE :: 382.569
+iteration 7 SSE :: 381.639
+iteration 8 SSE :: 381.475
+
+run 85
+------------------------
+
+iteration 1 SSE :: 685.529
+iteration 2 SSE :: 648.62
+iteration 3 SSE :: 586.456
+iteration 4 SSE :: 564.573
+iteration 5 SSE :: 562.913
+iteration 6 SSE :: 562.663
+
+run 86
+------------------------
+
+iteration 1 SSE :: 616.453
+iteration 2 SSE :: 472.884
+iteration 3 SSE :: 433.251
+iteration 4 SSE :: 395.49
+iteration 5 SSE :: 383.178
+iteration 6 SSE :: 382.761
+iteration 7 SSE :: 382.64
+
+run 87
+------------------------
+
+iteration 1 SSE :: 498.977
+iteration 2 SSE :: 468.499
+iteration 3 SSE :: 463.095
+iteration 4 SSE :: 461.369
+iteration 5 SSE :: 460.208
+iteration 6 SSE :: 459.143
+iteration 7 SSE :: 458.638
+iteration 8 SSE :: 456.97
+iteration 9 SSE :: 454.022
+iteration 10 SSE :: 447.19
+iteration 11 SSE :: 433.692
+iteration 12 SSE :: 394.174
+iteration 13 SSE :: 382.841
+iteration 14 SSE :: 382.691
+
+run 88
+------------------------
+
+iteration 1 SSE :: 494.164
+iteration 2 SSE :: 407.943
+iteration 3 SSE :: 390.709
+iteration 4 SSE :: 386.36
+iteration 5 SSE :: 383.429
+iteration 6 SSE :: 381.982
+iteration 7 SSE :: 381.422
+iteration 8 SSE :: 381.422
+
+run 89
+------------------------
+
+iteration 1 SSE :: 437.829
+iteration 2 SSE :: 402.398
+iteration 3 SSE :: 351.871
+iteration 4 SSE :: 339.483
+iteration 5 SSE :: 339.019
+iteration 6 SSE :: 338.987
+
+run 90
+------------------------
+
+iteration 1 SSE :: 424.636
+iteration 2 SSE :: 409.568
+iteration 3 SSE :: 400.741
+iteration 4 SSE :: 397.491
+iteration 5 SSE :: 393.12
+iteration 6 SSE :: 388.498
+iteration 7 SSE :: 386.222
+iteration 8 SSE :: 383.147
+iteration 9 SSE :: 379.937
+iteration 10 SSE :: 378.247
+iteration 11 SSE :: 377.573
+iteration 12 SSE :: 377.149
+iteration 13 SSE :: 376.952
+
+run 91
+------------------------
+
+iteration 1 SSE :: 616.76
+iteration 2 SSE :: 421.34
+iteration 3 SSE :: 390.751
+iteration 4 SSE :: 383.577
+iteration 5 SSE :: 381.177
+iteration 6 SSE :: 379.595
+iteration 7 SSE :: 378.929
+iteration 8 SSE :: 378.9
+
+run 92
+------------------------
+
+iteration 1 SSE :: 657.877
+iteration 2 SSE :: 588.525
+iteration 3 SSE :: 580.533
+iteration 4 SSE :: 564.353
+iteration 5 SSE :: 544.798
+iteration 6 SSE :: 475.571
+iteration 7 SSE :: 392.999
+iteration 8 SSE :: 377.519
+iteration 9 SSE :: 375.824
+iteration 10 SSE :: 375.281
+iteration 11 SSE :: 374.984
+
+run 93
+------------------------
+
+iteration 1 SSE :: 560.382
+iteration 2 SSE :: 480.575
+iteration 3 SSE :: 459.739
+iteration 4 SSE :: 407.554
+iteration 5 SSE :: 389.701
+iteration 6 SSE :: 376.967
+iteration 7 SSE :: 376.71
+
+run 94
+------------------------
+
+iteration 1 SSE :: 436.521
+iteration 2 SSE :: 406.335
+iteration 3 SSE :: 401.341
+iteration 4 SSE :: 397.587
+iteration 5 SSE :: 392.542
+iteration 6 SSE :: 382.878
+iteration 7 SSE :: 381.661
+iteration 8 SSE :: 381.483
+
+run 95
+------------------------
+
+iteration 1 SSE :: 544.591
+iteration 2 SSE :: 528.21
+iteration 3 SSE :: 496.533
+iteration 4 SSE :: 481.35
+iteration 5 SSE :: 467.127
+iteration 6 SSE :: 453.931
+iteration 7 SSE :: 451.543
+iteration 8 SSE :: 449.17
+iteration 9 SSE :: 447.726
+iteration 10 SSE :: 446.778
+iteration 11 SSE :: 446.281
+iteration 12 SSE :: 445.713
+iteration 13 SSE :: 445.635
+
+run 96
+------------------------
+
+iteration 1 SSE :: 657.736
+iteration 2 SSE :: 462.671
+iteration 3 SSE :: 433.725
+iteration 4 SSE :: 387.795
+iteration 5 SSE :: 380.504
+iteration 6 SSE :: 379.187
+iteration 7 SSE :: 379.001
+
+run 97
+------------------------
+
+iteration 1 SSE :: 672.2
+iteration 2 SSE :: 594.708
+iteration 3 SSE :: 566.793
+iteration 4 SSE :: 563.034
+iteration 5 SSE :: 562.879
+
+run 98
+------------------------
+
+iteration 1 SSE :: 572.187
+iteration 2 SSE :: 493.942
+iteration 3 SSE :: 445.069
+iteration 4 SSE :: 393.994
+iteration 5 SSE :: 354.967
+iteration 6 SSE :: 344.005
+iteration 7 SSE :: 336.798
+iteration 8 SSE :: 336.496
+
+run 99
+------------------------
+
+iteration 1 SSE :: 656.494
+iteration 2 SSE :: 589.918
+iteration 3 SSE :: 582.967
+iteration 4 SSE :: 580.793
+iteration 5 SSE :: 578.735
+iteration 6 SSE :: 571.3
+iteration 7 SSE :: 556.804
+iteration 8 SSE :: 549.553
+iteration 9 SSE :: 542.656
+iteration 10 SSE :: 541.903
+iteration 11 SSE :: 541.692
+
+run 100
+------------------------
+
+iteration 1 SSE :: 566.97
+iteration 2 SSE :: 465.914
+iteration 3 SSE :: 427.685
+iteration 4 SSE :: 389.657
+iteration 5 SSE :: 382.821
+iteration 6 SSE :: 382.608
+
+Run 61 is best run :: iteration SSE	336.2686
+total time taken for algorithm :: 0.700008 s

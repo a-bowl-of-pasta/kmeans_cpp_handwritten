@@ -1,0 +1,1870 @@
+
+run 1
+------------------------
+
+iteration 1 SSE :: 735426
+iteration 2 SSE :: 683849
+iteration 3 SSE :: 665578
+iteration 4 SSE :: 658123
+iteration 5 SSE :: 654114
+iteration 6 SSE :: 651294
+iteration 7 SSE :: 649065
+iteration 8 SSE :: 647308
+iteration 9 SSE :: 645853
+iteration 10 SSE :: 644777
+iteration 11 SSE :: 643869
+iteration 12 SSE :: 643192
+iteration 13 SSE :: 642616
+
+run 2
+------------------------
+
+iteration 1 SSE :: 771119
+iteration 2 SSE :: 715657
+iteration 3 SSE :: 681119
+iteration 4 SSE :: 652350
+iteration 5 SSE :: 638911
+iteration 6 SSE :: 632923
+iteration 7 SSE :: 629152
+iteration 8 SSE :: 626962
+iteration 9 SSE :: 625538
+iteration 10 SSE :: 624619
+iteration 11 SSE :: 623816
+iteration 12 SSE :: 623282
+
+run 3
+------------------------
+
+iteration 1 SSE :: 745918
+iteration 2 SSE :: 689476
+iteration 3 SSE :: 668603
+iteration 4 SSE :: 655479
+iteration 5 SSE :: 646627
+iteration 6 SSE :: 641425
+iteration 7 SSE :: 637974
+iteration 8 SSE :: 635796
+iteration 9 SSE :: 634355
+iteration 10 SSE :: 633403
+iteration 11 SSE :: 632919
+
+run 4
+------------------------
+
+iteration 1 SSE :: 699623
+iteration 2 SSE :: 664553
+iteration 3 SSE :: 652631
+iteration 4 SSE :: 646199
+iteration 5 SSE :: 641591
+iteration 6 SSE :: 637542
+iteration 7 SSE :: 633012
+iteration 8 SSE :: 628293
+iteration 9 SSE :: 625859
+iteration 10 SSE :: 624227
+iteration 11 SSE :: 622973
+iteration 12 SSE :: 622071
+iteration 13 SSE :: 621330
+iteration 14 SSE :: 620719
+
+run 5
+------------------------
+
+iteration 1 SSE :: 755129
+iteration 2 SSE :: 707087
+iteration 3 SSE :: 685092
+iteration 4 SSE :: 672753
+iteration 5 SSE :: 657649
+iteration 6 SSE :: 645866
+iteration 7 SSE :: 641430
+iteration 8 SSE :: 638970
+iteration 9 SSE :: 637771
+iteration 10 SSE :: 636924
+iteration 11 SSE :: 636237
+iteration 12 SSE :: 635645
+
+run 6
+------------------------
+
+iteration 1 SSE :: 707770
+iteration 2 SSE :: 674030
+iteration 3 SSE :: 662903
+iteration 4 SSE :: 656277
+iteration 5 SSE :: 650295
+iteration 6 SSE :: 645026
+iteration 7 SSE :: 640501
+iteration 8 SSE :: 637154
+iteration 9 SSE :: 634680
+iteration 10 SSE :: 632868
+iteration 11 SSE :: 631606
+iteration 12 SSE :: 630666
+iteration 13 SSE :: 629675
+iteration 14 SSE :: 628729
+iteration 15 SSE :: 627962
+iteration 16 SSE :: 626985
+iteration 17 SSE :: 626069
+iteration 18 SSE :: 625248
+iteration 19 SSE :: 624646
+
+run 7
+------------------------
+
+iteration 1 SSE :: 729474
+iteration 2 SSE :: 686828
+iteration 3 SSE :: 666509
+iteration 4 SSE :: 657765
+iteration 5 SSE :: 652618
+iteration 6 SSE :: 648794
+iteration 7 SSE :: 644984
+iteration 8 SSE :: 641134
+iteration 9 SSE :: 636807
+iteration 10 SSE :: 634193
+iteration 11 SSE :: 633159
+iteration 12 SSE :: 632470
+iteration 13 SSE :: 631974
+
+run 8
+------------------------
+
+iteration 1 SSE :: 704033
+iteration 2 SSE :: 663772
+iteration 3 SSE :: 649854
+iteration 4 SSE :: 642423
+iteration 5 SSE :: 636212
+iteration 6 SSE :: 630801
+iteration 7 SSE :: 628791
+iteration 8 SSE :: 627195
+iteration 9 SSE :: 625833
+iteration 10 SSE :: 624373
+iteration 11 SSE :: 622786
+iteration 12 SSE :: 621497
+iteration 13 SSE :: 620587
+iteration 14 SSE :: 619970
+
+run 9
+------------------------
+
+iteration 1 SSE :: 740078
+iteration 2 SSE :: 690976
+iteration 3 SSE :: 667764
+iteration 4 SSE :: 653371
+iteration 5 SSE :: 646866
+iteration 6 SSE :: 642911
+iteration 7 SSE :: 640425
+iteration 8 SSE :: 638557
+iteration 9 SSE :: 637039
+iteration 10 SSE :: 635103
+iteration 11 SSE :: 633105
+iteration 12 SSE :: 631706
+iteration 13 SSE :: 630256
+iteration 14 SSE :: 628410
+iteration 15 SSE :: 627496
+iteration 16 SSE :: 626878
+
+run 10
+------------------------
+
+iteration 1 SSE :: 760022
+iteration 2 SSE :: 707228
+iteration 3 SSE :: 685827
+iteration 4 SSE :: 666750
+iteration 5 SSE :: 651687
+iteration 6 SSE :: 643346
+iteration 7 SSE :: 636175
+iteration 8 SSE :: 631328
+iteration 9 SSE :: 628118
+iteration 10 SSE :: 626169
+iteration 11 SSE :: 624387
+iteration 12 SSE :: 622936
+iteration 13 SSE :: 621700
+iteration 14 SSE :: 620368
+iteration 15 SSE :: 619049
+iteration 16 SSE :: 618109
+iteration 17 SSE :: 617372
+iteration 18 SSE :: 616713
+iteration 19 SSE :: 616146
+
+run 11
+------------------------
+
+iteration 1 SSE :: 744877
+iteration 2 SSE :: 703755
+iteration 3 SSE :: 682960
+iteration 4 SSE :: 662118
+iteration 5 SSE :: 648423
+iteration 6 SSE :: 644987
+iteration 7 SSE :: 641309
+iteration 8 SSE :: 637833
+iteration 9 SSE :: 635537
+iteration 10 SSE :: 633937
+iteration 11 SSE :: 632939
+iteration 12 SSE :: 632098
+iteration 13 SSE :: 631217
+iteration 14 SSE :: 630469
+iteration 15 SSE :: 629745
+iteration 16 SSE :: 629105
+iteration 17 SSE :: 628663
+
+run 12
+------------------------
+
+iteration 1 SSE :: 759246
+iteration 2 SSE :: 698539
+iteration 3 SSE :: 673645
+iteration 4 SSE :: 662958
+iteration 5 SSE :: 657177
+iteration 6 SSE :: 652754
+iteration 7 SSE :: 648761
+iteration 8 SSE :: 645446
+iteration 9 SSE :: 643027
+iteration 10 SSE :: 641097
+iteration 11 SSE :: 639092
+iteration 12 SSE :: 636662
+iteration 13 SSE :: 634634
+iteration 14 SSE :: 633389
+iteration 15 SSE :: 632612
+iteration 16 SSE :: 632086
+
+run 13
+------------------------
+
+iteration 1 SSE :: 707605
+iteration 2 SSE :: 667047
+iteration 3 SSE :: 655350
+iteration 4 SSE :: 648381
+iteration 5 SSE :: 641375
+iteration 6 SSE :: 635532
+iteration 7 SSE :: 631858
+iteration 8 SSE :: 629294
+iteration 9 SSE :: 627810
+iteration 10 SSE :: 626804
+iteration 11 SSE :: 626031
+iteration 12 SSE :: 625390
+iteration 13 SSE :: 624931
+
+run 14
+------------------------
+
+iteration 1 SSE :: 754931
+iteration 2 SSE :: 689211
+iteration 3 SSE :: 667413
+iteration 4 SSE :: 655036
+iteration 5 SSE :: 647764
+iteration 6 SSE :: 642852
+iteration 7 SSE :: 638841
+iteration 8 SSE :: 635167
+iteration 9 SSE :: 631769
+iteration 10 SSE :: 629609
+iteration 11 SSE :: 627985
+iteration 12 SSE :: 626804
+iteration 13 SSE :: 625659
+iteration 14 SSE :: 624436
+iteration 15 SSE :: 623725
+iteration 16 SSE :: 623178
+
+run 15
+------------------------
+
+iteration 1 SSE :: 717445
+iteration 2 SSE :: 672878
+iteration 3 SSE :: 652238
+iteration 4 SSE :: 640634
+iteration 5 SSE :: 634167
+iteration 6 SSE :: 629319
+iteration 7 SSE :: 626127
+iteration 8 SSE :: 624054
+iteration 9 SSE :: 622546
+iteration 10 SSE :: 621519
+iteration 11 SSE :: 620854
+iteration 12 SSE :: 620289
+
+run 16
+------------------------
+
+iteration 1 SSE :: 760446
+iteration 2 SSE :: 707453
+iteration 3 SSE :: 675417
+iteration 4 SSE :: 658822
+iteration 5 SSE :: 649221
+iteration 6 SSE :: 642105
+iteration 7 SSE :: 637109
+iteration 8 SSE :: 632778
+iteration 9 SSE :: 628940
+iteration 10 SSE :: 626245
+iteration 11 SSE :: 624477
+iteration 12 SSE :: 623559
+iteration 13 SSE :: 623042
+
+run 17
+------------------------
+
+iteration 1 SSE :: 706760
+iteration 2 SSE :: 667974
+iteration 3 SSE :: 651467
+iteration 4 SSE :: 643043
+iteration 5 SSE :: 637661
+iteration 6 SSE :: 633122
+iteration 7 SSE :: 629717
+iteration 8 SSE :: 627485
+iteration 9 SSE :: 625855
+iteration 10 SSE :: 624647
+iteration 11 SSE :: 623545
+iteration 12 SSE :: 622592
+iteration 13 SSE :: 621846
+iteration 14 SSE :: 621235
+
+run 18
+------------------------
+
+iteration 1 SSE :: 751260
+iteration 2 SSE :: 703947
+iteration 3 SSE :: 684567
+iteration 4 SSE :: 669138
+iteration 5 SSE :: 657546
+iteration 6 SSE :: 651520
+iteration 7 SSE :: 648431
+iteration 8 SSE :: 646290
+iteration 9 SSE :: 644208
+iteration 10 SSE :: 642202
+iteration 11 SSE :: 639383
+iteration 12 SSE :: 636161
+iteration 13 SSE :: 633955
+iteration 14 SSE :: 632769
+iteration 15 SSE :: 631540
+iteration 16 SSE :: 630154
+iteration 17 SSE :: 628645
+iteration 18 SSE :: 626949
+iteration 19 SSE :: 625779
+iteration 20 SSE :: 625175
+
+run 19
+------------------------
+
+iteration 1 SSE :: 746254
+iteration 2 SSE :: 709909
+iteration 3 SSE :: 692004
+iteration 4 SSE :: 678300
+iteration 5 SSE :: 664272
+iteration 6 SSE :: 650139
+iteration 7 SSE :: 641517
+iteration 8 SSE :: 637193
+iteration 9 SSE :: 632467
+iteration 10 SSE :: 628131
+iteration 11 SSE :: 625438
+iteration 12 SSE :: 623470
+iteration 13 SSE :: 622456
+iteration 14 SSE :: 621762
+iteration 15 SSE :: 621221
+
+run 20
+------------------------
+
+iteration 1 SSE :: 725367
+iteration 2 SSE :: 678350
+iteration 3 SSE :: 665077
+iteration 4 SSE :: 657810
+iteration 5 SSE :: 651655
+iteration 6 SSE :: 645506
+iteration 7 SSE :: 641874
+iteration 8 SSE :: 639936
+iteration 9 SSE :: 638492
+iteration 10 SSE :: 637304
+iteration 11 SSE :: 636094
+iteration 12 SSE :: 635050
+iteration 13 SSE :: 634073
+iteration 14 SSE :: 632859
+iteration 15 SSE :: 631719
+iteration 16 SSE :: 630932
+iteration 17 SSE :: 630438
+
+run 21
+------------------------
+
+iteration 1 SSE :: 727288
+iteration 2 SSE :: 689999
+iteration 3 SSE :: 668898
+iteration 4 SSE :: 652735
+iteration 5 SSE :: 640230
+iteration 6 SSE :: 635448
+iteration 7 SSE :: 633696
+iteration 8 SSE :: 632607
+iteration 9 SSE :: 631605
+iteration 10 SSE :: 630725
+iteration 11 SSE :: 629865
+iteration 12 SSE :: 629205
+iteration 13 SSE :: 628612
+
+run 22
+------------------------
+
+iteration 1 SSE :: 685983
+iteration 2 SSE :: 662549
+iteration 3 SSE :: 652911
+iteration 4 SSE :: 647555
+iteration 5 SSE :: 643701
+iteration 6 SSE :: 641013
+iteration 7 SSE :: 639169
+iteration 8 SSE :: 637708
+iteration 9 SSE :: 636552
+iteration 10 SSE :: 635575
+iteration 11 SSE :: 634919
+iteration 12 SSE :: 634446
+
+run 23
+------------------------
+
+iteration 1 SSE :: 738924
+iteration 2 SSE :: 684594
+iteration 3 SSE :: 659136
+iteration 4 SSE :: 651578
+iteration 5 SSE :: 647109
+iteration 6 SSE :: 643170
+iteration 7 SSE :: 640015
+iteration 8 SSE :: 637331
+iteration 9 SSE :: 635098
+iteration 10 SSE :: 633358
+iteration 11 SSE :: 631990
+iteration 12 SSE :: 630720
+iteration 13 SSE :: 629016
+iteration 14 SSE :: 627806
+iteration 15 SSE :: 627056
+iteration 16 SSE :: 626433
+
+run 24
+------------------------
+
+iteration 1 SSE :: 775094
+iteration 2 SSE :: 728727
+iteration 3 SSE :: 701538
+iteration 4 SSE :: 684913
+iteration 5 SSE :: 674089
+iteration 6 SSE :: 663794
+iteration 7 SSE :: 656141
+iteration 8 SSE :: 652506
+iteration 9 SSE :: 649957
+iteration 10 SSE :: 647842
+iteration 11 SSE :: 645956
+iteration 12 SSE :: 643965
+iteration 13 SSE :: 642312
+iteration 14 SSE :: 641125
+iteration 15 SSE :: 639788
+iteration 16 SSE :: 638265
+iteration 17 SSE :: 636283
+iteration 18 SSE :: 634024
+iteration 19 SSE :: 632673
+iteration 20 SSE :: 631886
+iteration 21 SSE :: 631419
+
+run 25
+------------------------
+
+iteration 1 SSE :: 742258
+iteration 2 SSE :: 706238
+iteration 3 SSE :: 675455
+iteration 4 SSE :: 653427
+iteration 5 SSE :: 640809
+iteration 6 SSE :: 634442
+iteration 7 SSE :: 630721
+iteration 8 SSE :: 627884
+iteration 9 SSE :: 625920
+iteration 10 SSE :: 624765
+iteration 11 SSE :: 623939
+iteration 12 SSE :: 623350
+
+run 26
+------------------------
+
+iteration 1 SSE :: 758449
+iteration 2 SSE :: 709760
+iteration 3 SSE :: 685581
+iteration 4 SSE :: 671108
+iteration 5 SSE :: 659866
+iteration 6 SSE :: 649685
+iteration 7 SSE :: 643852
+iteration 8 SSE :: 639320
+iteration 9 SSE :: 635931
+iteration 10 SSE :: 633332
+iteration 11 SSE :: 631321
+iteration 12 SSE :: 630048
+iteration 13 SSE :: 629177
+iteration 14 SSE :: 628646
+
+run 27
+------------------------
+
+iteration 1 SSE :: 734894
+iteration 2 SSE :: 679961
+iteration 3 SSE :: 659781
+iteration 4 SSE :: 649889
+iteration 5 SSE :: 644535
+iteration 6 SSE :: 640988
+iteration 7 SSE :: 638191
+iteration 8 SSE :: 636197
+iteration 9 SSE :: 634608
+iteration 10 SSE :: 632893
+iteration 11 SSE :: 631178
+iteration 12 SSE :: 629960
+iteration 13 SSE :: 629109
+iteration 14 SSE :: 628473
+iteration 15 SSE :: 628017
+
+run 28
+------------------------
+
+iteration 1 SSE :: 757609
+iteration 2 SSE :: 708898
+iteration 3 SSE :: 680135
+iteration 4 SSE :: 657332
+iteration 5 SSE :: 638699
+iteration 6 SSE :: 631617
+iteration 7 SSE :: 626499
+iteration 8 SSE :: 623397
+iteration 9 SSE :: 621519
+iteration 10 SSE :: 620371
+iteration 11 SSE :: 619587
+iteration 12 SSE :: 619046
+
+run 29
+------------------------
+
+iteration 1 SSE :: 746408
+iteration 2 SSE :: 693860
+iteration 3 SSE :: 676251
+iteration 4 SSE :: 666879
+iteration 5 SSE :: 659382
+iteration 6 SSE :: 652798
+iteration 7 SSE :: 647644
+iteration 8 SSE :: 643534
+iteration 9 SSE :: 640656
+iteration 10 SSE :: 638372
+iteration 11 SSE :: 636391
+iteration 12 SSE :: 633457
+iteration 13 SSE :: 630626
+iteration 14 SSE :: 628522
+iteration 15 SSE :: 627403
+iteration 16 SSE :: 626931
+
+run 30
+------------------------
+
+iteration 1 SSE :: 774055
+iteration 2 SSE :: 729376
+iteration 3 SSE :: 706334
+iteration 4 SSE :: 688765
+iteration 5 SSE :: 673877
+iteration 6 SSE :: 664565
+iteration 7 SSE :: 656816
+iteration 8 SSE :: 648143
+iteration 9 SSE :: 640933
+iteration 10 SSE :: 637419
+iteration 11 SSE :: 634596
+iteration 12 SSE :: 632138
+iteration 13 SSE :: 630502
+iteration 14 SSE :: 629610
+iteration 15 SSE :: 628929
+iteration 16 SSE :: 628303
+
+run 31
+------------------------
+
+iteration 1 SSE :: 761642
+iteration 2 SSE :: 705080
+iteration 3 SSE :: 679590
+iteration 4 SSE :: 661967
+iteration 5 SSE :: 646364
+iteration 6 SSE :: 639064
+iteration 7 SSE :: 634676
+iteration 8 SSE :: 632285
+iteration 9 SSE :: 630751
+iteration 10 SSE :: 628483
+iteration 11 SSE :: 625925
+iteration 12 SSE :: 624524
+iteration 13 SSE :: 623710
+iteration 14 SSE :: 623215
+
+run 32
+------------------------
+
+iteration 1 SSE :: 751705
+iteration 2 SSE :: 697230
+iteration 3 SSE :: 673915
+iteration 4 SSE :: 658378
+iteration 5 SSE :: 646541
+iteration 6 SSE :: 639985
+iteration 7 SSE :: 636017
+iteration 8 SSE :: 633554
+iteration 9 SSE :: 632058
+iteration 10 SSE :: 631116
+iteration 11 SSE :: 630478
+iteration 12 SSE :: 629865
+
+run 33
+------------------------
+
+iteration 1 SSE :: 730395
+iteration 2 SSE :: 689708
+iteration 3 SSE :: 666232
+iteration 4 SSE :: 651058
+iteration 5 SSE :: 640877
+iteration 6 SSE :: 636383
+iteration 7 SSE :: 633496
+iteration 8 SSE :: 631417
+iteration 9 SSE :: 629850
+iteration 10 SSE :: 628743
+iteration 11 SSE :: 627711
+iteration 12 SSE :: 626749
+iteration 13 SSE :: 625903
+iteration 14 SSE :: 625224
+iteration 15 SSE :: 624715
+
+run 34
+------------------------
+
+iteration 1 SSE :: 780273
+iteration 2 SSE :: 730465
+iteration 3 SSE :: 699845
+iteration 4 SSE :: 660955
+iteration 5 SSE :: 649579
+iteration 6 SSE :: 644120
+iteration 7 SSE :: 640491
+iteration 8 SSE :: 638229
+iteration 9 SSE :: 636596
+iteration 10 SSE :: 635354
+iteration 11 SSE :: 634358
+iteration 12 SSE :: 633344
+iteration 13 SSE :: 631939
+iteration 14 SSE :: 630050
+iteration 15 SSE :: 628118
+iteration 16 SSE :: 626811
+iteration 17 SSE :: 626060
+iteration 18 SSE :: 625727
+
+run 35
+------------------------
+
+iteration 1 SSE :: 707028
+iteration 2 SSE :: 669046
+iteration 3 SSE :: 653650
+iteration 4 SSE :: 645059
+iteration 5 SSE :: 640348
+iteration 6 SSE :: 637783
+iteration 7 SSE :: 636041
+iteration 8 SSE :: 634913
+iteration 9 SSE :: 633991
+iteration 10 SSE :: 633181
+iteration 11 SSE :: 632439
+iteration 12 SSE :: 631816
+
+run 36
+------------------------
+
+iteration 1 SSE :: 711470
+iteration 2 SSE :: 674367
+iteration 3 SSE :: 659232
+iteration 4 SSE :: 651010
+iteration 5 SSE :: 645412
+iteration 6 SSE :: 640480
+iteration 7 SSE :: 636079
+iteration 8 SSE :: 633150
+iteration 9 SSE :: 631530
+iteration 10 SSE :: 630700
+iteration 11 SSE :: 630075
+
+run 37
+------------------------
+
+iteration 1 SSE :: 741367
+iteration 2 SSE :: 690897
+iteration 3 SSE :: 673359
+iteration 4 SSE :: 662699
+iteration 5 SSE :: 653186
+iteration 6 SSE :: 647498
+iteration 7 SSE :: 644340
+iteration 8 SSE :: 642345
+iteration 9 SSE :: 640864
+iteration 10 SSE :: 639895
+iteration 11 SSE :: 639077
+iteration 12 SSE :: 638237
+iteration 13 SSE :: 636840
+iteration 14 SSE :: 634856
+iteration 15 SSE :: 632546
+iteration 16 SSE :: 630320
+iteration 17 SSE :: 628680
+iteration 18 SSE :: 627631
+iteration 19 SSE :: 626985
+iteration 20 SSE :: 626573
+
+run 38
+------------------------
+
+iteration 1 SSE :: 770615
+iteration 2 SSE :: 723258
+iteration 3 SSE :: 695052
+iteration 4 SSE :: 678374
+iteration 5 SSE :: 667442
+iteration 6 SSE :: 657880
+iteration 7 SSE :: 647785
+iteration 8 SSE :: 634496
+iteration 9 SSE :: 629536
+iteration 10 SSE :: 628133
+iteration 11 SSE :: 627361
+iteration 12 SSE :: 626748
+
+run 39
+------------------------
+
+iteration 1 SSE :: 708548
+iteration 2 SSE :: 665362
+iteration 3 SSE :: 650857
+iteration 4 SSE :: 642320
+iteration 5 SSE :: 635713
+iteration 6 SSE :: 631680
+iteration 7 SSE :: 628911
+iteration 8 SSE :: 626395
+iteration 9 SSE :: 624497
+iteration 10 SSE :: 623108
+iteration 11 SSE :: 622123
+iteration 12 SSE :: 621464
+iteration 13 SSE :: 620991
+
+run 40
+------------------------
+
+iteration 1 SSE :: 729740
+iteration 2 SSE :: 687398
+iteration 3 SSE :: 671064
+iteration 4 SSE :: 658253
+iteration 5 SSE :: 648155
+iteration 6 SSE :: 640714
+iteration 7 SSE :: 634827
+iteration 8 SSE :: 629496
+iteration 9 SSE :: 626340
+iteration 10 SSE :: 624246
+iteration 11 SSE :: 623022
+iteration 12 SSE :: 622306
+iteration 13 SSE :: 621788
+
+run 41
+------------------------
+
+iteration 1 SSE :: 729271
+iteration 2 SSE :: 686220
+iteration 3 SSE :: 667186
+iteration 4 SSE :: 655536
+iteration 5 SSE :: 645583
+iteration 6 SSE :: 639041
+iteration 7 SSE :: 635322
+iteration 8 SSE :: 633071
+iteration 9 SSE :: 630912
+iteration 10 SSE :: 627845
+iteration 11 SSE :: 624668
+iteration 12 SSE :: 622823
+iteration 13 SSE :: 621404
+iteration 14 SSE :: 620305
+iteration 15 SSE :: 619332
+iteration 16 SSE :: 618703
+iteration 17 SSE :: 618256
+
+run 42
+------------------------
+
+iteration 1 SSE :: 747058
+iteration 2 SSE :: 688944
+iteration 3 SSE :: 666770
+iteration 4 SSE :: 656187
+iteration 5 SSE :: 650659
+iteration 6 SSE :: 646834
+iteration 7 SSE :: 644411
+iteration 8 SSE :: 642521
+iteration 9 SSE :: 640941
+iteration 10 SSE :: 639448
+iteration 11 SSE :: 637990
+iteration 12 SSE :: 636610
+iteration 13 SSE :: 635072
+iteration 14 SSE :: 633637
+iteration 15 SSE :: 632161
+iteration 16 SSE :: 631071
+iteration 17 SSE :: 630149
+iteration 18 SSE :: 629371
+iteration 19 SSE :: 628779
+
+run 43
+------------------------
+
+iteration 1 SSE :: 730773
+iteration 2 SSE :: 685599
+iteration 3 SSE :: 664219
+iteration 4 SSE :: 650577
+iteration 5 SSE :: 642456
+iteration 6 SSE :: 636711
+iteration 7 SSE :: 631873
+iteration 8 SSE :: 628942
+iteration 9 SSE :: 627559
+iteration 10 SSE :: 626619
+iteration 11 SSE :: 625678
+iteration 12 SSE :: 624801
+iteration 13 SSE :: 624003
+iteration 14 SSE :: 623567
+
+run 44
+------------------------
+
+iteration 1 SSE :: 771760
+iteration 2 SSE :: 711046
+iteration 3 SSE :: 678634
+iteration 4 SSE :: 659067
+iteration 5 SSE :: 652022
+iteration 6 SSE :: 646987
+iteration 7 SSE :: 641307
+iteration 8 SSE :: 637070
+iteration 9 SSE :: 634707
+iteration 10 SSE :: 633175
+iteration 11 SSE :: 632132
+iteration 12 SSE :: 631139
+iteration 13 SSE :: 629999
+iteration 14 SSE :: 628191
+iteration 15 SSE :: 625656
+iteration 16 SSE :: 622916
+iteration 17 SSE :: 621470
+iteration 18 SSE :: 620686
+iteration 19 SSE :: 620093
+
+run 45
+------------------------
+
+iteration 1 SSE :: 741393
+iteration 2 SSE :: 683260
+iteration 3 SSE :: 661556
+iteration 4 SSE :: 649443
+iteration 5 SSE :: 645779
+iteration 6 SSE :: 643320
+iteration 7 SSE :: 640734
+iteration 8 SSE :: 638491
+iteration 9 SSE :: 636556
+iteration 10 SSE :: 635091
+iteration 11 SSE :: 634101
+iteration 12 SSE :: 633324
+iteration 13 SSE :: 632687
+iteration 14 SSE :: 632109
+
+run 46
+------------------------
+
+iteration 1 SSE :: 726572
+iteration 2 SSE :: 679181
+iteration 3 SSE :: 657972
+iteration 4 SSE :: 646146
+iteration 5 SSE :: 641022
+iteration 6 SSE :: 638227
+iteration 7 SSE :: 636049
+iteration 8 SSE :: 634070
+iteration 9 SSE :: 633314
+iteration 10 SSE :: 632813
+
+run 47
+------------------------
+
+iteration 1 SSE :: 743373
+iteration 2 SSE :: 699471
+iteration 3 SSE :: 680617
+iteration 4 SSE :: 669859
+iteration 5 SSE :: 661678
+iteration 6 SSE :: 653373
+iteration 7 SSE :: 643021
+iteration 8 SSE :: 634743
+iteration 9 SSE :: 628482
+iteration 10 SSE :: 625476
+iteration 11 SSE :: 624079
+iteration 12 SSE :: 623282
+iteration 13 SSE :: 622781
+
+run 48
+------------------------
+
+iteration 1 SSE :: 723184
+iteration 2 SSE :: 694193
+iteration 3 SSE :: 676980
+iteration 4 SSE :: 656212
+iteration 5 SSE :: 647019
+iteration 6 SSE :: 642216
+iteration 7 SSE :: 639426
+iteration 8 SSE :: 637076
+iteration 9 SSE :: 635308
+iteration 10 SSE :: 634416
+iteration 11 SSE :: 633882
+
+run 49
+------------------------
+
+iteration 1 SSE :: 742365
+iteration 2 SSE :: 691186
+iteration 3 SSE :: 670713
+iteration 4 SSE :: 661247
+iteration 5 SSE :: 654926
+iteration 6 SSE :: 649987
+iteration 7 SSE :: 645591
+iteration 8 SSE :: 642475
+iteration 9 SSE :: 640422
+iteration 10 SSE :: 638950
+iteration 11 SSE :: 637484
+iteration 12 SSE :: 635938
+iteration 13 SSE :: 634385
+iteration 14 SSE :: 632994
+iteration 15 SSE :: 631670
+iteration 16 SSE :: 630301
+iteration 17 SSE :: 629055
+iteration 18 SSE :: 628354
+iteration 19 SSE :: 627920
+
+run 50
+------------------------
+
+iteration 1 SSE :: 787901
+iteration 2 SSE :: 722013
+iteration 3 SSE :: 688147
+iteration 4 SSE :: 676734
+iteration 5 SSE :: 668842
+iteration 6 SSE :: 660938
+iteration 7 SSE :: 653375
+iteration 8 SSE :: 647803
+iteration 9 SSE :: 643413
+iteration 10 SSE :: 639771
+iteration 11 SSE :: 637130
+iteration 12 SSE :: 634715
+iteration 13 SSE :: 632884
+iteration 14 SSE :: 631702
+iteration 15 SSE :: 630801
+iteration 16 SSE :: 630234
+
+run 51
+------------------------
+
+iteration 1 SSE :: 730061
+iteration 2 SSE :: 688687
+iteration 3 SSE :: 668640
+iteration 4 SSE :: 656145
+iteration 5 SSE :: 649191
+iteration 6 SSE :: 644444
+iteration 7 SSE :: 640569
+iteration 8 SSE :: 637172
+iteration 9 SSE :: 634380
+iteration 10 SSE :: 631055
+iteration 11 SSE :: 627068
+iteration 12 SSE :: 624927
+iteration 13 SSE :: 623466
+iteration 14 SSE :: 622363
+iteration 15 SSE :: 621524
+iteration 16 SSE :: 620901
+iteration 17 SSE :: 620479
+
+run 52
+------------------------
+
+iteration 1 SSE :: 709728
+iteration 2 SSE :: 678592
+iteration 3 SSE :: 666683
+iteration 4 SSE :: 657664
+iteration 5 SSE :: 648718
+iteration 6 SSE :: 642634
+iteration 7 SSE :: 639393
+iteration 8 SSE :: 637235
+iteration 9 SSE :: 635373
+iteration 10 SSE :: 633692
+iteration 11 SSE :: 632331
+iteration 12 SSE :: 631185
+iteration 13 SSE :: 630331
+iteration 14 SSE :: 629774
+
+run 53
+------------------------
+
+iteration 1 SSE :: 755788
+iteration 2 SSE :: 705587
+iteration 3 SSE :: 680391
+iteration 4 SSE :: 660872
+iteration 5 SSE :: 648649
+iteration 6 SSE :: 642717
+iteration 7 SSE :: 637265
+iteration 8 SSE :: 632998
+iteration 9 SSE :: 629739
+iteration 10 SSE :: 626534
+iteration 11 SSE :: 623286
+iteration 12 SSE :: 621686
+iteration 13 SSE :: 620676
+iteration 14 SSE :: 619901
+iteration 15 SSE :: 619440
+
+run 54
+------------------------
+
+iteration 1 SSE :: 699666
+iteration 2 SSE :: 666378
+iteration 3 SSE :: 652038
+iteration 4 SSE :: 641853
+iteration 5 SSE :: 634325
+iteration 6 SSE :: 629677
+iteration 7 SSE :: 626966
+iteration 8 SSE :: 625057
+iteration 9 SSE :: 623632
+iteration 10 SSE :: 622668
+iteration 11 SSE :: 621768
+iteration 12 SSE :: 621068
+iteration 13 SSE :: 620492
+
+run 55
+------------------------
+
+iteration 1 SSE :: 726185
+iteration 2 SSE :: 689424
+iteration 3 SSE :: 670091
+iteration 4 SSE :: 660329
+iteration 5 SSE :: 654360
+iteration 6 SSE :: 649372
+iteration 7 SSE :: 644482
+iteration 8 SSE :: 639392
+iteration 9 SSE :: 636150
+iteration 10 SSE :: 634071
+iteration 11 SSE :: 632536
+iteration 12 SSE :: 631435
+iteration 13 SSE :: 630571
+iteration 14 SSE :: 629772
+iteration 15 SSE :: 628766
+iteration 16 SSE :: 628124
+iteration 17 SSE :: 627717
+
+run 56
+------------------------
+
+iteration 1 SSE :: 712062
+iteration 2 SSE :: 673397
+iteration 3 SSE :: 655532
+iteration 4 SSE :: 646888
+iteration 5 SSE :: 640362
+iteration 6 SSE :: 636728
+iteration 7 SSE :: 634758
+iteration 8 SSE :: 633380
+iteration 9 SSE :: 632164
+iteration 10 SSE :: 631100
+iteration 11 SSE :: 630210
+iteration 12 SSE :: 629434
+iteration 13 SSE :: 628694
+iteration 14 SSE :: 627919
+iteration 15 SSE :: 627031
+iteration 16 SSE :: 626129
+iteration 17 SSE :: 625427
+iteration 18 SSE :: 624848
+
+run 57
+------------------------
+
+iteration 1 SSE :: 741060
+iteration 2 SSE :: 686282
+iteration 3 SSE :: 649956
+iteration 4 SSE :: 641561
+iteration 5 SSE :: 637301
+iteration 6 SSE :: 634273
+iteration 7 SSE :: 632386
+iteration 8 SSE :: 631045
+iteration 9 SSE :: 630106
+iteration 10 SSE :: 629465
+iteration 11 SSE :: 628962
+
+run 58
+------------------------
+
+iteration 1 SSE :: 748806
+iteration 2 SSE :: 707997
+iteration 3 SSE :: 686695
+iteration 4 SSE :: 673795
+iteration 5 SSE :: 667477
+iteration 6 SSE :: 662195
+iteration 7 SSE :: 657472
+iteration 8 SSE :: 652416
+iteration 9 SSE :: 648158
+iteration 10 SSE :: 644670
+iteration 11 SSE :: 642016
+iteration 12 SSE :: 640649
+iteration 13 SSE :: 640007
+iteration 14 SSE :: 639599
+
+run 59
+------------------------
+
+iteration 1 SSE :: 737053
+iteration 2 SSE :: 692758
+iteration 3 SSE :: 672347
+iteration 4 SSE :: 661080
+iteration 5 SSE :: 651170
+iteration 6 SSE :: 643419
+iteration 7 SSE :: 637952
+iteration 8 SSE :: 634402
+iteration 9 SSE :: 632477
+iteration 10 SSE :: 630994
+iteration 11 SSE :: 629915
+iteration 12 SSE :: 628928
+iteration 13 SSE :: 627890
+iteration 14 SSE :: 626682
+iteration 15 SSE :: 625112
+iteration 16 SSE :: 623296
+iteration 17 SSE :: 622391
+iteration 18 SSE :: 621834
+
+run 60
+------------------------
+
+iteration 1 SSE :: 731959
+iteration 2 SSE :: 688557
+iteration 3 SSE :: 668645
+iteration 4 SSE :: 653657
+iteration 5 SSE :: 646522
+iteration 6 SSE :: 642591
+iteration 7 SSE :: 639696
+iteration 8 SSE :: 637048
+iteration 9 SSE :: 635002
+iteration 10 SSE :: 633750
+iteration 11 SSE :: 632929
+iteration 12 SSE :: 632338
+
+run 61
+------------------------
+
+iteration 1 SSE :: 730441
+iteration 2 SSE :: 696617
+iteration 3 SSE :: 678613
+iteration 4 SSE :: 669142
+iteration 5 SSE :: 663468
+iteration 6 SSE :: 658184
+iteration 7 SSE :: 652386
+iteration 8 SSE :: 648030
+iteration 9 SSE :: 644677
+iteration 10 SSE :: 641484
+iteration 11 SSE :: 638525
+iteration 12 SSE :: 635901
+iteration 13 SSE :: 633607
+iteration 14 SSE :: 632268
+iteration 15 SSE :: 631276
+iteration 16 SSE :: 630188
+iteration 17 SSE :: 629442
+iteration 18 SSE :: 628979
+
+run 62
+------------------------
+
+iteration 1 SSE :: 713819
+iteration 2 SSE :: 677407
+iteration 3 SSE :: 656760
+iteration 4 SSE :: 646539
+iteration 5 SSE :: 642716
+iteration 6 SSE :: 639703
+iteration 7 SSE :: 636988
+iteration 8 SSE :: 635243
+iteration 9 SSE :: 634153
+iteration 10 SSE :: 633180
+iteration 11 SSE :: 632355
+iteration 12 SSE :: 631684
+iteration 13 SSE :: 631117
+
+run 63
+------------------------
+
+iteration 1 SSE :: 711938
+iteration 2 SSE :: 678041
+iteration 3 SSE :: 663011
+iteration 4 SSE :: 654572
+iteration 5 SSE :: 648586
+iteration 6 SSE :: 642703
+iteration 7 SSE :: 637408
+iteration 8 SSE :: 633848
+iteration 9 SSE :: 631139
+iteration 10 SSE :: 629104
+iteration 11 SSE :: 627586
+iteration 12 SSE :: 626362
+iteration 13 SSE :: 625105
+iteration 14 SSE :: 623819
+iteration 15 SSE :: 622742
+iteration 16 SSE :: 621845
+iteration 17 SSE :: 621132
+iteration 18 SSE :: 620564
+
+run 64
+------------------------
+
+iteration 1 SSE :: 737484
+iteration 2 SSE :: 682544
+iteration 3 SSE :: 658303
+iteration 4 SSE :: 645651
+iteration 5 SSE :: 640187
+iteration 6 SSE :: 637310
+iteration 7 SSE :: 635157
+iteration 8 SSE :: 633523
+iteration 9 SSE :: 632152
+iteration 10 SSE :: 631037
+iteration 11 SSE :: 630006
+iteration 12 SSE :: 629314
+iteration 13 SSE :: 628855
+
+run 65
+------------------------
+
+iteration 1 SSE :: 713647
+iteration 2 SSE :: 675396
+iteration 3 SSE :: 658152
+iteration 4 SSE :: 649173
+iteration 5 SSE :: 644361
+iteration 6 SSE :: 640577
+iteration 7 SSE :: 637138
+iteration 8 SSE :: 633960
+iteration 9 SSE :: 629805
+iteration 10 SSE :: 627447
+iteration 11 SSE :: 626093
+iteration 12 SSE :: 625232
+iteration 13 SSE :: 624813
+
+run 66
+------------------------
+
+iteration 1 SSE :: 741972
+iteration 2 SSE :: 691528
+iteration 3 SSE :: 668404
+iteration 4 SSE :: 655873
+iteration 5 SSE :: 645167
+iteration 6 SSE :: 636742
+iteration 7 SSE :: 632955
+iteration 8 SSE :: 630896
+iteration 9 SSE :: 629603
+iteration 10 SSE :: 628721
+iteration 11 SSE :: 627949
+iteration 12 SSE :: 627123
+iteration 13 SSE :: 626502
+
+run 67
+------------------------
+
+iteration 1 SSE :: 755651
+iteration 2 SSE :: 702549
+iteration 3 SSE :: 678630
+iteration 4 SSE :: 660746
+iteration 5 SSE :: 647871
+iteration 6 SSE :: 642221
+iteration 7 SSE :: 639142
+iteration 8 SSE :: 637162
+iteration 9 SSE :: 635662
+iteration 10 SSE :: 634455
+iteration 11 SSE :: 633486
+iteration 12 SSE :: 632751
+iteration 13 SSE :: 632198
+
+run 68
+------------------------
+
+iteration 1 SSE :: 745519
+iteration 2 SSE :: 685332
+iteration 3 SSE :: 654587
+iteration 4 SSE :: 641338
+iteration 5 SSE :: 634862
+iteration 6 SSE :: 629272
+iteration 7 SSE :: 626241
+iteration 8 SSE :: 624894
+iteration 9 SSE :: 624286
+
+run 69
+------------------------
+
+iteration 1 SSE :: 734597
+iteration 2 SSE :: 688147
+iteration 3 SSE :: 669467
+iteration 4 SSE :: 661850
+iteration 5 SSE :: 655583
+iteration 6 SSE :: 651132
+iteration 7 SSE :: 647028
+iteration 8 SSE :: 641965
+iteration 9 SSE :: 636616
+iteration 10 SSE :: 632714
+iteration 11 SSE :: 630250
+iteration 12 SSE :: 628365
+iteration 13 SSE :: 626821
+iteration 14 SSE :: 625310
+iteration 15 SSE :: 624266
+iteration 16 SSE :: 623617
+iteration 17 SSE :: 623286
+
+run 70
+------------------------
+
+iteration 1 SSE :: 757385
+iteration 2 SSE :: 716678
+iteration 3 SSE :: 697883
+iteration 4 SSE :: 685438
+iteration 5 SSE :: 672218
+iteration 6 SSE :: 656275
+iteration 7 SSE :: 645928
+iteration 8 SSE :: 640410
+iteration 9 SSE :: 638082
+iteration 10 SSE :: 636450
+iteration 11 SSE :: 635268
+iteration 12 SSE :: 634161
+iteration 13 SSE :: 632953
+iteration 14 SSE :: 631439
+iteration 15 SSE :: 629951
+iteration 16 SSE :: 628908
+iteration 17 SSE :: 628083
+iteration 18 SSE :: 627382
+iteration 19 SSE :: 626792
+
+run 71
+------------------------
+
+iteration 1 SSE :: 763274
+iteration 2 SSE :: 703389
+iteration 3 SSE :: 674993
+iteration 4 SSE :: 660085
+iteration 5 SSE :: 650480
+iteration 6 SSE :: 644585
+iteration 7 SSE :: 641038
+iteration 8 SSE :: 638861
+iteration 9 SSE :: 637313
+iteration 10 SSE :: 636328
+iteration 11 SSE :: 635434
+iteration 12 SSE :: 634671
+iteration 13 SSE :: 633801
+iteration 14 SSE :: 632845
+iteration 15 SSE :: 631957
+iteration 16 SSE :: 630923
+iteration 17 SSE :: 629965
+iteration 18 SSE :: 629217
+iteration 19 SSE :: 628663
+
+run 72
+------------------------
+
+iteration 1 SSE :: 749254
+iteration 2 SSE :: 701753
+iteration 3 SSE :: 678253
+iteration 4 SSE :: 665121
+iteration 5 SSE :: 653644
+iteration 6 SSE :: 645803
+iteration 7 SSE :: 640464
+iteration 8 SSE :: 636303
+iteration 9 SSE :: 633551
+iteration 10 SSE :: 631708
+iteration 11 SSE :: 630387
+iteration 12 SSE :: 629729
+iteration 13 SSE :: 629286
+
+run 73
+------------------------
+
+iteration 1 SSE :: 773447
+iteration 2 SSE :: 719494
+iteration 3 SSE :: 698065
+iteration 4 SSE :: 677541
+iteration 5 SSE :: 656782
+iteration 6 SSE :: 643040
+iteration 7 SSE :: 634398
+iteration 8 SSE :: 631318
+iteration 9 SSE :: 629973
+iteration 10 SSE :: 629037
+iteration 11 SSE :: 628387
+iteration 12 SSE :: 627877
+
+run 74
+------------------------
+
+iteration 1 SSE :: 718998
+iteration 2 SSE :: 680106
+iteration 3 SSE :: 662352
+iteration 4 SSE :: 650441
+iteration 5 SSE :: 640966
+iteration 6 SSE :: 634117
+iteration 7 SSE :: 630544
+iteration 8 SSE :: 628242
+iteration 9 SSE :: 626885
+iteration 10 SSE :: 626080
+iteration 11 SSE :: 625562
+
+run 75
+------------------------
+
+iteration 1 SSE :: 777928
+iteration 2 SSE :: 728376
+iteration 3 SSE :: 700416
+iteration 4 SSE :: 672616
+iteration 5 SSE :: 659493
+iteration 6 SSE :: 650581
+iteration 7 SSE :: 642264
+iteration 8 SSE :: 637157
+iteration 9 SSE :: 633582
+iteration 10 SSE :: 630568
+iteration 11 SSE :: 627895
+iteration 12 SSE :: 626233
+iteration 13 SSE :: 625441
+iteration 14 SSE :: 624826
+
+run 76
+------------------------
+
+iteration 1 SSE :: 725793
+iteration 2 SSE :: 677552
+iteration 3 SSE :: 665132
+iteration 4 SSE :: 658008
+iteration 5 SSE :: 651203
+iteration 6 SSE :: 647048
+iteration 7 SSE :: 644494
+iteration 8 SSE :: 643084
+iteration 9 SSE :: 641947
+iteration 10 SSE :: 640828
+iteration 11 SSE :: 639773
+iteration 12 SSE :: 638732
+iteration 13 SSE :: 637697
+iteration 14 SSE :: 636708
+iteration 15 SSE :: 635787
+iteration 16 SSE :: 634809
+iteration 17 SSE :: 633870
+iteration 18 SSE :: 632558
+iteration 19 SSE :: 631229
+iteration 20 SSE :: 630018
+iteration 21 SSE :: 628876
+iteration 22 SSE :: 628245
+iteration 23 SSE :: 627902
+
+run 77
+------------------------
+
+iteration 1 SSE :: 727662
+iteration 2 SSE :: 693757
+iteration 3 SSE :: 670552
+iteration 4 SSE :: 657661
+iteration 5 SSE :: 651562
+iteration 6 SSE :: 646824
+iteration 7 SSE :: 644901
+iteration 8 SSE :: 643062
+iteration 9 SSE :: 641290
+iteration 10 SSE :: 639743
+iteration 11 SSE :: 638573
+iteration 12 SSE :: 637667
+iteration 13 SSE :: 636914
+iteration 14 SSE :: 636280
+
+run 78
+------------------------
+
+iteration 1 SSE :: 769686
+iteration 2 SSE :: 708557
+iteration 3 SSE :: 676361
+iteration 4 SSE :: 656597
+iteration 5 SSE :: 648854
+iteration 6 SSE :: 645010
+iteration 7 SSE :: 641532
+iteration 8 SSE :: 637286
+iteration 9 SSE :: 634702
+iteration 10 SSE :: 632897
+iteration 11 SSE :: 631404
+iteration 12 SSE :: 630315
+iteration 13 SSE :: 627452
+iteration 14 SSE :: 625637
+iteration 15 SSE :: 624890
+iteration 16 SSE :: 624523
+
+run 79
+------------------------
+
+iteration 1 SSE :: 734876
+iteration 2 SSE :: 687297
+iteration 3 SSE :: 661682
+iteration 4 SSE :: 651625
+iteration 5 SSE :: 647188
+iteration 6 SSE :: 644525
+iteration 7 SSE :: 642656
+iteration 8 SSE :: 640884
+iteration 9 SSE :: 638947
+iteration 10 SSE :: 636698
+iteration 11 SSE :: 634245
+iteration 12 SSE :: 630759
+iteration 13 SSE :: 626931
+iteration 14 SSE :: 624194
+iteration 15 SSE :: 622897
+iteration 16 SSE :: 622284
+
+run 80
+------------------------
+
+iteration 1 SSE :: 735371
+iteration 2 SSE :: 689052
+iteration 3 SSE :: 667470
+iteration 4 SSE :: 654820
+iteration 5 SSE :: 648397
+iteration 6 SSE :: 643977
+iteration 7 SSE :: 639631
+iteration 8 SSE :: 635903
+iteration 9 SSE :: 633120
+iteration 10 SSE :: 630831
+iteration 11 SSE :: 628416
+iteration 12 SSE :: 626201
+iteration 13 SSE :: 625220
+iteration 14 SSE :: 624500
+iteration 15 SSE :: 623847
+iteration 16 SSE :: 623107
+iteration 17 SSE :: 622293
+iteration 18 SSE :: 621689
+
+run 81
+------------------------
+
+iteration 1 SSE :: 748968
+iteration 2 SSE :: 693741
+iteration 3 SSE :: 661075
+iteration 4 SSE :: 647273
+iteration 5 SSE :: 640616
+iteration 6 SSE :: 637456
+iteration 7 SSE :: 635849
+iteration 8 SSE :: 634742
+iteration 9 SSE :: 633941
+iteration 10 SSE :: 633002
+iteration 11 SSE :: 632125
+iteration 12 SSE :: 631478
+iteration 13 SSE :: 631040
+
+run 82
+------------------------
+
+iteration 1 SSE :: 748330
+iteration 2 SSE :: 698742
+iteration 3 SSE :: 676203
+iteration 4 SSE :: 664760
+iteration 5 SSE :: 656528
+iteration 6 SSE :: 650134
+iteration 7 SSE :: 645951
+iteration 8 SSE :: 643535
+iteration 9 SSE :: 641675
+iteration 10 SSE :: 639293
+iteration 11 SSE :: 636109
+iteration 12 SSE :: 633199
+iteration 13 SSE :: 631761
+iteration 14 SSE :: 631056
+iteration 15 SSE :: 630644
+
+run 83
+------------------------
+
+iteration 1 SSE :: 737967
+iteration 2 SSE :: 690197
+iteration 3 SSE :: 668582
+iteration 4 SSE :: 656602
+iteration 5 SSE :: 651102
+iteration 6 SSE :: 647670
+iteration 7 SSE :: 644912
+iteration 8 SSE :: 642886
+iteration 9 SSE :: 640704
+iteration 10 SSE :: 636925
+iteration 11 SSE :: 633981
+iteration 12 SSE :: 631794
+iteration 13 SSE :: 629177
+iteration 14 SSE :: 625816
+iteration 15 SSE :: 623610
+iteration 16 SSE :: 622190
+iteration 17 SSE :: 621592
+
+run 84
+------------------------
+
+iteration 1 SSE :: 728803
+iteration 2 SSE :: 692526
+iteration 3 SSE :: 673354
+iteration 4 SSE :: 662488
+iteration 5 SSE :: 654915
+iteration 6 SSE :: 648866
+iteration 7 SSE :: 644855
+iteration 8 SSE :: 641791
+iteration 9 SSE :: 638652
+iteration 10 SSE :: 635890
+iteration 11 SSE :: 633786
+iteration 12 SSE :: 632064
+iteration 13 SSE :: 630606
+iteration 14 SSE :: 629392
+iteration 15 SSE :: 628583
+iteration 16 SSE :: 627874
+iteration 17 SSE :: 627156
+iteration 18 SSE :: 626579
+
+run 85
+------------------------
+
+iteration 1 SSE :: 732696
+iteration 2 SSE :: 679901
+iteration 3 SSE :: 656312
+iteration 4 SSE :: 639602
+iteration 5 SSE :: 633507
+iteration 6 SSE :: 631189
+iteration 7 SSE :: 629620
+iteration 8 SSE :: 628491
+iteration 9 SSE :: 627783
+iteration 10 SSE :: 627205
+
+run 86
+------------------------
+
+iteration 1 SSE :: 758445
+iteration 2 SSE :: 710445
+iteration 3 SSE :: 686538
+iteration 4 SSE :: 667483
+iteration 5 SSE :: 647482
+iteration 6 SSE :: 633354
+iteration 7 SSE :: 626741
+iteration 8 SSE :: 623191
+iteration 9 SSE :: 621461
+iteration 10 SSE :: 620742
+iteration 11 SSE :: 620351
+
+run 87
+------------------------
+
+iteration 1 SSE :: 716758
+iteration 2 SSE :: 669753
+iteration 3 SSE :: 655428
+iteration 4 SSE :: 647553
+iteration 5 SSE :: 641460
+iteration 6 SSE :: 636753
+iteration 7 SSE :: 633865
+iteration 8 SSE :: 630765
+iteration 9 SSE :: 629335
+iteration 10 SSE :: 628682
+iteration 11 SSE :: 628311
+
+run 88
+------------------------
+
+iteration 1 SSE :: 740561
+iteration 2 SSE :: 698422
+iteration 3 SSE :: 678070
+iteration 4 SSE :: 660867
+iteration 5 SSE :: 650520
+iteration 6 SSE :: 644172
+iteration 7 SSE :: 638333
+iteration 8 SSE :: 633669
+iteration 9 SSE :: 630842
+iteration 10 SSE :: 629179
+iteration 11 SSE :: 627833
+iteration 12 SSE :: 626913
+iteration 13 SSE :: 626265
+iteration 14 SSE :: 625639
+
+run 89
+------------------------
+
+iteration 1 SSE :: 726184
+iteration 2 SSE :: 679746
+iteration 3 SSE :: 659537
+iteration 4 SSE :: 645971
+iteration 5 SSE :: 637455
+iteration 6 SSE :: 631924
+iteration 7 SSE :: 629824
+iteration 8 SSE :: 628739
+iteration 9 SSE :: 628145
+
+run 90
+------------------------
+
+iteration 1 SSE :: 726251
+iteration 2 SSE :: 684010
+iteration 3 SSE :: 663063
+iteration 4 SSE :: 650717
+iteration 5 SSE :: 643482
+iteration 6 SSE :: 639156
+iteration 7 SSE :: 636321
+iteration 8 SSE :: 634192
+iteration 9 SSE :: 632760
+iteration 10 SSE :: 631518
+iteration 11 SSE :: 630363
+iteration 12 SSE :: 629315
+iteration 13 SSE :: 628589
+iteration 14 SSE :: 627866
+iteration 15 SSE :: 627161
+iteration 16 SSE :: 626618
+
+run 91
+------------------------
+
+iteration 1 SSE :: 705858
+iteration 2 SSE :: 671955
+iteration 3 SSE :: 658578
+iteration 4 SSE :: 648647
+iteration 5 SSE :: 643563
+iteration 6 SSE :: 639998
+iteration 7 SSE :: 637590
+iteration 8 SSE :: 635755
+iteration 9 SSE :: 634248
+iteration 10 SSE :: 632980
+iteration 11 SSE :: 631859
+iteration 12 SSE :: 630777
+iteration 13 SSE :: 629560
+iteration 14 SSE :: 628190
+iteration 15 SSE :: 626992
+iteration 16 SSE :: 626225
+iteration 17 SSE :: 625768
+
+run 92
+------------------------
+
+iteration 1 SSE :: 749387
+iteration 2 SSE :: 698700
+iteration 3 SSE :: 674759
+iteration 4 SSE :: 661693
+iteration 5 SSE :: 652817
+iteration 6 SSE :: 648113
+iteration 7 SSE :: 644124
+iteration 8 SSE :: 641189
+iteration 9 SSE :: 639092
+iteration 10 SSE :: 637382
+iteration 11 SSE :: 635977
+iteration 12 SSE :: 634770
+iteration 13 SSE :: 633817
+iteration 14 SSE :: 632880
+iteration 15 SSE :: 632138
+iteration 16 SSE :: 631694
+
+run 93
+------------------------
+
+iteration 1 SSE :: 744804
+iteration 2 SSE :: 704486
+iteration 3 SSE :: 683960
+iteration 4 SSE :: 669804
+iteration 5 SSE :: 660181
+iteration 6 SSE :: 650707
+iteration 7 SSE :: 643114
+iteration 8 SSE :: 639079
+iteration 9 SSE :: 636781
+iteration 10 SSE :: 635316
+iteration 11 SSE :: 634393
+iteration 12 SSE :: 633552
+iteration 13 SSE :: 632342
+iteration 14 SSE :: 630311
+iteration 15 SSE :: 628506
+iteration 16 SSE :: 627095
+iteration 17 SSE :: 626034
+iteration 18 SSE :: 625382
+iteration 19 SSE :: 624949
+
+run 94
+------------------------
+
+iteration 1 SSE :: 750138
+iteration 2 SSE :: 713780
+iteration 3 SSE :: 686376
+iteration 4 SSE :: 664373
+iteration 5 SSE :: 649634
+iteration 6 SSE :: 638735
+iteration 7 SSE :: 631060
+iteration 8 SSE :: 626175
+iteration 9 SSE :: 623598
+iteration 10 SSE :: 622259
+iteration 11 SSE :: 620941
+iteration 12 SSE :: 619889
+iteration 13 SSE :: 619532
+
+run 95
+------------------------
+
+iteration 1 SSE :: 748124
+iteration 2 SSE :: 703825
+iteration 3 SSE :: 673231
+iteration 4 SSE :: 659056
+iteration 5 SSE :: 650607
+iteration 6 SSE :: 643532
+iteration 7 SSE :: 636448
+iteration 8 SSE :: 632627
+iteration 9 SSE :: 630890
+iteration 10 SSE :: 629884
+iteration 11 SSE :: 629186
+iteration 12 SSE :: 628715
+
+run 96
+------------------------
+
+iteration 1 SSE :: 825959
+iteration 2 SSE :: 746330
+iteration 3 SSE :: 715199
+iteration 4 SSE :: 696586
+iteration 5 SSE :: 684028
+iteration 6 SSE :: 675147
+iteration 7 SSE :: 668833
+iteration 8 SSE :: 664793
+iteration 9 SSE :: 661385
+iteration 10 SSE :: 657724
+iteration 11 SSE :: 649878
+iteration 12 SSE :: 637489
+iteration 13 SSE :: 634991
+iteration 14 SSE :: 633323
+iteration 15 SSE :: 632205
+iteration 16 SSE :: 631485
+iteration 17 SSE :: 630924
+
+run 97
+------------------------
+
+iteration 1 SSE :: 727254
+iteration 2 SSE :: 673958
+iteration 3 SSE :: 657303
+iteration 4 SSE :: 647519
+iteration 5 SSE :: 642164
+iteration 6 SSE :: 639539
+iteration 7 SSE :: 637525
+iteration 8 SSE :: 635693
+iteration 9 SSE :: 634178
+iteration 10 SSE :: 632623
+iteration 11 SSE :: 631249
+iteration 12 SSE :: 630174
+iteration 13 SSE :: 629530
+iteration 14 SSE :: 629100
+
+run 98
+------------------------
+
+iteration 1 SSE :: 721324
+iteration 2 SSE :: 678871
+iteration 3 SSE :: 652345
+iteration 4 SSE :: 641130
+iteration 5 SSE :: 636473
+iteration 6 SSE :: 633275
+iteration 7 SSE :: 631156
+iteration 8 SSE :: 629463
+iteration 9 SSE :: 628177
+iteration 10 SSE :: 627469
+iteration 11 SSE :: 627027
+
+run 99
+------------------------
+
+iteration 1 SSE :: 695033
+iteration 2 SSE :: 662942
+iteration 3 SSE :: 649176
+iteration 4 SSE :: 640192
+iteration 5 SSE :: 635091
+iteration 6 SSE :: 631920
+iteration 7 SSE :: 629932
+iteration 8 SSE :: 628383
+iteration 9 SSE :: 627249
+iteration 10 SSE :: 626584
+iteration 11 SSE :: 626156
+
+run 100
+------------------------
+
+iteration 1 SSE :: 753751
+iteration 2 SSE :: 696165
+iteration 3 SSE :: 664643
+iteration 4 SSE :: 651650
+iteration 5 SSE :: 644311
+iteration 6 SSE :: 639797
+iteration 7 SSE :: 636900
+iteration 8 SSE :: 634182
+iteration 9 SSE :: 632208
+iteration 10 SSE :: 630730
+iteration 11 SSE :: 629105
+iteration 12 SSE :: 627139
+iteration 13 SSE :: 624965
+iteration 14 SSE :: 623706
+iteration 15 SSE :: 622917
+iteration 16 SSE :: 622199
+iteration 17 SSE :: 621592
+
+Run 10 is best run :: iteration SSE	616146.1638
+total time taken for algorithm :: 323.041 s
