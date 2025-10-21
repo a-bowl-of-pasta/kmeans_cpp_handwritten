@@ -28,12 +28,23 @@ struct dataPoint
    
    
     // = = = = = = = = = = = = = = setters and getters 
-    void setID(std::string id) { dataID = id; }
-    void updateDistanceFromClust(double distance) { distance_from_cluster = distance; }
+    void setID(std::string id) 
+        { dataID = id; }
+    
+    void updateDistanceFromClust(double distance) 
+        { distance_from_cluster = distance; }
+    
+    void replaceDataVector(std::vector<T>& updatedVector)
+        { data_point = std::move(updatedVector); }
 
-    std::string getDataID(){ return dataID;}
-    double getDistanceFromClust(){return distance_from_cluster;}
-    std::vector<T> getDataVector(){ return data_point;}
+    std::string getDataID()
+        { return dataID;}
+
+    double getDistanceFromClust()
+        {return distance_from_cluster;}
+
+    std::vector<T> getDataVector()
+        { return data_point;}
 
     // = = = = = = = = = = = = = = visualization methods 
     void printData()

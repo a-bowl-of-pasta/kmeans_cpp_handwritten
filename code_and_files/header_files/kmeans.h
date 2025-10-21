@@ -1,24 +1,6 @@
 #ifndef KMEANS_WRAP
 #define KMEANS_WRAP
 
-/*
-!!!!!!!!!!!!!!!!!!!!!! fix these !!!!!!!!!!!!!!!!
-
-    changes in cluster
-    
-    - clusterData<DataPoint<T>> -> clust_data_indicies<int>
-    - setCentroid() -> assignCentroid()
-    - showCentroid() -> printCentroid()
-    - setData(dataPoint<T>) -> assignData(int)
-    - displayDataAt() -> printDataPoint(const std::vector<DataPoint<T>>& dataSet, int index)
-
-    changes in K_means
-
-    - dataSet -> data_set
-    - clusterList<Clust<T>> -> clust<T> cluster_list[] 
-    - bestRunCluster<clust<T>> -> clust<T> best_run_clust[] 
-
-*/
 
 
 #include <iostream>
@@ -63,6 +45,8 @@ class k_means
     double best_run_iter_sse; 
     
     std::vector<dataPoint<T>> data_set;  
+    std::vector<T> maxDataVector; 
+    std::vector<T> minDataVector; 
     clust<T>* cluster_list; 
     clust<T>* best_run_clust; 
     // ============================================================= helper methods
@@ -89,19 +73,41 @@ class k_means
    
    
     // - - - - - - generates dataPoint structs & populates data_set
-    void populateDataSet(const std::string& line, int& id)
+    void populateDataSet(const std::string& line, int& id, bool& firstRun)
     {           
          // read rows element by element
         std::istringstream lineStream(line);
         std::string elements; 
         std::vector<double> featureVector;
 
+        int elmNum =0; 
         while(getline(lineStream, elements, ' '))
         {
             // ---- skip empty elements 
             if (!elements.empty())
             {
-                featureVector.push_back(std::stod(elements));
+                double elmToDec = std::stod(elements); 
+                // ----- first run populates min/max vectors, other runs find min/max
+                if(firstRun == true)
+                {
+                    maxDataVector.push_back(elmToDec);
+                    minDataVector.push_back(elmToDec);
+                }
+                else
+                {
+                    // swap attributes if elm in vector is smaller
+                    if(maxDataVector.at(elmNum) < elmToDec)
+                    {
+                        maxDataVector.at(elmNum) = elmToDec; 
+                    }
+                    // swap attributes if elm in vector is greater
+                    if(minDataVector.at(elmNum) > elmToDec)
+                    {
+                        minDataVector.at(elmNum) = elmToDec; 
+                    }
+                }
+                featureVector.push_back(elmToDec);
+                elmNum++; 
             }
         }
 
@@ -112,7 +118,10 @@ class k_means
         
             data_set.push_back(dataPoint<T>(std::move(featureVector), 0.0, point_ID)); 
             id++; 
-        }  
+        }              
+        
+        if(firstRun == true) {firstRun = false; }
+
     }
   
   
@@ -273,6 +282,35 @@ class k_means
     }
     
     // ============================================================== configuration methods
+    // - - - - - min/max data normalization
+    void normalizeData()
+    {
+
+        // ------ goes through each feature vector
+        for(int dataVector =0; dataVector < data_set.size(); dataVector++)
+        {
+            dataPoint<T>& currPoint = data_set.at(dataVector);
+            std::vector<T> currFeatVect = currPoint.getDataVector(); 
+            
+            // ----- goes through each elm in feature vector
+            for(int vectorElm = 0; vectorElm < currFeatVect.size(); vectorElm++ )
+            {
+                double elm = currFeatVect.at(vectorElm); 
+                double maxVal = maxDataVector.at(vectorElm); 
+                double minVal = minDataVector.at(vectorElm); 
+                
+                // x' = x - min(x) / max(x) - min(x)
+                double normalizedElm = 0.5; 
+                if((maxVal - minVal) != 0)
+                {
+                    normalizedElm = (elm - minVal) / (maxVal - minVal);
+                }
+
+                currFeatVect.at(vectorElm) = normalizedElm; 
+            }
+            currPoint.replaceDataVector(currFeatVect); 
+        }
+    }
    
     // - - - - - - takes path to file & fills data_set vector | so that I don't have to keep reading from file 
     void fillDataSet(const std::string&  data_file)
@@ -281,6 +319,7 @@ class k_means
         std::ifstream fn(data_file); 
         bool isFirstLine = true; 
         int id = 0; 
+        bool firstRun = true; 
 
         // ---- check if file is open
         if(!fn.is_open())
@@ -296,7 +335,7 @@ class k_means
             // ---- first line = header, following lines = data 
             if(isFirstLine == false)
             {
-               populateDataSet(line, id); 
+               populateDataSet(line, id, firstRun); 
             }
             else 
             {
@@ -304,8 +343,7 @@ class k_means
                 isFirstLine = false;    
             }
         }
-        
-        std::cout<<std::endl; 
+       
         fn.close(); 
     }
 
@@ -392,7 +430,7 @@ class k_means
     }
     
     
-    // ============================================ the run logic
+    // ============================================ some logic
     // - - - - - run without logging 
     void startRun()
     {  
@@ -445,9 +483,11 @@ class k_means
 
 
     public :
+    
+    
     // ================================================================ User API
-    // - - - - - - main API method that runs the algorithm 
-    void runAlgorithm(const std::string& file_path)
+    // - - - - - - runs the algorithm 
+    void runAlg(const std::string& file_path)
     {
         // -------- configure kmeans; start run; reset cluster_list; reset kmeans for new run
         initKmeans(file_path); 
@@ -471,8 +511,36 @@ class k_means
     }
     
 
+    
+    // - - - - - - normalizes the data and runs the algorithm
+    void normRunAlg(const std::string& file_path)
+    {
+        // -------- configure kmeans; start run; reset cluster_list; reset kmeans for new run
+        initKmeans(file_path); 
+        normalizeData(); 
 
-    // - - - - - - same as runAlgorithm() only that it logs to an output file
+        auto start = std::chrono::high_resolution_clock::now();
+        while (current_run <= total_runs)
+        {         
+            std::cout << "\nrun " << current_run << "\n------------------------\n"<<std::endl;            
+            startRun(); 
+            resetKmeans();
+            current_run++; 
+        } 
+        
+        auto end = std::chrono::high_resolution_clock::now();
+        std::chrono::duration<double> seconds_taken = end - start;
+
+        // print best run & it's iteration SSE 
+        std::cout << "\nRun "<< best_run_indx 
+                  << " is best run :: iteration SSE\t" << best_run_iter_sse <<std::endl; 
+        std::cout << "total time taken for algorithm :: " << seconds_taken.count() << " s" << std::endl;
+
+    }
+
+
+
+    // - - - - - - run the algorithm and logs
     void runAndLogAlg(const std::string& path_to_data, const std::string& path_to_output)
     {
         // -------- configure kmeans; start run; reset cluster_list; reset kmeans for new run
@@ -519,6 +587,15 @@ class k_means
         
     }
 
+
+    
+    // - - - - - - normalizes the data, runs the algorithm, and logs
+    void normRunAndLogAlg(const std::string& file_path)
+    {
+
+    }
+
+    
     // ==================================================== constructor 
     k_means(int k, int runs, int max_iterations, double convergence)
     {
@@ -529,7 +606,7 @@ class k_means
         best_run_indx = 0; 
         best_run_iter_sse = std::numeric_limits<double>::max(); 
 
-        data_set = std::vector<dataPoint<T>>{};  
+        data_set = std::vector<dataPoint<T>>{};   
         cluster_list = new clust<T>[k_value];
         best_run_clust = new clust<T>[k_value]; 
     

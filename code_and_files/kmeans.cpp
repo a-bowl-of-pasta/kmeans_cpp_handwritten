@@ -7,12 +7,11 @@
 // ================================ test with hard coded values
 void inlineRuns()
 {
-    // -------- hardCoded file names for argv[1]
-    //          has a total of 10 indicies [0 - 9]
+    // hard coded file names for argv[1]
     std::string default_files[] = {"ecoli", "glass", "ionosphere", "iris_bezdek", "landsat", "letter_recognition", "segmentation", "vehicle", "wine", "yeast"}; 
     
-    // -------- manual file names for argv[1] 
-    //std::string file_name = "iris_bezdek";        
+    // manually typing file name for argv[1]
+   // std::string file_name = "testingMM";           
 
     // ===== arg variables 
     int k_val = 3;                           // argv[2]
@@ -20,14 +19,15 @@ void inlineRuns()
     double convergence = 0.001;             // argv[4]
     int num_of_runs = 100;                 // argv[5] 
 
-    std::string path_in = "../default_data_sets/" + default_files[3] + ".txt";
-    std::string path_out = "../outputs/v1.1_outputs/" + default_files[3] + "_out.txt";
+    // so that you can copy and paste :: default_files[]    file_name
+    std::string path_in = "../default_data_sets/" + default_files[4] + ".txt";
+    std::string path_out = "../outputs/v2_outputs/" + default_files[4] + "_out.txt";
 
 
     k_means<double> km_manager(k_val, num_of_runs, iterations, convergence);
    
-    //km_manager.runAlgorithm(path_in); 
-    km_manager.runAndLogAlg(path_in, path_out); 
+    km_manager.normRunAlg(path_in); 
+    //km_manager.runAndLogAlg(path_in, path_out); 
 
 }
 
@@ -54,12 +54,12 @@ void actualRun(int argc, char* argv[])
         exit(EXIT_FAILURE);        
     }
 
-    std::string path_in = "../default_data_sets/" + file_name + ".txt";
-    std::string path_out = "./outputs/v1.1_outputs/" + file_name + "_out.txt";
+    std::string path_in = "../data_sets/" + file_name + ".txt";
 
    
     k_means<double> km_manager(std::stoi(argv[5]), std::stod(argv[4]), std::stoi(argv[2]), std::stoi(argv[3]));
-    km_manager.runAlgorithm(path_in); 
+    km_manager.runAlg(path_in); 
+
 
 }
 
