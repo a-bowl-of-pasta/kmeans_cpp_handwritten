@@ -45,6 +45,8 @@ struct dataPoint
         }
     }
 
+
+
     void logData(std::ofstream& file)
     {
         file << dataID << " : "; 
@@ -53,6 +55,9 @@ struct dataPoint
             file << data_point.at(i) << "\t"; 
         }
     }
+
+
+
     // = = = = = = = = = = = = = = constructors 
     dataPoint(std::vector<T> dataPoint, double distanceFromClust, std::string id)
     {
@@ -74,76 +79,100 @@ struct dataPoint
     the clust class is in charge of the clusters
     it holds cluster specific information.
 
-    clusterData is the data from the DataSet
-    that this specific cluster is holding
+    clust_data_indicies is the data assigned to the
+    cluster. copying the dataSet from Kmeans is too
+    much work, so instead it just stores indicies. 
 
     the Template T is to be passed down to the 
     DataPoint class, so that it knows what the
     DataVectors are storing. 
 */
 template <class T>
-class clust 
+class clust
 {
-
     double class_level_SSE; 
     dataPoint<T> centroid; 
-    std::vector<dataPoint<T>> clusterData; 
+    std::vector<int> clust_data_indicies;
 
-    public:
-    // = = = = = = = = = = = = = =  setters and getters    
 
-    void addDataPoint(std::vector<T>& data, std::string pointID)
-    { 
-        clusterData.push_back(dataPoint<T>(data, 0.0, pointID));
-    }
-    void addDataPoint(dataPoint<T>& data)
-    {
-        clusterData.push_back(data);
-    }
+    public: 
+    // = = = = = = = = = = = = = =  short & basic methods    
+    void assignData(int dataSetIndex)
+        { clust_data_indicies.push_back(dataSetIndex);}
 
-    void setCentroid(dataPoint<T>& cent) { centroid = cent;}
+        
 
-    dataPoint<T> getCentroid(){return centroid; }
-    double getClassLevelSSE(){return class_level_SSE;}
-    std::vector<dataPoint<T>> getClusterData(){return clusterData; }
+    void assignCentroid(dataPoint<T>& cent) 
+        { centroid = cent;}
 
-    // = = = = = = = = = = = = = = visualization methods
 
-    void showCentroid()
-    {
-        centroid.printData(); 
-        std::cout << std::endl; 
-    }
-    void logCentroids(std::ofstream& file)
-    {
-            centroid.logData(file); 
-            file << std::endl; 
-    }
-    void displayDataAt(int index)
-    {
-        clusterData.at(index).printData();   
-    }
 
-    // = = = = = = = = = = = = = = some methods <IDK what to label these>
+    dataPoint<T> getCentroid()
+        {return centroid; }
+
+
+
+    double getClassLevelSSE()
+        {return class_level_SSE;}
+
+
+
+    std::vector<int> getDataIndicies()
+        {return clust_data_indicies; }
+   
+
+
     void resetCluster()
     {
         centroid = dataPoint<T>{};
         class_level_SSE = 0.0; 
-        clusterData = std::vector<dataPoint<T>>{};
-
+        clust_data_indicies.clear();
     }
-    std::vector<T> centroidUsingMean()
+
+
+
+    // = = = = = = = = = = = = = = visualization methods
+    void printCentroid()
+    {
+        centroid.printData(); 
+        std::cout << std::endl; 
+    }
+    
+    
+    
+    void logCentroids(std::ofstream& file)
+    {
+            centroid.logData(file); 
+            file << std::endl; 
+    }   
+    
+
+
+    void printDataPoint(const std::vector<dataPoint<T>>& dataSet, int index)
+    { 
+            int pos = clust_data_indicies.at(index); 
+            dataPoint<T>& data = dataSet.at(pos); 
+            data.printData(); 
+            std::cout << std::endl; 
+    }
+    
+
+
+    // = = = = = = = = = = = = = =  main calculations 
+    // - - - - - - mean centroid
+    std::vector<T> centroidUsingMean( std::vector<dataPoint<T>>& dataSet)
     {
      
         int numOfFeatures = centroid.getDataVector().size(); 
         // initialize a vector of the proper dimensions with default value 0.0
         std::vector<double> new_centroid(numOfFeatures, 0.0); 
-        int sizeOfData = clusterData.size(); 
+        int sizeOfData = clust_data_indicies.size(); 
 
         // ------ go through each data vector
         for(int dataVector = 0; dataVector < sizeOfData; dataVector++)
         {
-            std::vector<T> elms = clusterData.at(dataVector).getDataVector(); 
+            int pos = clust_data_indicies.at(dataVector); 
+            std::vector<T> elms = dataSet.at(pos).getDataVector(); 
             
             // -------- calculate the sum of each feature
            for(int element = 0; element < elms.size(); element++  )
@@ -163,17 +192,22 @@ class clust
         // ---- return new centroid's dataVector
         return new_centroid; 
     }
-    void genSSE()
+
+    
+
+    // - - - - - - - SSE calculation 
+    void genSSE( std::vector<dataPoint<T>>& dataSet)
     {
         std::vector<T> centroidFeatures = centroid.getDataVector(); 
-        int sizeOfData = clusterData.size(); 
+        int sizeOfData = clust_data_indicies.size(); 
 
         double clustSSE = 0; 
 
         // ----- go through every dataPoint 
         for(int dataVec = 0; dataVec < sizeOfData; dataVec++ )
         {
-            std::vector<T> elms = clusterData.at(dataVec).getDataVector(); 
+            int currIndx = clust_data_indicies.at(dataVec); 
+            std::vector<T> elms = dataSet.at(currIndx).getDataVector(); 
             double dataVectorSSE = 0.0;
 
             // -------- find the total distance of a dataVector from centroid 
@@ -196,24 +230,15 @@ class clust
         class_level_SSE = clustSSE; 
     }
 
+
+
     // = = = = = = = = = = = = = = constructors 
     clust()
     {
         class_level_SSE = double{};
         centroid = dataPoint<T>{};
-        clusterData = std::vector<dataPoint<T>>{};
+        clust_data_indicies = std::vector<int>{};
     }
-
 };
-
-//!!!!!!!!!!!!!!!!!!!!!! TODO
-/*
-[] add SSE calculation to cluster class
-[] move visualization & log methods from cluster class to controller
-[] look over controller class to make sure it's all good
-[] write the controller class methods 
-[] connect controller class to main 
-*/
-
 
 #endif

@@ -1,0 +1,1394 @@
+
+run 1
+------------------------
+
+iteration 1 SSE :: 5.21829e+06
+iteration 2 SSE :: 5.17448e+06
+iteration 3 SSE :: 5.15014e+06
+iteration 4 SSE :: 5.11254e+06
+iteration 5 SSE :: 5.0902e+06
+iteration 6 SSE :: 5.0723e+06
+iteration 7 SSE :: 5.04889e+06
+iteration 8 SSE :: 5.01854e+06
+iteration 9 SSE :: 4.98163e+06
+iteration 10 SSE :: 4.96334e+06
+iteration 11 SSE :: 4.9407e+06
+iteration 12 SSE :: 4.92028e+06
+iteration 13 SSE :: 4.89575e+06
+iteration 14 SSE :: 4.87955e+06
+iteration 15 SSE :: 4.87559e+06
+
+run 2
+------------------------
+
+iteration 1 SSE :: 5.78434e+06
+iteration 2 SSE :: 5.40467e+06
+iteration 3 SSE :: 5.38576e+06
+iteration 4 SSE :: 5.38385e+06
+
+run 3
+------------------------
+
+iteration 1 SSE :: 8.90165e+06
+iteration 2 SSE :: 5.63119e+06
+iteration 3 SSE :: 5.40084e+06
+iteration 4 SSE :: 5.38609e+06
+iteration 5 SSE :: 5.38395e+06
+
+run 4
+------------------------
+
+iteration 1 SSE :: 5.39094e+06
+iteration 2 SSE :: 5.38399e+06
+iteration 3 SSE :: 5.38376e+06
+
+run 5
+------------------------
+
+iteration 1 SSE :: 1.17303e+07
+iteration 2 SSE :: 5.9737e+06
+iteration 3 SSE :: 5.42579e+06
+iteration 4 SSE :: 5.38718e+06
+iteration 5 SSE :: 5.38436e+06
+
+run 6
+------------------------
+
+iteration 1 SSE :: 6.47371e+06
+iteration 2 SSE :: 5.42425e+06
+iteration 3 SSE :: 5.38036e+06
+iteration 4 SSE :: 5.35651e+06
+iteration 5 SSE :: 5.33512e+06
+iteration 6 SSE :: 5.31192e+06
+iteration 7 SSE :: 5.27742e+06
+iteration 8 SSE :: 5.21419e+06
+iteration 9 SSE :: 5.17805e+06
+iteration 10 SSE :: 5.15437e+06
+iteration 11 SSE :: 5.12026e+06
+iteration 12 SSE :: 5.09256e+06
+iteration 13 SSE :: 5.07346e+06
+iteration 14 SSE :: 5.05231e+06
+iteration 15 SSE :: 5.0242e+06
+iteration 16 SSE :: 4.98645e+06
+iteration 17 SSE :: 4.96475e+06
+iteration 18 SSE :: 4.94303e+06
+iteration 19 SSE :: 4.92179e+06
+iteration 20 SSE :: 4.89947e+06
+iteration 21 SSE :: 4.87955e+06
+iteration 22 SSE :: 4.87559e+06
+
+run 7
+------------------------
+
+iteration 1 SSE :: 5.28332e+06
+iteration 2 SSE :: 4.99832e+06
+iteration 3 SSE :: 4.96565e+06
+iteration 4 SSE :: 4.94558e+06
+iteration 5 SSE :: 4.92179e+06
+iteration 6 SSE :: 4.89947e+06
+iteration 7 SSE :: 4.87955e+06
+iteration 8 SSE :: 4.87559e+06
+
+run 8
+------------------------
+
+iteration 1 SSE :: 5.7152e+06
+iteration 2 SSE :: 5.35591e+06
+iteration 3 SSE :: 5.28529e+06
+iteration 4 SSE :: 5.23046e+06
+iteration 5 SSE :: 5.18256e+06
+iteration 6 SSE :: 5.15924e+06
+iteration 7 SSE :: 5.12273e+06
+iteration 8 SSE :: 5.09374e+06
+iteration 9 SSE :: 5.07453e+06
+iteration 10 SSE :: 5.05523e+06
+iteration 11 SSE :: 5.0287e+06
+iteration 12 SSE :: 4.99125e+06
+iteration 13 SSE :: 4.96923e+06
+iteration 14 SSE :: 4.95432e+06
+iteration 15 SSE :: 4.93406e+06
+iteration 16 SSE :: 4.9086e+06
+iteration 17 SSE :: 4.88338e+06
+iteration 18 SSE :: 4.87632e+06
+iteration 19 SSE :: 4.87547e+06
+
+run 9
+------------------------
+
+iteration 1 SSE :: 5.01876e+06
+iteration 2 SSE :: 4.98179e+06
+iteration 3 SSE :: 4.943e+06
+iteration 4 SSE :: 4.90554e+06
+iteration 5 SSE :: 4.89574e+06
+iteration 6 SSE :: 4.8883e+06
+iteration 7 SSE :: 4.8837e+06
+
+run 10
+------------------------
+
+iteration 1 SSE :: 5.07154e+06
+iteration 2 SSE :: 4.97395e+06
+iteration 3 SSE :: 4.95819e+06
+iteration 4 SSE :: 4.93665e+06
+iteration 5 SSE :: 4.91377e+06
+iteration 6 SSE :: 4.89132e+06
+iteration 7 SSE :: 4.87955e+06
+iteration 8 SSE :: 4.87559e+06
+
+run 11
+------------------------
+
+iteration 1 SSE :: 5.37361e+06
+iteration 2 SSE :: 5.26893e+06
+iteration 3 SSE :: 5.21243e+06
+iteration 4 SSE :: 5.17688e+06
+iteration 5 SSE :: 5.15157e+06
+iteration 6 SSE :: 5.1172e+06
+iteration 7 SSE :: 5.0902e+06
+iteration 8 SSE :: 5.0723e+06
+iteration 9 SSE :: 5.04889e+06
+iteration 10 SSE :: 5.01854e+06
+iteration 11 SSE :: 4.98163e+06
+iteration 12 SSE :: 4.96334e+06
+iteration 13 SSE :: 4.9407e+06
+iteration 14 SSE :: 4.92028e+06
+iteration 15 SSE :: 4.89575e+06
+iteration 16 SSE :: 4.87955e+06
+iteration 17 SSE :: 4.87559e+06
+
+run 12
+------------------------
+
+iteration 1 SSE :: 1.28345e+07
+iteration 2 SSE :: 6.53456e+06
+iteration 3 SSE :: 5.56781e+06
+iteration 4 SSE :: 5.40228e+06
+iteration 5 SSE :: 5.38718e+06
+iteration 6 SSE :: 5.38436e+06
+
+run 13
+------------------------
+
+iteration 1 SSE :: 4.94827e+06
+iteration 2 SSE :: 4.90119e+06
+iteration 3 SSE :: 4.89005e+06
+iteration 4 SSE :: 4.88549e+06
+
+run 14
+------------------------
+
+iteration 1 SSE :: 7.96194e+06
+iteration 2 SSE :: 5.6301e+06
+iteration 3 SSE :: 5.40205e+06
+iteration 4 SSE :: 5.38645e+06
+iteration 5 SSE :: 5.38412e+06
+
+run 15
+------------------------
+
+iteration 1 SSE :: 4.90656e+06
+iteration 2 SSE :: 4.87559e+06
+iteration 3 SSE :: 4.87515e+06
+
+run 16
+------------------------
+
+iteration 1 SSE :: 6.65342e+06
+iteration 2 SSE :: 5.48889e+06
+iteration 3 SSE :: 5.32331e+06
+iteration 4 SSE :: 5.18483e+06
+iteration 5 SSE :: 5.06545e+06
+iteration 6 SSE :: 5.02172e+06
+iteration 7 SSE :: 4.98709e+06
+iteration 8 SSE :: 4.94899e+06
+iteration 9 SSE :: 4.90845e+06
+iteration 10 SSE :: 4.89574e+06
+iteration 11 SSE :: 4.8883e+06
+iteration 12 SSE :: 4.8837e+06
+
+run 17
+------------------------
+
+iteration 1 SSE :: 5.94685e+06
+iteration 2 SSE :: 5.38714e+06
+iteration 3 SSE :: 5.32634e+06
+iteration 4 SSE :: 5.28601e+06
+iteration 5 SSE :: 5.22842e+06
+iteration 6 SSE :: 5.18256e+06
+iteration 7 SSE :: 5.15924e+06
+iteration 8 SSE :: 5.12273e+06
+iteration 9 SSE :: 5.09374e+06
+iteration 10 SSE :: 5.07453e+06
+iteration 11 SSE :: 5.05523e+06
+iteration 12 SSE :: 5.0287e+06
+iteration 13 SSE :: 4.99125e+06
+iteration 14 SSE :: 4.96923e+06
+iteration 15 SSE :: 4.95432e+06
+iteration 16 SSE :: 4.93406e+06
+iteration 17 SSE :: 4.9086e+06
+iteration 18 SSE :: 4.88338e+06
+iteration 19 SSE :: 4.87632e+06
+iteration 20 SSE :: 4.87547e+06
+
+run 18
+------------------------
+
+iteration 1 SSE :: 5.55077e+06
+iteration 2 SSE :: 5.10685e+06
+iteration 3 SSE :: 5.03276e+06
+iteration 4 SSE :: 5.00214e+06
+iteration 5 SSE :: 4.97103e+06
+iteration 6 SSE :: 4.93213e+06
+iteration 7 SSE :: 4.90554e+06
+iteration 8 SSE :: 4.89574e+06
+iteration 9 SSE :: 4.8883e+06
+iteration 10 SSE :: 4.8837e+06
+
+run 19
+------------------------
+
+iteration 1 SSE :: 5.0508e+06
+iteration 2 SSE :: 5.00251e+06
+iteration 3 SSE :: 4.97404e+06
+iteration 4 SSE :: 4.95819e+06
+iteration 5 SSE :: 4.93665e+06
+iteration 6 SSE :: 4.91377e+06
+iteration 7 SSE :: 4.89132e+06
+iteration 8 SSE :: 4.87955e+06
+iteration 9 SSE :: 4.87559e+06
+
+run 20
+------------------------
+
+iteration 1 SSE :: 5.48919e+06
+iteration 2 SSE :: 5.06956e+06
+iteration 3 SSE :: 5.019e+06
+iteration 4 SSE :: 4.98179e+06
+iteration 5 SSE :: 4.943e+06
+iteration 6 SSE :: 4.90554e+06
+iteration 7 SSE :: 4.89574e+06
+iteration 8 SSE :: 4.8883e+06
+iteration 9 SSE :: 4.8837e+06
+
+run 21
+------------------------
+
+iteration 1 SSE :: 5.52526e+06
+iteration 2 SSE :: 5.39722e+06
+iteration 3 SSE :: 5.38678e+06
+iteration 4 SSE :: 5.38436e+06
+
+run 22
+------------------------
+
+iteration 1 SSE :: 6.30714e+06
+iteration 2 SSE :: 5.45901e+06
+iteration 3 SSE :: 5.3927e+06
+iteration 4 SSE :: 5.38576e+06
+iteration 5 SSE :: 5.38385e+06
+
+run 23
+------------------------
+
+iteration 1 SSE :: 1.36637e+07
+iteration 2 SSE :: 6.43547e+06
+iteration 3 SSE :: 5.47513e+06
+iteration 4 SSE :: 5.3927e+06
+iteration 5 SSE :: 5.38576e+06
+iteration 6 SSE :: 5.38385e+06
+
+run 24
+------------------------
+
+iteration 1 SSE :: 8.55662e+06
+iteration 2 SSE :: 5.57843e+06
+iteration 3 SSE :: 5.39032e+06
+iteration 4 SSE :: 5.38307e+06
+iteration 5 SSE :: 5.3777e+06
+
+run 25
+------------------------
+
+iteration 1 SSE :: 5.44168e+06
+iteration 2 SSE :: 5.38541e+06
+iteration 3 SSE :: 5.38249e+06
+
+run 26
+------------------------
+
+iteration 1 SSE :: 5.39199e+06
+iteration 2 SSE :: 4.96985e+06
+iteration 3 SSE :: 4.91698e+06
+iteration 4 SSE :: 4.89574e+06
+iteration 5 SSE :: 4.8883e+06
+iteration 6 SSE :: 4.8837e+06
+
+run 27
+------------------------
+
+iteration 1 SSE :: 6.37017e+06
+iteration 2 SSE :: 5.47656e+06
+iteration 3 SSE :: 5.3927e+06
+iteration 4 SSE :: 5.38576e+06
+iteration 5 SSE :: 5.38385e+06
+
+run 28
+------------------------
+
+iteration 1 SSE :: 6.63073e+06
+iteration 2 SSE :: 5.43292e+06
+iteration 3 SSE :: 5.38447e+06
+iteration 4 SSE :: 5.38376e+06
+
+run 29
+------------------------
+
+iteration 1 SSE :: 1.25046e+07
+iteration 2 SSE :: 6.33582e+06
+iteration 3 SSE :: 5.49017e+06
+iteration 4 SSE :: 5.39387e+06
+iteration 5 SSE :: 5.38609e+06
+iteration 6 SSE :: 5.38395e+06
+
+run 30
+------------------------
+
+iteration 1 SSE :: 6.58201e+06
+iteration 2 SSE :: 5.39869e+06
+iteration 3 SSE :: 5.32539e+06
+iteration 4 SSE :: 5.27637e+06
+iteration 5 SSE :: 5.21887e+06
+iteration 6 SSE :: 5.17805e+06
+iteration 7 SSE :: 5.15437e+06
+iteration 8 SSE :: 5.12026e+06
+iteration 9 SSE :: 5.09256e+06
+iteration 10 SSE :: 5.07346e+06
+iteration 11 SSE :: 5.05231e+06
+iteration 12 SSE :: 5.0242e+06
+iteration 13 SSE :: 4.98645e+06
+iteration 14 SSE :: 4.96475e+06
+iteration 15 SSE :: 4.94303e+06
+iteration 16 SSE :: 4.92179e+06
+iteration 17 SSE :: 4.89947e+06
+iteration 18 SSE :: 4.87955e+06
+iteration 19 SSE :: 4.87559e+06
+
+run 31
+------------------------
+
+iteration 1 SSE :: 5.13219e+06
+iteration 2 SSE :: 5.01278e+06
+iteration 3 SSE :: 4.97587e+06
+iteration 4 SSE :: 4.95966e+06
+iteration 5 SSE :: 4.93807e+06
+iteration 6 SSE :: 4.91619e+06
+iteration 7 SSE :: 4.89132e+06
+iteration 8 SSE :: 4.87955e+06
+iteration 9 SSE :: 4.87559e+06
+
+run 32
+------------------------
+
+iteration 1 SSE :: 1.62141e+07
+iteration 2 SSE :: 7.23772e+06
+iteration 3 SSE :: 5.67251e+06
+iteration 4 SSE :: 5.41937e+06
+iteration 5 SSE :: 5.38718e+06
+iteration 6 SSE :: 5.38436e+06
+
+run 33
+------------------------
+
+iteration 1 SSE :: 5.34912e+06
+iteration 2 SSE :: 5.27475e+06
+iteration 3 SSE :: 5.21887e+06
+iteration 4 SSE :: 5.17805e+06
+iteration 5 SSE :: 5.15437e+06
+iteration 6 SSE :: 5.12026e+06
+iteration 7 SSE :: 5.09256e+06
+iteration 8 SSE :: 5.07346e+06
+iteration 9 SSE :: 5.05231e+06
+iteration 10 SSE :: 5.0242e+06
+iteration 11 SSE :: 4.98645e+06
+iteration 12 SSE :: 4.96475e+06
+iteration 13 SSE :: 4.94303e+06
+iteration 14 SSE :: 4.92179e+06
+iteration 15 SSE :: 4.89947e+06
+iteration 16 SSE :: 4.87955e+06
+iteration 17 SSE :: 4.87559e+06
+
+run 34
+------------------------
+
+iteration 1 SSE :: 6.22511e+06
+iteration 2 SSE :: 5.31845e+06
+iteration 3 SSE :: 5.19676e+06
+iteration 4 SSE :: 5.16128e+06
+iteration 5 SSE :: 5.12415e+06
+iteration 6 SSE :: 5.09374e+06
+iteration 7 SSE :: 5.07453e+06
+iteration 8 SSE :: 5.05523e+06
+iteration 9 SSE :: 5.0287e+06
+iteration 10 SSE :: 4.99125e+06
+iteration 11 SSE :: 4.96923e+06
+iteration 12 SSE :: 4.95432e+06
+iteration 13 SSE :: 4.93406e+06
+iteration 14 SSE :: 4.9086e+06
+iteration 15 SSE :: 4.88338e+06
+iteration 16 SSE :: 4.87632e+06
+iteration 17 SSE :: 4.87547e+06
+
+run 35
+------------------------
+
+iteration 1 SSE :: 4.99948e+06
+iteration 2 SSE :: 4.92266e+06
+iteration 3 SSE :: 4.89697e+06
+iteration 4 SSE :: 4.8892e+06
+iteration 5 SSE :: 4.88453e+06
+
+run 36
+------------------------
+
+iteration 1 SSE :: 4.9806e+06
+iteration 2 SSE :: 4.96196e+06
+iteration 3 SSE :: 4.9407e+06
+iteration 4 SSE :: 4.92028e+06
+iteration 5 SSE :: 4.89575e+06
+iteration 6 SSE :: 4.87955e+06
+iteration 7 SSE :: 4.87559e+06
+
+run 37
+------------------------
+
+iteration 1 SSE :: 4.99749e+06
+iteration 2 SSE :: 4.94164e+06
+iteration 3 SSE :: 4.91464e+06
+iteration 4 SSE :: 4.89258e+06
+iteration 5 SSE :: 4.87955e+06
+iteration 6 SSE :: 4.87559e+06
+
+run 38
+------------------------
+
+iteration 1 SSE :: 5.86281e+06
+iteration 2 SSE :: 5.40633e+06
+iteration 3 SSE :: 5.38522e+06
+iteration 4 SSE :: 5.38388e+06
+
+run 39
+------------------------
+
+iteration 1 SSE :: 5.05233e+06
+iteration 2 SSE :: 5.00723e+06
+iteration 3 SSE :: 4.97103e+06
+iteration 4 SSE :: 4.93213e+06
+iteration 5 SSE :: 4.90554e+06
+iteration 6 SSE :: 4.89574e+06
+iteration 7 SSE :: 4.8883e+06
+iteration 8 SSE :: 4.8837e+06
+
+run 40
+------------------------
+
+iteration 1 SSE :: 5.43493e+06
+iteration 2 SSE :: 5.38864e+06
+iteration 3 SSE :: 5.38466e+06
+
+run 41
+------------------------
+
+iteration 1 SSE :: 4.97725e+06
+iteration 2 SSE :: 4.92231e+06
+iteration 3 SSE :: 4.89697e+06
+iteration 4 SSE :: 4.8892e+06
+iteration 5 SSE :: 4.88453e+06
+
+run 42
+------------------------
+
+iteration 1 SSE :: 1.69618e+07
+iteration 2 SSE :: 7.45906e+06
+iteration 3 SSE :: 5.72361e+06
+iteration 4 SSE :: 5.42521e+06
+iteration 5 SSE :: 5.38763e+06
+iteration 6 SSE :: 5.38466e+06
+
+run 43
+------------------------
+
+iteration 1 SSE :: 5.54799e+06
+iteration 2 SSE :: 5.39496e+06
+iteration 3 SSE :: 5.38576e+06
+iteration 4 SSE :: 5.38385e+06
+
+run 44
+------------------------
+
+iteration 1 SSE :: 5.36462e+06
+iteration 2 SSE :: 5.18922e+06
+iteration 3 SSE :: 5.06545e+06
+iteration 4 SSE :: 5.02172e+06
+iteration 5 SSE :: 4.98709e+06
+iteration 6 SSE :: 4.94899e+06
+iteration 7 SSE :: 4.90845e+06
+iteration 8 SSE :: 4.89574e+06
+iteration 9 SSE :: 4.8883e+06
+iteration 10 SSE :: 4.8837e+06
+
+run 45
+------------------------
+
+iteration 1 SSE :: 5.57271e+06
+iteration 2 SSE :: 5.39297e+06
+iteration 3 SSE :: 5.38447e+06
+iteration 4 SSE :: 5.38376e+06
+
+run 46
+------------------------
+
+iteration 1 SSE :: 6.81792e+06
+iteration 2 SSE :: 5.53058e+06
+iteration 3 SSE :: 5.39387e+06
+iteration 4 SSE :: 5.38609e+06
+iteration 5 SSE :: 5.38395e+06
+
+run 47
+------------------------
+
+iteration 1 SSE :: 7.57455e+06
+iteration 2 SSE :: 5.11401e+06
+iteration 3 SSE :: 5.05644e+06
+iteration 4 SSE :: 5.03048e+06
+iteration 5 SSE :: 4.9929e+06
+iteration 6 SSE :: 4.96923e+06
+iteration 7 SSE :: 4.95432e+06
+iteration 8 SSE :: 4.93406e+06
+iteration 9 SSE :: 4.9086e+06
+iteration 10 SSE :: 4.88338e+06
+iteration 11 SSE :: 4.87632e+06
+iteration 12 SSE :: 4.87547e+06
+
+run 48
+------------------------
+
+iteration 1 SSE :: 5.00789e+06
+iteration 2 SSE :: 4.97343e+06
+iteration 3 SSE :: 4.95819e+06
+iteration 4 SSE :: 4.93665e+06
+iteration 5 SSE :: 4.91377e+06
+iteration 6 SSE :: 4.89132e+06
+iteration 7 SSE :: 4.87955e+06
+iteration 8 SSE :: 4.87559e+06
+
+run 49
+------------------------
+
+iteration 1 SSE :: 6.83373e+06
+iteration 2 SSE :: 5.57088e+06
+iteration 3 SSE :: 5.40228e+06
+iteration 4 SSE :: 5.38718e+06
+iteration 5 SSE :: 5.38436e+06
+
+run 50
+------------------------
+
+iteration 1 SSE :: 6.60302e+06
+iteration 2 SSE :: 5.26262e+06
+iteration 3 SSE :: 5.07946e+06
+iteration 4 SSE :: 5.02638e+06
+iteration 5 SSE :: 4.99528e+06
+iteration 6 SSE :: 4.96224e+06
+iteration 7 SSE :: 4.91465e+06
+iteration 8 SSE :: 4.89574e+06
+iteration 9 SSE :: 4.8883e+06
+iteration 10 SSE :: 4.8837e+06
+
+run 51
+------------------------
+
+iteration 1 SSE :: 5.50783e+06
+iteration 2 SSE :: 5.36432e+06
+iteration 3 SSE :: 5.20659e+06
+iteration 4 SSE :: 5.07237e+06
+iteration 5 SSE :: 5.02441e+06
+iteration 6 SSE :: 4.99528e+06
+iteration 7 SSE :: 4.96224e+06
+iteration 8 SSE :: 4.91465e+06
+iteration 9 SSE :: 4.89574e+06
+iteration 10 SSE :: 4.8883e+06
+iteration 11 SSE :: 4.8837e+06
+
+run 52
+------------------------
+
+iteration 1 SSE :: 7.82182e+06
+iteration 2 SSE :: 5.30748e+06
+iteration 3 SSE :: 5.19756e+06
+iteration 4 SSE :: 5.1669e+06
+iteration 5 SSE :: 5.13857e+06
+iteration 6 SSE :: 5.10126e+06
+iteration 7 SSE :: 5.08267e+06
+iteration 8 SSE :: 5.06303e+06
+iteration 9 SSE :: 5.03234e+06
+iteration 10 SSE :: 4.99459e+06
+iteration 11 SSE :: 4.96923e+06
+iteration 12 SSE :: 4.95432e+06
+iteration 13 SSE :: 4.93406e+06
+iteration 14 SSE :: 4.9086e+06
+iteration 15 SSE :: 4.88338e+06
+iteration 16 SSE :: 4.87632e+06
+iteration 17 SSE :: 4.87547e+06
+
+run 53
+------------------------
+
+iteration 1 SSE :: 1.39468e+07
+iteration 2 SSE :: 6.2152e+06
+iteration 3 SSE :: 5.43648e+06
+iteration 4 SSE :: 5.38945e+06
+iteration 5 SSE :: 5.38506e+06
+
+run 54
+------------------------
+
+iteration 1 SSE :: 6.45191e+06
+iteration 2 SSE :: 5.35484e+06
+iteration 3 SSE :: 5.23122e+06
+iteration 4 SSE :: 5.18088e+06
+iteration 5 SSE :: 5.15786e+06
+iteration 6 SSE :: 5.12273e+06
+iteration 7 SSE :: 5.09374e+06
+iteration 8 SSE :: 5.07453e+06
+iteration 9 SSE :: 5.05523e+06
+iteration 10 SSE :: 5.0287e+06
+iteration 11 SSE :: 4.99125e+06
+iteration 12 SSE :: 4.96923e+06
+iteration 13 SSE :: 4.95432e+06
+iteration 14 SSE :: 4.93406e+06
+iteration 15 SSE :: 4.9086e+06
+iteration 16 SSE :: 4.88338e+06
+iteration 17 SSE :: 4.87632e+06
+iteration 18 SSE :: 4.87547e+06
+
+run 55
+------------------------
+
+iteration 1 SSE :: 5.5982e+06
+iteration 2 SSE :: 5.23198e+06
+iteration 3 SSE :: 5.14886e+06
+iteration 4 SSE :: 5.11176e+06
+iteration 5 SSE :: 5.0902e+06
+iteration 6 SSE :: 5.0723e+06
+iteration 7 SSE :: 5.04889e+06
+iteration 8 SSE :: 5.01854e+06
+iteration 9 SSE :: 4.98163e+06
+iteration 10 SSE :: 4.96334e+06
+iteration 11 SSE :: 4.9407e+06
+iteration 12 SSE :: 4.92028e+06
+iteration 13 SSE :: 4.89575e+06
+iteration 14 SSE :: 4.87955e+06
+iteration 15 SSE :: 4.87559e+06
+
+run 56
+------------------------
+
+iteration 1 SSE :: 7.79661e+06
+iteration 2 SSE :: 6.59442e+06
+iteration 3 SSE :: 5.43233e+06
+iteration 4 SSE :: 5.38546e+06
+iteration 5 SSE :: 5.37833e+06
+iteration 6 SSE :: 5.37096e+06
+iteration 7 SSE :: 5.36295e+06
+iteration 8 SSE :: 5.35308e+06
+iteration 9 SSE :: 5.33391e+06
+iteration 10 SSE :: 5.31075e+06
+iteration 11 SSE :: 5.27386e+06
+iteration 12 SSE :: 5.21007e+06
+iteration 13 SSE :: 5.17688e+06
+iteration 14 SSE :: 5.15157e+06
+iteration 15 SSE :: 5.1172e+06
+iteration 16 SSE :: 5.0902e+06
+iteration 17 SSE :: 5.0723e+06
+iteration 18 SSE :: 5.04889e+06
+iteration 19 SSE :: 5.01854e+06
+iteration 20 SSE :: 4.98163e+06
+iteration 21 SSE :: 4.96334e+06
+iteration 22 SSE :: 4.9407e+06
+iteration 23 SSE :: 4.92028e+06
+iteration 24 SSE :: 4.89575e+06
+iteration 25 SSE :: 4.87955e+06
+iteration 26 SSE :: 4.87559e+06
+
+run 57
+------------------------
+
+iteration 1 SSE :: 8.55385e+06
+iteration 2 SSE :: 5.81915e+06
+iteration 3 SSE :: 5.43025e+06
+iteration 4 SSE :: 5.38763e+06
+iteration 5 SSE :: 5.38466e+06
+
+run 58
+------------------------
+
+iteration 1 SSE :: 5.58639e+06
+iteration 2 SSE :: 5.39831e+06
+iteration 3 SSE :: 5.38576e+06
+iteration 4 SSE :: 5.38385e+06
+
+run 59
+------------------------
+
+iteration 1 SSE :: 6.82202e+06
+iteration 2 SSE :: 5.62151e+06
+iteration 3 SSE :: 5.46541e+06
+iteration 4 SSE :: 5.33755e+06
+iteration 5 SSE :: 5.18202e+06
+iteration 6 SSE :: 5.06545e+06
+iteration 7 SSE :: 5.02172e+06
+iteration 8 SSE :: 4.98709e+06
+iteration 9 SSE :: 4.94899e+06
+iteration 10 SSE :: 4.90845e+06
+iteration 11 SSE :: 4.89574e+06
+iteration 12 SSE :: 4.8883e+06
+iteration 13 SSE :: 4.8837e+06
+
+run 60
+------------------------
+
+iteration 1 SSE :: 5.63968e+06
+iteration 2 SSE :: 5.13494e+06
+iteration 3 SSE :: 5.09207e+06
+iteration 4 SSE :: 5.07426e+06
+iteration 5 SSE :: 5.05231e+06
+iteration 6 SSE :: 5.0242e+06
+iteration 7 SSE :: 4.98645e+06
+iteration 8 SSE :: 4.96475e+06
+iteration 9 SSE :: 4.94303e+06
+iteration 10 SSE :: 4.92179e+06
+iteration 11 SSE :: 4.89947e+06
+iteration 12 SSE :: 4.87955e+06
+iteration 13 SSE :: 4.87559e+06
+
+run 61
+------------------------
+
+iteration 1 SSE :: 5.29061e+06
+iteration 2 SSE :: 5.14348e+06
+iteration 3 SSE :: 5.10414e+06
+iteration 4 SSE :: 5.08803e+06
+iteration 5 SSE :: 5.0697e+06
+iteration 6 SSE :: 5.04434e+06
+iteration 7 SSE :: 5.00866e+06
+iteration 8 SSE :: 4.97532e+06
+iteration 9 SSE :: 4.95966e+06
+iteration 10 SSE :: 4.93807e+06
+iteration 11 SSE :: 4.91619e+06
+iteration 12 SSE :: 4.89132e+06
+iteration 13 SSE :: 4.87955e+06
+iteration 14 SSE :: 4.87559e+06
+
+run 62
+------------------------
+
+iteration 1 SSE :: 7.3717e+06
+iteration 2 SSE :: 5.4449e+06
+iteration 3 SSE :: 5.16146e+06
+iteration 4 SSE :: 5.10903e+06
+iteration 5 SSE :: 5.0891e+06
+iteration 6 SSE :: 5.07093e+06
+iteration 7 SSE :: 5.04434e+06
+iteration 8 SSE :: 5.00866e+06
+iteration 9 SSE :: 4.97532e+06
+iteration 10 SSE :: 4.95966e+06
+iteration 11 SSE :: 4.93807e+06
+iteration 12 SSE :: 4.91619e+06
+iteration 13 SSE :: 4.89132e+06
+iteration 14 SSE :: 4.87955e+06
+iteration 15 SSE :: 4.87559e+06
+
+run 63
+------------------------
+
+iteration 1 SSE :: 5.21736e+06
+iteration 2 SSE :: 5.07606e+06
+iteration 3 SSE :: 5.02441e+06
+iteration 4 SSE :: 4.99528e+06
+iteration 5 SSE :: 4.96224e+06
+iteration 6 SSE :: 4.91465e+06
+iteration 7 SSE :: 4.89574e+06
+iteration 8 SSE :: 4.8883e+06
+iteration 9 SSE :: 4.8837e+06
+
+run 64
+------------------------
+
+iteration 1 SSE :: 5.1643e+06
+iteration 2 SSE :: 5.10852e+06
+iteration 3 SSE :: 5.08744e+06
+iteration 4 SSE :: 5.0697e+06
+iteration 5 SSE :: 5.04434e+06
+iteration 6 SSE :: 5.00866e+06
+iteration 7 SSE :: 4.97532e+06
+iteration 8 SSE :: 4.95966e+06
+iteration 9 SSE :: 4.93807e+06
+iteration 10 SSE :: 4.91619e+06
+iteration 11 SSE :: 4.89132e+06
+iteration 12 SSE :: 4.87955e+06
+iteration 13 SSE :: 4.87559e+06
+
+run 65
+------------------------
+
+iteration 1 SSE :: 5.46248e+06
+iteration 2 SSE :: 5.39275e+06
+iteration 3 SSE :: 5.38569e+06
+iteration 4 SSE :: 5.38412e+06
+
+run 66
+------------------------
+
+iteration 1 SSE :: 5.18795e+06
+iteration 2 SSE :: 5.14934e+06
+iteration 3 SSE :: 5.11443e+06
+iteration 4 SSE :: 5.0902e+06
+iteration 5 SSE :: 5.0723e+06
+iteration 6 SSE :: 5.04889e+06
+iteration 7 SSE :: 5.01854e+06
+iteration 8 SSE :: 4.98163e+06
+iteration 9 SSE :: 4.96334e+06
+iteration 10 SSE :: 4.9407e+06
+iteration 11 SSE :: 4.92028e+06
+iteration 12 SSE :: 4.89575e+06
+iteration 13 SSE :: 4.87955e+06
+iteration 14 SSE :: 4.87559e+06
+
+run 67
+------------------------
+
+iteration 1 SSE :: 5.52449e+06
+iteration 2 SSE :: 5.14052e+06
+iteration 3 SSE :: 5.09946e+06
+iteration 4 SSE :: 5.08064e+06
+iteration 5 SSE :: 5.06303e+06
+iteration 6 SSE :: 5.03234e+06
+iteration 7 SSE :: 4.99459e+06
+iteration 8 SSE :: 4.96923e+06
+iteration 9 SSE :: 4.95432e+06
+iteration 10 SSE :: 4.93406e+06
+iteration 11 SSE :: 4.9086e+06
+iteration 12 SSE :: 4.88338e+06
+iteration 13 SSE :: 4.87632e+06
+iteration 14 SSE :: 4.87547e+06
+
+run 68
+------------------------
+
+iteration 1 SSE :: 5.49256e+06
+iteration 2 SSE :: 5.11505e+06
+iteration 3 SSE :: 5.08303e+06
+iteration 4 SSE :: 5.06105e+06
+iteration 5 SSE :: 5.03234e+06
+iteration 6 SSE :: 4.99459e+06
+iteration 7 SSE :: 4.96923e+06
+iteration 8 SSE :: 4.95432e+06
+iteration 9 SSE :: 4.93406e+06
+iteration 10 SSE :: 4.9086e+06
+iteration 11 SSE :: 4.88338e+06
+iteration 12 SSE :: 4.87632e+06
+iteration 13 SSE :: 4.87547e+06
+
+run 69
+------------------------
+
+iteration 1 SSE :: 1.74825e+07
+iteration 2 SSE :: 7.73221e+06
+iteration 3 SSE :: 5.73832e+06
+iteration 4 SSE :: 5.42073e+06
+iteration 5 SSE :: 5.38763e+06
+iteration 6 SSE :: 5.38466e+06
+
+run 70
+------------------------
+
+iteration 1 SSE :: 5.46927e+06
+iteration 2 SSE :: 5.27581e+06
+iteration 3 SSE :: 5.2082e+06
+iteration 4 SSE :: 5.17137e+06
+iteration 5 SSE :: 5.14601e+06
+iteration 6 SSE :: 5.11254e+06
+iteration 7 SSE :: 5.0902e+06
+iteration 8 SSE :: 5.0723e+06
+iteration 9 SSE :: 5.04889e+06
+iteration 10 SSE :: 5.01854e+06
+iteration 11 SSE :: 4.98163e+06
+iteration 12 SSE :: 4.96334e+06
+iteration 13 SSE :: 4.9407e+06
+iteration 14 SSE :: 4.92028e+06
+iteration 15 SSE :: 4.89575e+06
+iteration 16 SSE :: 4.87955e+06
+iteration 17 SSE :: 4.87559e+06
+
+run 71
+------------------------
+
+iteration 1 SSE :: 6.57799e+06
+iteration 2 SSE :: 5.42871e+06
+iteration 3 SSE :: 5.38498e+06
+iteration 4 SSE :: 5.37828e+06
+iteration 5 SSE :: 5.37092e+06
+iteration 6 SSE :: 5.36295e+06
+iteration 7 SSE :: 5.35308e+06
+iteration 8 SSE :: 5.33391e+06
+iteration 9 SSE :: 5.31075e+06
+iteration 10 SSE :: 5.27386e+06
+iteration 11 SSE :: 5.21007e+06
+iteration 12 SSE :: 5.17688e+06
+iteration 13 SSE :: 5.15157e+06
+iteration 14 SSE :: 5.1172e+06
+iteration 15 SSE :: 5.0902e+06
+iteration 16 SSE :: 5.0723e+06
+iteration 17 SSE :: 5.04889e+06
+iteration 18 SSE :: 5.01854e+06
+iteration 19 SSE :: 4.98163e+06
+iteration 20 SSE :: 4.96334e+06
+iteration 21 SSE :: 4.9407e+06
+iteration 22 SSE :: 4.92028e+06
+iteration 23 SSE :: 4.89575e+06
+iteration 24 SSE :: 4.87955e+06
+iteration 25 SSE :: 4.87559e+06
+
+run 72
+------------------------
+
+iteration 1 SSE :: 1.97002e+07
+iteration 2 SSE :: 5.8535e+06
+iteration 3 SSE :: 5.23484e+06
+iteration 4 SSE :: 5.14886e+06
+iteration 5 SSE :: 5.11176e+06
+iteration 6 SSE :: 5.0902e+06
+iteration 7 SSE :: 5.0723e+06
+iteration 8 SSE :: 5.04889e+06
+iteration 9 SSE :: 5.01854e+06
+iteration 10 SSE :: 4.98163e+06
+iteration 11 SSE :: 4.96334e+06
+iteration 12 SSE :: 4.9407e+06
+iteration 13 SSE :: 4.92028e+06
+iteration 14 SSE :: 4.89575e+06
+iteration 15 SSE :: 4.87955e+06
+iteration 16 SSE :: 4.87559e+06
+
+run 73
+------------------------
+
+iteration 1 SSE :: 5.18132e+06
+iteration 2 SSE :: 5.10117e+06
+iteration 3 SSE :: 5.08024e+06
+iteration 4 SSE :: 5.05975e+06
+iteration 5 SSE :: 5.03048e+06
+iteration 6 SSE :: 4.9929e+06
+iteration 7 SSE :: 4.96923e+06
+iteration 8 SSE :: 4.95432e+06
+iteration 9 SSE :: 4.93406e+06
+iteration 10 SSE :: 4.9086e+06
+iteration 11 SSE :: 4.88338e+06
+iteration 12 SSE :: 4.87632e+06
+iteration 13 SSE :: 4.87547e+06
+
+run 74
+------------------------
+
+iteration 1 SSE :: 5.16819e+06
+iteration 2 SSE :: 5.10207e+06
+iteration 3 SSE :: 5.08131e+06
+iteration 4 SSE :: 5.06303e+06
+iteration 5 SSE :: 5.03234e+06
+iteration 6 SSE :: 4.99459e+06
+iteration 7 SSE :: 4.96923e+06
+iteration 8 SSE :: 4.95432e+06
+iteration 9 SSE :: 4.93406e+06
+iteration 10 SSE :: 4.9086e+06
+iteration 11 SSE :: 4.88338e+06
+iteration 12 SSE :: 4.87632e+06
+iteration 13 SSE :: 4.87547e+06
+
+run 75
+------------------------
+
+iteration 1 SSE :: 5.3395e+06
+iteration 2 SSE :: 5.25086e+06
+iteration 3 SSE :: 5.1915e+06
+iteration 4 SSE :: 5.16498e+06
+iteration 5 SSE :: 5.13057e+06
+iteration 6 SSE :: 5.09613e+06
+iteration 7 SSE :: 5.07631e+06
+iteration 8 SSE :: 5.0564e+06
+iteration 9 SSE :: 5.03048e+06
+iteration 10 SSE :: 4.9929e+06
+iteration 11 SSE :: 4.96923e+06
+iteration 12 SSE :: 4.95432e+06
+iteration 13 SSE :: 4.93406e+06
+iteration 14 SSE :: 4.9086e+06
+iteration 15 SSE :: 4.88338e+06
+iteration 16 SSE :: 4.87632e+06
+iteration 17 SSE :: 4.87547e+06
+
+run 76
+------------------------
+
+iteration 1 SSE :: 7.6598e+06
+iteration 2 SSE :: 5.73073e+06
+iteration 3 SSE :: 5.58261e+06
+iteration 4 SSE :: 5.54153e+06
+iteration 5 SSE :: 5.53751e+06
+
+run 77
+------------------------
+
+iteration 1 SSE :: 5.07267e+06
+iteration 2 SSE :: 4.98793e+06
+iteration 3 SSE :: 4.96565e+06
+iteration 4 SSE :: 4.94558e+06
+iteration 5 SSE :: 4.92179e+06
+iteration 6 SSE :: 4.89947e+06
+iteration 7 SSE :: 4.87955e+06
+iteration 8 SSE :: 4.87559e+06
+
+run 78
+------------------------
+
+iteration 1 SSE :: 4.97946e+06
+iteration 2 SSE :: 4.9588e+06
+iteration 3 SSE :: 4.93665e+06
+iteration 4 SSE :: 4.91377e+06
+iteration 5 SSE :: 4.89132e+06
+iteration 6 SSE :: 4.87955e+06
+iteration 7 SSE :: 4.87559e+06
+
+run 79
+------------------------
+
+iteration 1 SSE :: 5.50159e+06
+iteration 2 SSE :: 5.30915e+06
+iteration 3 SSE :: 5.15418e+06
+iteration 4 SSE :: 5.05072e+06
+iteration 5 SSE :: 5.01608e+06
+iteration 6 SSE :: 4.97915e+06
+iteration 7 SSE :: 4.93474e+06
+iteration 8 SSE :: 4.90554e+06
+iteration 9 SSE :: 4.89574e+06
+iteration 10 SSE :: 4.8883e+06
+iteration 11 SSE :: 4.8837e+06
+
+run 80
+------------------------
+
+iteration 1 SSE :: 5.17626e+06
+iteration 2 SSE :: 5.03747e+06
+iteration 3 SSE :: 5.0045e+06
+iteration 4 SSE :: 4.97103e+06
+iteration 5 SSE :: 4.93213e+06
+iteration 6 SSE :: 4.90554e+06
+iteration 7 SSE :: 4.89574e+06
+iteration 8 SSE :: 4.8883e+06
+iteration 9 SSE :: 4.8837e+06
+
+run 81
+------------------------
+
+iteration 1 SSE :: 1.09611e+07
+iteration 2 SSE :: 7.5134e+06
+iteration 3 SSE :: 6.7988e+06
+iteration 4 SSE :: 5.18357e+06
+iteration 5 SSE :: 4.96447e+06
+iteration 6 SSE :: 4.94152e+06
+iteration 7 SSE :: 4.91881e+06
+iteration 8 SSE :: 4.89426e+06
+iteration 9 SSE :: 4.87955e+06
+iteration 10 SSE :: 4.87559e+06
+
+run 82
+------------------------
+
+iteration 1 SSE :: 5.79392e+06
+iteration 2 SSE :: 5.20596e+06
+iteration 3 SSE :: 5.06522e+06
+iteration 4 SSE :: 5.02172e+06
+iteration 5 SSE :: 4.98709e+06
+iteration 6 SSE :: 4.94899e+06
+iteration 7 SSE :: 4.90845e+06
+iteration 8 SSE :: 4.89574e+06
+iteration 9 SSE :: 4.8883e+06
+iteration 10 SSE :: 4.8837e+06
+
+run 83
+------------------------
+
+iteration 1 SSE :: 7.47715e+06
+iteration 2 SSE :: 5.49574e+06
+iteration 3 SSE :: 5.33481e+06
+iteration 4 SSE :: 5.27637e+06
+iteration 5 SSE :: 5.21887e+06
+iteration 6 SSE :: 5.17805e+06
+iteration 7 SSE :: 5.15437e+06
+iteration 8 SSE :: 5.12026e+06
+iteration 9 SSE :: 5.09256e+06
+iteration 10 SSE :: 5.07346e+06
+iteration 11 SSE :: 5.05231e+06
+iteration 12 SSE :: 5.0242e+06
+iteration 13 SSE :: 4.98645e+06
+iteration 14 SSE :: 4.96475e+06
+iteration 15 SSE :: 4.94303e+06
+iteration 16 SSE :: 4.92179e+06
+iteration 17 SSE :: 4.89947e+06
+iteration 18 SSE :: 4.87955e+06
+iteration 19 SSE :: 4.87559e+06
+
+run 84
+------------------------
+
+iteration 1 SSE :: 5.13599e+06
+iteration 2 SSE :: 5.04154e+06
+iteration 3 SSE :: 5.01299e+06
+iteration 4 SSE :: 4.97361e+06
+iteration 5 SSE :: 4.93474e+06
+iteration 6 SSE :: 4.90554e+06
+iteration 7 SSE :: 4.89574e+06
+iteration 8 SSE :: 4.8883e+06
+iteration 9 SSE :: 4.8837e+06
+
+run 85
+------------------------
+
+iteration 1 SSE :: 6.06631e+06
+iteration 2 SSE :: 5.41991e+06
+iteration 3 SSE :: 5.38678e+06
+iteration 4 SSE :: 5.38436e+06
+
+run 86
+------------------------
+
+iteration 1 SSE :: 6.40961e+06
+iteration 2 SSE :: 5.25637e+06
+iteration 3 SSE :: 5.10991e+06
+iteration 4 SSE :: 5.08803e+06
+iteration 5 SSE :: 5.0697e+06
+iteration 6 SSE :: 5.04434e+06
+iteration 7 SSE :: 5.00866e+06
+iteration 8 SSE :: 4.97532e+06
+iteration 9 SSE :: 4.95966e+06
+iteration 10 SSE :: 4.93807e+06
+iteration 11 SSE :: 4.91619e+06
+iteration 12 SSE :: 4.89132e+06
+iteration 13 SSE :: 4.87955e+06
+iteration 14 SSE :: 4.87559e+06
+
+run 87
+------------------------
+
+iteration 1 SSE :: 4.89869e+06
+iteration 2 SSE :: 4.88742e+06
+iteration 3 SSE :: 4.8837e+06
+
+run 88
+------------------------
+
+iteration 1 SSE :: 2.0672e+07
+iteration 2 SSE :: 1.01107e+07
+iteration 3 SSE :: 6.1876e+06
+iteration 4 SSE :: 5.48521e+06
+iteration 5 SSE :: 5.39577e+06
+iteration 6 SSE :: 5.38678e+06
+iteration 7 SSE :: 5.38436e+06
+
+run 89
+------------------------
+
+iteration 1 SSE :: 1.58107e+07
+iteration 2 SSE :: 7.29255e+06
+iteration 3 SSE :: 5.71856e+06
+iteration 4 SSE :: 5.4286e+06
+iteration 5 SSE :: 5.38763e+06
+iteration 6 SSE :: 5.38466e+06
+
+run 90
+------------------------
+
+iteration 1 SSE :: 5.11467e+06
+iteration 2 SSE :: 5.08803e+06
+iteration 3 SSE :: 5.0697e+06
+iteration 4 SSE :: 5.04434e+06
+iteration 5 SSE :: 5.00866e+06
+iteration 6 SSE :: 4.97532e+06
+iteration 7 SSE :: 4.95966e+06
+iteration 8 SSE :: 4.93807e+06
+iteration 9 SSE :: 4.91619e+06
+iteration 10 SSE :: 4.89132e+06
+iteration 11 SSE :: 4.87955e+06
+iteration 12 SSE :: 4.87559e+06
+
+run 91
+------------------------
+
+iteration 1 SSE :: 1.25733e+07
+iteration 2 SSE :: 6.46383e+06
+iteration 3 SSE :: 5.54432e+06
+iteration 4 SSE :: 5.39801e+06
+iteration 5 SSE :: 5.38678e+06
+iteration 6 SSE :: 5.38436e+06
+
+run 92
+------------------------
+
+iteration 1 SSE :: 5.88755e+06
+iteration 2 SSE :: 5.39161e+06
+iteration 3 SSE :: 5.34557e+06
+iteration 4 SSE :: 5.30838e+06
+iteration 5 SSE :: 5.27196e+06
+iteration 6 SSE :: 5.20774e+06
+iteration 7 SSE :: 5.17688e+06
+iteration 8 SSE :: 5.15157e+06
+iteration 9 SSE :: 5.1172e+06
+iteration 10 SSE :: 5.0902e+06
+iteration 11 SSE :: 5.0723e+06
+iteration 12 SSE :: 5.04889e+06
+iteration 13 SSE :: 5.01854e+06
+iteration 14 SSE :: 4.98163e+06
+iteration 15 SSE :: 4.96334e+06
+iteration 16 SSE :: 4.9407e+06
+iteration 17 SSE :: 4.92028e+06
+iteration 18 SSE :: 4.89575e+06
+iteration 19 SSE :: 4.87955e+06
+iteration 20 SSE :: 4.87559e+06
+
+run 93
+------------------------
+
+iteration 1 SSE :: 5.72041e+06
+iteration 2 SSE :: 5.13674e+06
+iteration 3 SSE :: 5.08644e+06
+iteration 4 SSE :: 5.06761e+06
+iteration 5 SSE :: 5.04268e+06
+iteration 6 SSE :: 5.00687e+06
+iteration 7 SSE :: 4.97404e+06
+iteration 8 SSE :: 4.95819e+06
+iteration 9 SSE :: 4.93665e+06
+iteration 10 SSE :: 4.91377e+06
+iteration 11 SSE :: 4.89132e+06
+iteration 12 SSE :: 4.87955e+06
+iteration 13 SSE :: 4.87559e+06
+
+run 94
+------------------------
+
+iteration 1 SSE :: 5.27679e+06
+iteration 2 SSE :: 5.168e+06
+iteration 3 SSE :: 5.1355e+06
+iteration 4 SSE :: 5.10016e+06
+iteration 5 SSE :: 5.08064e+06
+iteration 6 SSE :: 5.06303e+06
+iteration 7 SSE :: 5.03234e+06
+iteration 8 SSE :: 4.99459e+06
+iteration 9 SSE :: 4.96923e+06
+iteration 10 SSE :: 4.95432e+06
+iteration 11 SSE :: 4.93406e+06
+iteration 12 SSE :: 4.9086e+06
+iteration 13 SSE :: 4.88338e+06
+iteration 14 SSE :: 4.87632e+06
+iteration 15 SSE :: 4.87547e+06
+
+run 95
+------------------------
+
+iteration 1 SSE :: 2.05602e+07
+iteration 2 SSE :: 9.82679e+06
+iteration 3 SSE :: 6.06107e+06
+iteration 4 SSE :: 5.46616e+06
+iteration 5 SSE :: 5.39229e+06
+iteration 6 SSE :: 5.38575e+06
+iteration 7 SSE :: 5.38412e+06
+
+run 96
+------------------------
+
+iteration 1 SSE :: 7.25165e+06
+iteration 2 SSE :: 5.21903e+06
+iteration 3 SSE :: 5.086e+06
+iteration 4 SSE :: 5.06042e+06
+iteration 5 SSE :: 5.03048e+06
+iteration 6 SSE :: 4.9929e+06
+iteration 7 SSE :: 4.96923e+06
+iteration 8 SSE :: 4.95432e+06
+iteration 9 SSE :: 4.93406e+06
+iteration 10 SSE :: 4.9086e+06
+iteration 11 SSE :: 4.88338e+06
+iteration 12 SSE :: 4.87632e+06
+iteration 13 SSE :: 4.87547e+06
+
+run 97
+------------------------
+
+iteration 1 SSE :: 5.52304e+06
+iteration 2 SSE :: 5.1432e+06
+iteration 3 SSE :: 5.09631e+06
+iteration 4 SSE :: 5.07631e+06
+iteration 5 SSE :: 5.0564e+06
+iteration 6 SSE :: 5.03048e+06
+iteration 7 SSE :: 4.9929e+06
+iteration 8 SSE :: 4.96923e+06
+iteration 9 SSE :: 4.95432e+06
+iteration 10 SSE :: 4.93406e+06
+iteration 11 SSE :: 4.9086e+06
+iteration 12 SSE :: 4.88338e+06
+iteration 13 SSE :: 4.87632e+06
+iteration 14 SSE :: 4.87547e+06
+
+run 98
+------------------------
+
+iteration 1 SSE :: 1.44985e+07
+iteration 2 SSE :: 6.57077e+06
+iteration 3 SSE :: 5.55245e+06
+iteration 4 SSE :: 5.40057e+06
+iteration 5 SSE :: 5.38678e+06
+iteration 6 SSE :: 5.38436e+06
+
+run 99
+------------------------
+
+iteration 1 SSE :: 5.37029e+06
+iteration 2 SSE :: 5.32313e+06
+iteration 3 SSE :: 5.27448e+06
+iteration 4 SSE :: 5.20996e+06
+iteration 5 SSE :: 5.17805e+06
+iteration 6 SSE :: 5.15437e+06
+iteration 7 SSE :: 5.12026e+06
+iteration 8 SSE :: 5.09256e+06
+iteration 9 SSE :: 5.07346e+06
+iteration 10 SSE :: 5.05231e+06
+iteration 11 SSE :: 5.0242e+06
+iteration 12 SSE :: 4.98645e+06
+iteration 13 SSE :: 4.96475e+06
+iteration 14 SSE :: 4.94303e+06
+iteration 15 SSE :: 4.92179e+06
+iteration 16 SSE :: 4.89947e+06
+iteration 17 SSE :: 4.87955e+06
+iteration 18 SSE :: 4.87559e+06
+
+run 100
+------------------------
+
+iteration 1 SSE :: 6.81265e+06
+iteration 2 SSE :: 5.21209e+06
+iteration 3 SSE :: 5.01096e+06
+iteration 4 SSE :: 4.97587e+06
+iteration 5 SSE :: 4.95966e+06
+iteration 6 SSE :: 4.93807e+06
+iteration 7 SSE :: 4.91619e+06
+iteration 8 SSE :: 4.89132e+06
+iteration 9 SSE :: 4.87955e+06
+iteration 10 SSE :: 4.87559e+06
+
+Run 15 is best run :: iteration SSE	4875148.1225
+total time taken for algorithm :: 1.72878 s

@@ -7,21 +7,27 @@
 // ================================ test with hard coded values
 void inlineRuns()
 {
+    // -------- hardCoded file names for argv[1]
+    //          has a total of 10 indicies [0 - 9]
+    std::string default_files[] = {"ecoli", "glass", "ionosphere", "iris_bezdek", "landsat", "letter_recognition", "segmentation", "vehicle", "wine", "yeast"}; 
+    
+    // -------- manual file names for argv[1] 
+    //std::string file_name = "iris_bezdek";        
+
     // ===== arg variables 
-    std::string file_name = "iris_bezdek";           //argv[1]
     int k_val = 3;                           // argv[2]
     int iterations = 100;                    // argv[3]
     double convergence = 0.001;             // argv[4]
     int num_of_runs = 100;                 // argv[5] 
 
-    std::string path_in = "../default_data_sets/" + file_name + ".txt";
-    std::string path_out = "../outputs/v1_outputs/" + file_name + "_out.txt";
+    std::string path_in = "../default_data_sets/" + default_files[3] + ".txt";
+    std::string path_out = "../outputs/v1.1_outputs/" + default_files[3] + "_out.txt";
 
 
     k_means<double> km_manager(k_val, num_of_runs, iterations, convergence);
    
-    km_manager.runAlgorithm(path_in); 
-    //km_manager.runAndLogAlg(path_in, path_out); 
+    //km_manager.runAlgorithm(path_in); 
+    km_manager.runAndLogAlg(path_in, path_out); 
 
 }
 
@@ -49,11 +55,11 @@ void actualRun(int argc, char* argv[])
     }
 
     std::string path_in = "../default_data_sets/" + file_name + ".txt";
-    std::string path_out = "../outputs/v1_outputs/" + file_name + "_out.txt";
+    std::string path_out = "./outputs/v1.1_outputs/" + file_name + "_out.txt";
 
+   
     k_means<double> km_manager(std::stoi(argv[5]), std::stod(argv[4]), std::stoi(argv[2]), std::stoi(argv[3]));
     km_manager.runAlgorithm(path_in); 
-
 
 }
 
@@ -65,7 +71,9 @@ int main(int argc, char* argv[])
     //actualRun(argc, argv);
     
     // ---- test using hard coded values 
-    inlineRuns(); 
+   inlineRuns(); 
 
 return 0; 
 }
+
+// hello, professor :) 

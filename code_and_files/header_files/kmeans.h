@@ -1,6 +1,26 @@
 #ifndef KMEANS_WRAP
 #define KMEANS_WRAP
 
+/*
+!!!!!!!!!!!!!!!!!!!!!! fix these !!!!!!!!!!!!!!!!
+
+    changes in cluster
+    
+    - clusterData<DataPoint<T>> -> clust_data_indicies<int>
+    - setCentroid() -> assignCentroid()
+    - showCentroid() -> printCentroid()
+    - setData(dataPoint<T>) -> assignData(int)
+    - displayDataAt() -> printDataPoint(const std::vector<DataPoint<T>>& dataSet, int index)
+
+    changes in K_means
+
+    - dataSet -> data_set
+    - clusterList<Clust<T>> -> clust<T> cluster_list[] 
+    - bestRunCluster<clust<T>> -> clust<T> best_run_clust[] 
+
+*/
+
+
 #include <iostream>
 #include <vector>
 #include <fstream>
@@ -42,9 +62,9 @@ class k_means
     int best_run_indx; 
     double best_run_iter_sse; 
     
-    std::vector<dataPoint<T>> dataSet;  
-    std::vector<clust<T>> clusterList; 
-    std::vector<clust<T>> bestRunClust; 
+    std::vector<dataPoint<T>> data_set;  
+    clust<T>* cluster_list; 
+    clust<T>* best_run_clust; 
     // ============================================================= helper methods
    
     // - - - - - - validates and assigns the main values for the constructor 
@@ -65,7 +85,10 @@ class k_means
         convergence = converg;
         total_runs = runs; 
     }
-    // - - - - - - generates dataPoint structs & populates dataSet
+   
+   
+   
+    // - - - - - - generates dataPoint structs & populates data_set
     void populateDataSet(const std::string& line, int& id)
     {           
          // read rows element by element
@@ -87,19 +110,22 @@ class k_means
         {
             std::string point_ID = "dataPoint " + std::to_string(id); 
         
-            dataSet.push_back(dataPoint<T>(std::move(featureVector), 0.0, point_ID)); 
+            data_set.push_back(dataPoint<T>(std::move(featureVector), 0.0, point_ID)); 
             id++; 
         }  
     }
-   // - - - - - -  checks if the current cluster's rand centroid is not already used
+  
+  
+  
+    // - - - - - -  checks if the current cluster's rand centroid is not already used
     bool checkUnique(int currentCluster, int centroidIndx )
     {
-        const std::string& dataPointID = dataSet.at(centroidIndx).getDataID(); 
+        const std::string& dataPointID = data_set.at(centroidIndx).getDataID(); 
         bool unique = true; 
 
         for(int i = 0; i < currentCluster; i++)
         {
-            dataPoint<T> prevCentroids = clusterList.at(i).getCentroid(); // !!!!!!!!! find a way way to avoid copying !!!!!!!!
+            dataPoint<T> prevCentroids = cluster_list[i].getCentroid(); // !!!!!!!!! find a way way to avoid copying !!!!!!!!
                  
             if(dataPointID == prevCentroids.getDataID())
             {
@@ -110,18 +136,21 @@ class k_means
 
         return unique; 
     }
+   
+   
+   
     // - - - - - finds the closest centroid for a given dataPoint
     int closestCentroid(int currentPoint)
     {
         // using largest value so that it can be replaced with increasingly smaller values
         double bestSqrDifference = std::numeric_limits<double>::max(); 
         int bestFitIndex =0; 
-        std::vector<T> currDataVector = dataSet.at(currentPoint).getDataVector(); // !!!!!!!!!!!!! find a way to avoid copying !!!!!!!!
+        std::vector<T> currDataVector = data_set.at(currentPoint).getDataVector(); // !!!!!!!!!!!!! find a way to avoid copying !!!!!!!!
 
 
         for (int i = 0; i < k_value; i++)
         {
-            clust<T>& currClust = clusterList.at(i); 
+            clust<T>& currClust = cluster_list[i]; 
             const std::vector<T>& dataVector = currClust.getCentroid().getDataVector(); 
             double totalSqrDifference =0.0; 
 
@@ -139,9 +168,13 @@ class k_means
                 bestFitIndex = i; 
             }
         }
+        // returns the cluster_list index of the cluster with the best fit
         return bestFitIndex; 
     }
-   // - - - - - checks for and calculates convergence 
+  
+  
+  
+    // - - - - - checks for and calculates convergence 
     bool tryConvergence(std::vector<double>& iter_sse_vector, int current_iteration, double iterSSE)
     {
         bool converged = false; 
@@ -173,12 +206,15 @@ class k_means
             // sets values for the current best 'run' 
             best_run_iter_sse = iterSSE; 
             best_run_indx = current_run; 
-            // safe to transfer 'best cluster' ownership ; clusterList will be reset anyways 
-            bestRunClust = std::move(clusterList);
+            // safe to transfer 'best cluster' ownership ; cluster_list will be reset anyways 
+            best_run_clust = std::move(cluster_list);
         } 
 
         return converged; 
     }
+   
+   
+   
     // - - - - - prints each iteration SSE value
     void printIterationSSE(const std::vector<double>& sse_values)
     {
@@ -187,6 +223,9 @@ class k_means
             std::cout << "iteration " << (i+1) << " SSE :: " << sse_values.at(i) <<std::endl; 
         }
     }
+   
+   
+   
     // - - - - - prints iteration SSE to an output file 
     void logIterationSSE(const std::vector<double>& sse_values, std::ofstream& path_to_output)
     {
@@ -195,33 +234,39 @@ class k_means
             path_to_output << "iteration " << (i+1) << " SSE :: " << sse_values.at(i) <<std::endl; 
         }
     }
+   
+   
+   
     // - - - - -  finds and sets cluster's mean centroids
     void genMeanCentroid()
     {
         // ------ reset clusters with new centroid
-        for(int i =0; i < clusterList.size(); i++)
+        for(int i =0; i < k_value; i++)
         {   
-            clust<T>& currClust = clusterList.at(i); 
+            clust<T>& currClust = cluster_list[i]; 
          
             // generate the dataPoint for the new centroid
-            std::vector<T> meanCentroid = currClust.centroidUsingMean(); 
+            std::vector<T> meanCentroid = currClust.centroidUsingMean(data_set); 
             std::string id = "Mean Centroid " + std::to_string(i); 
             
             dataPoint<T> newPoint(meanCentroid, 0.0, id); // !!!!!!!!!!!!!!!! remove this later on !!!!!!!!!!! 
 
             // reset cluster and assign next centroid 
             currClust.resetCluster(); 
-            currClust.setCentroid(newPoint); // !!!!!!!!!!!!! find a way to build dataPoint within method call !!!!!!!!!!
+            currClust.assignCentroid(newPoint); // !!!!!!!!!!!!! find a way to build dataPoint within method call !!!!!!!!!!
         }
     } 
+
+
+
    // - - - -  generates the iteration SSE  
     double genIterationSSE()
     {
         double totalIterationSSE = 0.0;
         for(int i =0; i< k_value; i++)
         {
-            clust<T>& currClust = clusterList.at(i); 
-            currClust.genSSE(); 
+            clust<T>& currClust = cluster_list[i]; 
+            currClust.genSSE(data_set); 
             totalIterationSSE += currClust.getClassLevelSSE(); 
         }
         return totalIterationSSE; 
@@ -229,7 +274,7 @@ class k_means
     
     // ============================================================== configuration methods
    
-    // - - - - - - takes path to file & fills dataSet vector | so that I don't have to keep reading from file 
+    // - - - - - - takes path to file & fills data_set vector | so that I don't have to keep reading from file 
     void fillDataSet(const std::string&  data_file)
     {
         std::string line; 
@@ -263,6 +308,9 @@ class k_means
         std::cout<<std::endl; 
         fn.close(); 
     }
+
+
+
    // - - - - - - finds the cluster's random data clusters
     void randCentroid()
     {
@@ -270,13 +318,13 @@ class k_means
         // -------- runs until all K clusters have centroids
         while (currentCluster < k_value)
         {
-            int centroidIndx = rand() % dataSet.size(); 
+            int centroidIndx = rand() % data_set.size(); 
 
             // ---- first cluster, no need to compare
             if(currentCluster == 0)
             {
-                clust<T>& currClust = clusterList.at(currentCluster);                 
-                currClust.setCentroid(dataSet.at(centroidIndx)); 
+                clust<T>& currClust = cluster_list[currentCluster];                 
+                currClust.assignCentroid(data_set.at(centroidIndx)); 
                 currentCluster++; 
             }
             else // ---- compare with other clusters, no repeated centroids 
@@ -284,36 +332,43 @@ class k_means
                 // ---- assign centroid if unique
                 if(checkUnique(currentCluster, centroidIndx))
                 {
-                    clust<T>& currClust = clusterList.at(currentCluster); 
-                    currClust.setCentroid(dataSet.at(centroidIndx));  
+                    clust<T>& currClust = cluster_list[currentCluster]; 
+                    currClust.assignCentroid(data_set.at(centroidIndx));  
                     currentCluster++;
                 }
             }
         }
 
     }
-   // - - - - - - - assign data from dataSet to cluster 
+
+
+
+   // - - - - - - - assign data from data_set to cluster 
     void assignClustData()
     {
         int currentPoint = 0;
 
         // ----- loops through data set to find closest centroid per dataPoint
-        while(currentPoint < dataSet.size())
+        //       Clust saves the dataPoint index from data_set, not the dataPoint itself
+        while(currentPoint < data_set.size())
         {
             int bestFitIndex = closestCentroid(currentPoint);    
-            clust<T>& bestClust = clusterList.at(bestFitIndex);            
-            bestClust.addDataPoint(dataSet.at(currentPoint)); 
+            clust<T>& bestClust = cluster_list[bestFitIndex];  
+            bestClust.assignData(currentPoint); 
             currentPoint++; 
         } 
         
     }    
+
+
+
    // - - - - - initializes the whole algorithm 
     void initKmeans(const std::string& file_path)
     {
         for(int i =0; i < k_value; i++)
         {
             clust<T> clust; 
-            clusterList.push_back(std::move(clust));
+            cluster_list[i] = std::move(clust);
         }
 
         fillDataSet(file_path);
@@ -321,23 +376,24 @@ class k_means
         assignClustData();  
         current_run++; 
     }
+
+
+
    // - - - - - - resets to base between runs 
     void resetKmeans()
     {
         for(int i =0; i < k_value; i++)
         {
             clust<T> clust; 
-            clusterList.push_back(std::move(clust));
+            cluster_list[i]= std::move(clust);
         }
         randCentroid(); 
         assignClustData(); 
     }
-
-    public :
-
-    // ================================================================ User API
-   
-    //- - - - - - the start of each actual run
+    
+    
+    // ============================================ the run logic
+    // - - - - - run without logging 
     void startRun()
     {  
         int current_iteration = 0; 
@@ -359,26 +415,10 @@ class k_means
         printIterationSSE(all_iteration_sse); 
         
     }
-    // - - - - - - main API method that runs the algorithm 
-    void runAlgorithm(const std::string& file_path)
-    {
-        // -------- configure kmeans; start run; reset clusterList; reset kmeans for new run
-        initKmeans(file_path); 
-        while (current_run <= total_runs)
-        {         
-            std::cout << "\nrun " << current_run << "\n------------------------\n"<<std::endl;            
-            startRun(); 
-            clusterList.clear(); 
-            clusterList.reserve(k_value); // auto allocates K slots           
-            resetKmeans();
-            current_run++; 
-        } 
-        
-        // print best run & it's iteration SSE 
-        std::cout << "\nRun "<< best_run_indx 
-                  << " is best run :: iteration SSE\t" << best_run_iter_sse <<std::endl; 
-    }
-    // - - - - - - same as startRun() only that this logs to an output file
+
+
+
+    // - - - - - - run and log
     void startLogRun( std::ofstream& path_to_output)
     {  
         int current_iteration = 0; 
@@ -401,10 +441,41 @@ class k_means
         logIterationSSE(all_iteration_sse, path_to_output);
         
     }
+
+
+
+    public :
+    // ================================================================ User API
+    // - - - - - - main API method that runs the algorithm 
+    void runAlgorithm(const std::string& file_path)
+    {
+        // -------- configure kmeans; start run; reset cluster_list; reset kmeans for new run
+        initKmeans(file_path); 
+
+        auto start = std::chrono::high_resolution_clock::now();
+        while (current_run <= total_runs)
+        {         
+            std::cout << "\nrun " << current_run << "\n------------------------\n"<<std::endl;            
+            startRun(); 
+            resetKmeans();
+            current_run++; 
+        } 
+        
+        auto end = std::chrono::high_resolution_clock::now();
+        std::chrono::duration<double> seconds_taken = end - start;
+
+        // print best run & it's iteration SSE 
+        std::cout << "\nRun "<< best_run_indx 
+                  << " is best run :: iteration SSE\t" << best_run_iter_sse <<std::endl; 
+        std::cout << "total time taken for algorithm :: " << seconds_taken.count() << " s" << std::endl;
+    }
+    
+
+
     // - - - - - - same as runAlgorithm() only that it logs to an output file
     void runAndLogAlg(const std::string& path_to_data, const std::string& path_to_output)
     {
-        // -------- configure kmeans; start run; reset clusterList; reset kmeans for new run
+        // -------- configure kmeans; start run; reset cluster_list; reset kmeans for new run
         initKmeans(path_to_data); 
         std::ofstream log_to_Output(path_to_output); 
         
@@ -422,9 +493,7 @@ class k_means
             std::cout << "\nrun " << current_run << "\n------------------------\n"<<std::endl;   
             log_to_Output << "\nrun " << current_run << "\n------------------------\n"<<std::endl;     
 
-            startLogRun(log_to_Output); 
-            clusterList.clear(); 
-            clusterList.reserve(k_value); // auto allocates K slots           
+            startLogRun(log_to_Output);            
             resetKmeans();
             current_run++; 
         } 
@@ -460,11 +529,15 @@ class k_means
         best_run_indx = 0; 
         best_run_iter_sse = std::numeric_limits<double>::max(); 
 
-        dataSet = std::vector<dataPoint<T>>{};  
-        clusterList = std::vector<clust<T>>{}; 
-        clusterList.reserve(k); 
-        bestRunClust = clusterList; 
+        data_set = std::vector<dataPoint<T>>{};  
+        cluster_list = new clust<T>[k_value];
+        best_run_clust = new clust<T>[k_value]; 
     
+    }
+    ~k_means()
+    {
+        delete[] cluster_list; 
+        delete[] best_run_clust; 
     }
 };
      /*
@@ -495,6 +568,4 @@ class k_means
             std::move() tells us that X's job is done and it is safe to transfer ownership and trash
     
         */ 
-
-
 #endif
