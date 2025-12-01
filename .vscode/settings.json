@@ -56,7 +56,22 @@
         "iomanip": "cpp",
         "optional": "cpp",
         "ratio": "cpp",
-        "sstream": "cpp"
+        "sstream": "cpp",
+        "array": "cpp",
+        "cstdarg": "cpp",
+        "cwctype": "cpp",
+        "deque": "cpp",
+        "unordered_map": "cpp",
+        "algorithm": "cpp",
+        "functional": "cpp",
+        "memory_resource": "cpp",
+        "numeric": "cpp",
+        "random": "cpp",
+        "string_view": "cpp",
+        "numbers": "cpp",
+        "span": "cpp",
+        "text_encoding": "cpp",
+        "variant": "cpp"
     },
     "cSpell.words": [
         "clust",

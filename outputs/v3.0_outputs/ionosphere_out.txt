@@ -1,0 +1,41 @@
+Run 1 | first Run
+-------------
+
+iteration 1 SSE :: 809.236
+iteration 2 SSE :: 798.397
+iteration 3 SSE :: 759.605
+iteration 4 SSE :: 656.645
+iteration 5 SSE :: 632.777
+iteration 6 SSE :: 629.322
+iteration 7 SSE :: 628.903
+Run 25 | Q1
+-------------
+
+iteration 1 SSE :: 645.93
+iteration 2 SSE :: 629.66
+iteration 3 SSE :: 628.903
+iteration 4 SSE :: 628.903
+Run 50 | Q2
+-------------
+
+iteration 1 SSE :: 654.457
+iteration 2 SSE :: 630.405
+iteration 3 SSE :: 628.933
+iteration 4 SSE :: 628.903
+Run 75 | Q3
+-------------
+
+iteration 1 SSE :: 665.248
+iteration 2 SSE :: 630.685
+iteration 3 SSE :: 628.991
+iteration 4 SSE :: 628.903
+Run 100 | last Run
+-------------
+
+iteration 1 SSE :: 792.917
+iteration 2 SSE :: 629.37
+iteration 3 SSE :: 628.936
+
+Run 5 is best run :: iteration SSE	628.8960
+
+total time taken for algorithm :: 0.644203 s

@@ -28,8 +28,8 @@ struct dataPoint
    
    
     // = = = = = = = = = = = = = = setters and getters 
-    void setID(std::string id) 
-        { dataID = id; }
+    void setID(std::string& id) 
+        { dataID = std::move(id); }
     
     void updateDistanceFromClust(double distance) 
         { distance_from_cluster = distance; }
@@ -37,7 +37,7 @@ struct dataPoint
     void replaceDataVector(std::vector<T>& updatedVector)
         { data_point = std::move(updatedVector); }
 
-    std::string getDataID()
+    std::string& getDataID()
         { return dataID;}
 
     double getDistanceFromClust()
@@ -45,6 +45,10 @@ struct dataPoint
 
     std::vector<T> getDataVector()
         { return data_point;}
+
+    
+    std::vector<T>& getDataVectorByRef()
+        { return data_point; }    
 
     // = = = = = = = = = = = = = = visualization methods 
     void printData()
@@ -70,10 +74,10 @@ struct dataPoint
 
 
     // = = = = = = = = = = = = = = constructors 
-    dataPoint(std::vector<T> dataPoint, double distanceFromClust, std::string id)
+    dataPoint(std::vector<T>& dataPoint, double distanceFromClust, std::string& id)
     {
-        dataID = id; 
-        data_point = dataPoint;
+        dataID = std::move(id); 
+        data_point = std::move(dataPoint);
         distance_from_cluster = distanceFromClust; 
     }
     dataPoint()
@@ -170,38 +174,43 @@ class clust
 
 
     // = = = = = = = = = = = = = =  main calculations 
-    // - - - - - - mean centroid
-    std::vector<T> centroidUsingMean( std::vector<dataPoint<T>>& dataSet)
+    // - - - - - - finds the mean data vector
+    std::vector<T> genMeanDataVector( std::vector<dataPoint<T>>& dataSet)
     {
-     
-        int numOfFeatures = centroid.getDataVector().size(); 
-        // initialize a vector of the proper dimensions with default value 0.0
-        std::vector<double> new_centroid(numOfFeatures, 0.0); 
+        // gen vector dimensions
+        // true = include centroid data
+        // false = exclude centroid data
+        
+        dataPoint<T>& temp = dataSet.at(0); 
+        int numOfFeatures = temp.getDataVectorByRef().size(); 
+    
+        std::vector<double> meanFeatureVector(numOfFeatures, 0.0); 
+    
         int sizeOfData = clust_data_indicies.size(); 
 
         // ------ go through each data vector
         for(int dataVector = 0; dataVector < sizeOfData; dataVector++)
         {
             int pos = clust_data_indicies.at(dataVector); 
-            std::vector<T> elms = dataSet.at(pos).getDataVector(); 
+            std::vector<T>& elms = dataSet.at(pos).getDataVectorByRef(); 
             
             // -------- calculate the sum of each feature
            for(int element = 0; element < elms.size(); element++  )
             {
-                new_centroid.at(element) += elms.at(element); 
+                meanFeatureVector.at(element) += elms.at(element); 
             }
 
         }
 
         // ------- divide each feature's sum by total dataPoints
         // ------- this creates a vector of means
-        for(int i =0; i < new_centroid.size(); i++)
+        for(int i =0; i < meanFeatureVector.size(); i++)
         {
-            new_centroid.at(i) = new_centroid.at(i) / sizeOfData; 
+            meanFeatureVector.at(i) = meanFeatureVector.at(i) / sizeOfData; 
         }
 
         // ---- return new centroid's dataVector
-        return new_centroid; 
+        return meanFeatureVector; 
     }
 
     
@@ -209,7 +218,7 @@ class clust
     // - - - - - - - SSE calculation 
     void genSSE( std::vector<dataPoint<T>>& dataSet)
     {
-        std::vector<T> centroidFeatures = centroid.getDataVector(); 
+        std::vector<T>& centroidFeatures = centroid.getDataVectorByRef(); 
         int sizeOfData = clust_data_indicies.size(); 
 
         double clustSSE = 0; 
@@ -218,7 +227,7 @@ class clust
         for(int dataVec = 0; dataVec < sizeOfData; dataVec++ )
         {
             int currIndx = clust_data_indicies.at(dataVec); 
-            std::vector<T> elms = dataSet.at(currIndx).getDataVector(); 
+            std::vector<T>& elms = dataSet.at(currIndx).getDataVectorByRef(); 
             double dataVectorSSE = 0.0;
 
             // -------- find the total distance of a dataVector from centroid 
