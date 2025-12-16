@@ -1,15 +1,20 @@
 
-#include "./header_files/kmeans.h"
-#include "./header_files/clusters.h"
+#include "./km_model/km_driver.h"
 #include <vector>
 #include <iostream>
 
 // ================================ test with hard coded values
 void inlineRuns()
 {
+
+
+    //!!!!!!!!!!!!!!!! Current issue :: large datasets are taking too long to run. 
+    //                 go through the code, maybe things are being copied and not referenced 
+
+
     // hard coded file names for argv[1]
-    int indx_used = 9; 
-    std::string current_version_out = "v3.0_outputs";
+    int indx_used = 4; 
+    std::string current_version_out = "v4.0_outputs";
 
     std::string default_files[] = {"ecoli", "glass", "ionosphere", "iris_bezdek", "landsat", "letter_recognition", "segmentation", "vehicle", "wine", "yeast"}; 
     int default_Kvals[] = {8,6,2,3,6,26,7,4,3,10};
