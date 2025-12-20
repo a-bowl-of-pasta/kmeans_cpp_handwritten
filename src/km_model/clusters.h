@@ -6,8 +6,44 @@
 #include <vector>
    
 
+//~ ================================================= easy to look at metrics class
+template<class T>
+class cluster_backend
+{
 
-// ================================================= dataPoints structure
+    //  - - - - - - - - Finds the squared euclidean distance between two points 
+    //&                 (X1_0 - X2_0)^2 + (X1_1 - X2_1)^2 + ..... + (X1_n - X2_n)^2
+    double sqr_euclid_dist(std::vector<T>& x1_feature_vector, std::vector<T>& x2_feature_vector)
+    {
+        double finalDistance = 0.0; 
+           
+        // - - - - loop through x2 features 
+        for(int i =0; i < x1_features.size(); i++)
+        {
+            // get the features out of the vector 
+            T x2_feature = x2_features.at(i); 
+            T x1_feature = x1_features.at(i); 
+
+            // dif = x1 - x2 
+            double current_features_sqr_diff = x1_feature - x2_feature; 
+           
+            // sqr_dif = dif^2
+            current_features_sqr_diff = current_features_sqr_diff * current_features_sqr_diff; 
+
+            // finalDist = sum( all sqr_dif for vectors )
+            finalDistance += current_features_sqr_diff; 
+        }
+
+        return finalDistance; 
+    }    
+
+
+    cluster_backend()
+    {}
+};
+
+
+//~ ================================================= dataPoints structure
 /*
     the dataPoint class consists of a dataPoint's
     MetaData and DataVector.
@@ -20,114 +56,77 @@
 */
 template <class T>
 struct dataPoint
+// TODO - - - - - change name to something clearer like: data_element
+
 {
     // data ID | distance from nearest cluster | data
-    std::string dataID; 
-    std::vector<T> data_point;
+    std::string dataPoint_class_id; 
+    std::vector<T> feature_vector;
     double distance_from_cluster; 
+    cluster_backend<T> metrics; 
    
    
     // = = = = = = = = = = = = = = setters and getters 
-    void setID(std::string& id) 
-        { dataID = std::move(id); }
+
+    // - - - - - - - - - - data point ID 
+    void setPointID(std::string& id) 
+        { dataPoint_class_id = std::move(id); }
     
-    void replaceDataVector(std::vector<T>& updatedVector)
-        { data_point = std::move(updatedVector); }
+    std::string& getPointID()
+        { return dataPoint_class_id;}
 
-    std::string& getDataID()
-        { return dataID;}
+    // - - - - - - - - - distance from cluster
+    void setDistanceFromCluster(double dist_from_clust)
+        { distance_from_cluster = dist_from_clust}
 
+    double getDistanceFromCluster()
+        {return distance_from_cluster}
 
-    std::vector<T> getDataVector()
-        { return data_point;}
+    // - - - - - - - - - - - data vector 
+    void setDataVector(std::vector<T>& updatedVector)
+        { feature_vector = std::move(updatedVector); }
+    
+    std::vector<T> getDataVector_copy()
+        { return feature_vector;}
 
     
-    std::vector<T>& getDataVectorByRef()
-        { return data_point; }    
+    std::vector<T>& getDataVector_ref()
+        { return feature_vector; }    
 
-    // = = = = = = = = = = = = = = Helpful methods
 
-    
-    // - - - - finds the squared euclidean distance between this and another point
-    double calcSquaredEuclidDist(dataPoint<T>& x_2)
+    // = = = = = = = = = = = = = = Metrics  
+
+    double find_euclid_dist(dataPoint<T>& x2_dataPoint)
     {
-        std::vector<T>& x_2_dataVec = x_2.getDataVectorByRef();
-        double squaredDistance = 0.0; 
-           
-        // ---- (X1_0 - X2_0)^2 + (X1_1 - X2_1)^2 + ..... + (X1_n - X2_n)^2
-        for(int i =0; i < data_point.size(); i++)
-        {
-            T x_2_elm = x_2_dataVec.at(i); 
-            T x_1_elm = data_point.at(i); 
+        std::vector<T>& x2_feature_vector = x2_dataPoint.getDataVector_ref(); 
+        
+        return metrics.sqr_euclid_dist(feature_vector, x2_feature_vector);
+    }   
 
-            double squaredDiff = x_1_elm - x_2_elm; 
-            squaredDiff = squaredDiff * squaredDiff; 
-            squaredDistance += squaredDiff; 
-        }
-
-        return squaredDistance; 
+    double find_euclid_dist(std::vector<T>& x2_feature_vector)
+    {
+        return metrics.sqr_euclid_dist(feature_vector, x2_feature_vector); 
     }
 
-
-    double calcSquaredEuclidDist(std::vector<T>& x_2_dataVec)
-    {
-        double squaredDistance = 0.0; 
-           
-        // ---- (X1_0 - X2_0)^2 + (X1_1 - X2_1)^2 + ..... + (X1_n - X2_n)^2
-        for(int i =0; i < data_point.size(); i++)
-        {
-            T x_2_elm = x_2_dataVec.at(i); 
-            T x_1_elm = data_point.at(i); 
-
-            double squaredDiff = x_1_elm - x_2_elm; 
-            squaredDiff = squaredDiff * squaredDiff; 
-            squaredDistance += squaredDiff; 
-        }
-
-        return squaredDistance; 
-    }
-
-
-    // = = = = = = = = = = = = = = visualization methods 
-    void printData()
-    {
-        std::cout << dataID << " : "; 
-        for (int i =0; i < data_point.size(); i++)
-        {
-            std::cout << data_point.at(i) << "\t"; 
-        }
-    }
-
-
-
-    void logData(std::ofstream& file)
-    {
-        file << dataID << " : "; 
-        for(int i =0; i < data_point.size(); i++)
-        {
-            file << data_point.at(i) << "\t"; 
-        }
-    }
-
-
-
+   
     // = = = = = = = = = = = = = = constructors 
-    dataPoint(std::vector<T>& dataPoint, double distanceFromClust, std::string& id)
-    {
-        dataID = std::move(id); 
-        data_point = std::move(dataPoint);
-        distance_from_cluster = distanceFromClust; 
-    }
+    dataPoint(std::vector<T>& feature_vector, std::string& instance_id)
+    :   dataPoint_class_id(std::move(instance_id)),
+        feature_vector(std::move(feature_vector)),
+        metrics(),  
+        distance_from_cluster()
+    {}
+    
     dataPoint()
-    {
-        dataID = ""; 
-        data_point = std::vector<T>{};  
-        distance_from_cluster = 0.0; 
-    }
+    :   dataPoint_class_id(),
+        feature_vector(),
+        metrics(), 
+        distance_from_cluster()
+    {}
 };
 
 
-// ========================================================== kmeans class 
+//~ ========================================================== cluster class 
 /*
     the clust class is in charge of the clusters
     it holds cluster specific information.
@@ -153,45 +152,56 @@ class clust
 
 
     public: 
-    // = = = = = = = = = = = = = =  short & basic methods    
+    // = = = = = = = = = = = = = = = = = = = = =  setters and getters    
+
+    // - - - - - - - - - - - - indicies of datapoints assigned to cluster
     void assignData(int dataSetIndex)
         { clust_data_indicies.push_back(dataSetIndex);}
 
-        
 
-    void assignCentroid(dataPoint<T>& cent) 
+    std::vector<int> getAssignedData()
+        {return clust_data_indicies; }
+    //!
+    // ^ this was previously getDataIndicies
+    // !
+
+    int getSize()
+        {return clust_data_indicies.size();}
+
+
+    // - - - - - - - - - - -  centroid 
+    void setCentroid(dataPoint<T>& cent) 
         { centroid = cent;}
+    
+    dataPoint<T>& getCentroid_ref()
+        {return centroid; }
+
+    dataPoint<T> getCentroid_copy()
+        {return centroid}
 
 
+    // - - - - - - - - - - - cluster ID
     void setID(int id)
         { clust_id = "c" + std::to_string(id); }
 
+    std::string& getID_ref()
+        {return clust_id;}
+    
+    std::string getID_copy()
+        {return clust_id;}
 
 
-    dataPoint<T> getCentroid()
-        {return centroid; }
-
-
-
+    // - - - - - - - - - - - class SSE
     double getClassLevelSSE()
         {return class_level_SSE;}
 
 
+    // - - - - - - - - - - - class shiloette score 
     double getSScoreContribution()
         {return total_SScore;}
-
-
-
-    std::vector<int> getDataIndicies()
-        {return clust_data_indicies; }
-   
-
-    std::string getID()
-        {return clust_id;}
-
     
-    int getSize()
-        {return clust_data_indicies.size();}
+    // - - - - - - - - - - - size of cluster
+    
 
 
     void resetCluster()
@@ -203,33 +213,7 @@ class clust
         clust_data_indicies.clear();
     }
 
-
-    // = = = = = = = = = = = = = = visualization methods
-    void printCentroid()
-    {
-        centroid.printData(); 
-        std::cout << std::endl; 
-    }
-    
-    
-    
-    void logCentroids(std::ofstream& file)
-    {
-            centroid.logData(file); 
-            file << std::endl; 
-    }   
-    
-
-
-    void printDataPoint(const std::vector<dataPoint<T>>& dataSet, int index)
-    { 
-            int pos = clust_data_indicies.at(index); 
-            dataPoint<T>& data = dataSet.at(pos); 
-            data.printData(); 
-            std::cout << std::endl; 
-    }
-   
-
+    // ! ------------------------------------------- rework all of these calculations
 
     // - - - - - - - - distance calculation for within the cluster
     double calc_x1_internalDist(int indxCount, dataPoint<T>& x1_point, std::vector<dataPoint<T>>& dataSet)
