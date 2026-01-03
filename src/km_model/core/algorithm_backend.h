@@ -1,4 +1,4 @@
-#ifndef ALG_BACKND
+ #ifndef ALG_BACKND
 #define ALG_BACKND
 
 /*
@@ -15,204 +15,8 @@ class algorithm_backend
     std::vector<T>& minDataVector; 
     std::vector<clust<T>>& cluster_list; 
 
-    public: 
-    // =========================================================== calculation methods
-   
-    // - - - - finds the closest centroid to a point | not used outside this class
-    int calcClosestCentroid(int currentPoint, int k_value) 
-    {
-        // using largest value so that it can be replaced with increasingly smaller values
-        double bestSqrDifference = std::numeric_limits<double>::max(); 
-        int bestFitIndex =0; 
-        std::vector<T> currDataVector = data_set.at(currentPoint).getDataVector(); // !!!!!!!!!!!!! find a way to avoid copying !!!!!!!!
-
-
-        for (int i = 0; i < k_value; i++)
-        {
-            clust<T>& currClust = cluster_list.at(i); 
-            std::vector<T> dataVector = currClust.getCentroid().getDataVector(); 
-            double totalSqrDifference =0.0; 
-
-            // ---- finds the total difference between dataPoint features and centroid features
-            //      squaring it so that I have a positive number at the end
-            for(int featIndx =0; featIndx < dataVector.size(); featIndx++)
-            {
-                double diff = dataVector.at(featIndx) - currDataVector.at(featIndx);
-                totalSqrDifference += (diff * diff);                
-            }
-            // ----- replace bestDistance & bestFit with closer centroid 
-            if(totalSqrDifference < bestSqrDifference)
-            {
-                bestSqrDifference = totalSqrDifference; 
-                bestFitIndex = i; 
-            }
-        }
-        // returns the  cluster_list index of the cluster with the best fit
-        return bestFitIndex; 
-    }
-  
-    // - - - - finds the iteration SSE
-    double calcIterationSSE(int k_value)
-    {
-        double totalIterationSSE = 0.0;
-        for(int i =0; i< k_value; i++)
-        {
-            clust<T>& currClust = cluster_list.at(i); 
-            currClust.genSSE(data_set); 
-            totalIterationSSE += currClust.getClassLevelSSE(); 
-        }
-        return totalIterationSSE; 
-    }
-   
-     // - - - - - - gets me the mean vector for the whole dataSet
-     std::vector<T> dataSetMeanVector()
-    {
-        dataPoint<T>& temp = data_set.at(0); 
-        int numOfFeatures = temp.getDataVector().size(); 
-    
-        std::vector<double> meanFeatureVector(numOfFeatures, 0.0); 
-    
-        int sizeOfData = data_set.size();  
-
-        // ------ go through each data vector
-        for(int dataVector = 0; dataVector < sizeOfData; dataVector++)
-        {
-            std::vector<T>& elms = data_set.at(dataVector).getDataVectorByRef(); 
-            
-            // -------- calculate the sum of each feature
-           for(int element = 0; element < elms.size(); element++  )
-            {
-                meanFeatureVector.at(element) += elms.at(element); 
-            }
-
-        }
-
-        // ------- divide each feature's sum by total dataPoints
-        // ------- this creates a vector of means
-        for(int i =0; i < meanFeatureVector.size(); i++)
-        {
-            meanFeatureVector.at(i) = meanFeatureVector.at(i) / sizeOfData; 
-        }
-
-        // ---- return new centroid's dataVector
-        return meanFeatureVector; 
-
-    }
-
-    // - - - - - SSB = sum(total_clust_dataPoints * ||centroid_dataVec - dataset_meanVec||^2) 
-    double findSSB(int k_value)
-    {
-        double SSB_value = 0.0; 
-        std::vector<T> meanDataVec = dataSetMeanVector(); 
-        for(int i = 0; i < k_value; i++)
-        {
-            clust<T>& currClust = cluster_list.at(i); 
-            dataPoint<T> currCent = currClust.getCentroid(); 
-
-            // gets the squared euclidean distance | (centroid - meanVec)^2
-            double pt1 = currCent.calcSquaredEuclidDist(meanDataVec); 
-
-            SSB_value += currClust.getSize() * pt1; 
-            
-        }
-    
-        return SSB_value; 
-    }
-
-    // - - - - - - CH = (SSB / (k - 1)) / (SSW / (n - k))
-    double genCHI(double runSSE, int k_value)
-    {
-        double SSB = findSSB(k_value); 
-        double pt1 = SSB / (k_value - 1); 
-        double pt2 = runSSE / (data_set.size() - k_value); 
-
-        return pt1 / pt2; 
-    }
-
-    // - - - - - - - the total Silhouette score for the current run
-    double genShiloetteScore(int k_value)
-    {
-        double runSScore = 0.0 ;
-
-
-        for(int i = 0; i < k_value; i++)
-        {    
-            clust<T>& currClust = cluster_list.at(i); 
-            currClust.genClustSilhouetteScore(data_set, cluster_list, k_value);
-            runSScore += currClust.getSScoreContribution(); 
-        }
-        return (runSScore / data_set.size()); 
-    }
-
-
-
-    // =========================================================== validation methods
-    
-    bool checkUnique( int currentCluster, int centroidIndx)
-    {
-        const std::string& dataPointID = data_set.at(centroidIndx).getDataID(); 
-        bool unique = true; 
-
-        for(int i = 0; i < currentCluster; i++)
-        {
-            dataPoint<T> prevCentroids = cluster_list.at(i).getCentroid(); // !!!!!!!!! find a way way to avoid copying !!!!!!!!
-                 
-            if(dataPointID == prevCentroids.getDataID())
-            {
-                unique = false; 
-                break; 
-            }
-        }
-
-        return unique; 
-    }
-   
-
-    bool checkConvergance(dataBucket<T>& shared_data, std::vector<double>& iter_sse_vector, int current_iteration, double iterSSE)
-    {
-        bool converged = false; 
-        
-        // ---- convergence check for :: i > 0 or i == 0
-        if(current_iteration > 0)
-        { 
-            // (SSE^t-1 - SSE^t) / SSE^t-1
-            double prevSSE = iter_sse_vector.at(current_iteration - 1);
-            double currentSSE = iter_sse_vector.at(current_iteration); 
-            double convCheck = (prevSSE - currentSSE) / prevSSE;
-
-            if (convCheck < shared_data.convergence)
-            {
-                converged = true; 
-            }
-        }
-        else 
-        {
-            if(iterSSE < shared_data.convergence) 
-            {              
-                converged =  true; 
-            }
-        }
-
-        // ---- if converged, compare current iteration to algorithm's best iteration
-        if(shared_data.best_run_iter_sse > iterSSE && converged == true)
-        {
-            // sets values for the current best 'run' 
-            shared_data.best_run_iter_sse = iterSSE; 
-            shared_data.best_run_indx = shared_data.current_run; 
-
-            // deep copy best run clusters
-            shared_data.updateBestRun();
-            
-        } 
-
-        return converged; 
-    }
-        
-
-    // =========================================================== data processing methods
-   
-    // - - - - creates a new node (dataPoint) for the dataSet vector | not used outside this class
-    void createDataSetNode( const std::string& line, int& id, bool& firstRun)
+    //! - - - - - - - - - check over this method 
+    void createDataSetNode(const std::string& line, int& id, bool& firstRun)
     {           
          // read rows element by element
         std::istringstream lineStream(line);
@@ -263,39 +67,94 @@ class algorithm_backend
 
     }
     
-
-    // - - - -  data normalization
-    void calcNormalizedData()
+  
+    bool checkUnique(int currClustIndx, int randCentroidIndx)
     {
+        const std::string& dataPointID = data_set.at(randCentroidIndx).getDataID(); 
+        bool unique = true; 
 
-        // ------ goes through each feature vector
-        for(int dataVector =0; dataVector < data_set.size(); dataVector++)
+        for(int i = 0; i < currClustIndx; i++)
         {
-            dataPoint<T>& currPoint_temp = data_set.at(dataVector);
-            std::vector<T> currFeatVect_temp = currPoint_temp.getDataVector(); 
-            
-            // ----- goes through each elm in feature vector
-            for(int vectorElm = 0; vectorElm < currFeatVect_temp.size(); vectorElm++ )
+            dataPoint<T>& prevCentroids = cluster_list.at(i).getCentroid_ref(); 
+                 
+            if(dataPointID == prevCentroids.getDataID())
             {
-                double elm = currFeatVect_temp.at(vectorElm); 
-                double maxVal = maxDataVector.at(vectorElm); 
-                double minVal = minDataVector.at(vectorElm); 
-                
-                // x' = x - min(x) / max(x) - min(x)
-                double normalizedElm = 0.5; 
-                if((maxVal - minVal) != 0)
-                {
-                    normalizedElm = (elm - minVal) / (maxVal - minVal);
-                }
-
-                currFeatVect_temp.at(vectorElm) = normalizedElm; 
+                unique = false; 
+                break; 
             }
-            currPoint_temp.replaceDataVector(currFeatVect_temp); 
         }
+
+        return unique; 
     }
    
 
-    // - - - - -  assign data from  data_set to cluster 
+
+    public: 
+
+    // ==================================================== distance calculations
+
+    //  - - - - - - - - Finds the euclidean distance of two points (x1, x2)
+    //&                 (X1_0 - X2_0)^2 + (X1_1 - X2_1)^2 + ..... + (X1_n - X2_n)^2
+    double sqr_euclid_dist(std::vector<T>& x1_feature_vector, std::vector<T>& x2_feature_vector)
+    {
+        double finalDistance = 0.0; 
+           
+        // - - - - loop through x2 features 
+        for(int i =0; i < x1_features.size(); i++)
+        {
+            // get the features out of the vector 
+            T x2_feature = x2_features.at(i); 
+            T x1_feature = x1_features.at(i); 
+
+            // residual = x1 - x2 
+            double curr_sqr_residual = x1_feature - x2_feature; 
+           
+            // sqr_residual = residual^2
+            curr_sqr_residual = curr_sqr_residual * curr_sqr_residual; 
+
+            // finalDist = sum( all sqr_residuals )
+            finalDistance += curr_sqr_residual; 
+        }
+
+        return finalDistance; 
+    }    
+
+    // - - - - - - finds regular euclidean distance
+    //&            sqrt( (X1_0 - X2_0)^2 + (X1_1 - X2_1)^2 + ..... + (X1_n - X2_n)^2 )
+    double euclidean_distance(std::vector<T>& x1_feature_vector, std::vector<T&> x2_feature_vector)
+    {
+        double temp = sqr_euclid_dist(x1_feature_vector, x2_feature_vector);
+        return sqrt(temp); 
+    }
+
+    // - - - - - - - finds the manhattan distance of two points (x1, x2)
+    //&              |X1_0 - X2_0| + |X1_1 - X2_1| + ..... + |X1_n - X2_n|
+    double manhattan_distance(std::vector<T>& x1_feature_vector, std::vector<T>& x2_feature_vector)
+    {
+        double finalDistance = 0.0; 
+           
+        // - - - - loop through x2 features 
+        for(int i =0; i < x1_features.size(); i++)
+        {
+            // get the features out of the vector 
+            T x2_feature = x2_features.at(i); 
+            T x1_feature = x1_features.at(i); 
+
+            // residual = |x1 - x2|
+            double curr_abs_residual = std::abs(x1_feature - x2_feature); 
+        
+            // finalDist = sum( all residuals )
+            finalDistance += curr_abs_residual; 
+        }
+
+        return finalDistance; 
+    }    
+
+
+    // ============================================ processing 
+
+    // - - - - - - -  -  assign data from  data_set to cluster 
+    // ! - - - - - - - - - - - - - - - - - rename this method 
     void fillClust(int k_value) 
     {
         int currentPoint = 0;
@@ -304,15 +163,82 @@ class algorithm_backend
         //       Clust saves the dataPoint index from  data_set, not the dataPoint itself
         while(currentPoint < data_set.size())
         {
-            int bestFitIndex = calcClosestCentroid(currentPoint, k_value);    
-            clust<T>& bestClust = cluster_list.at(bestFitIndex);  
-            bestClust.assignData(currentPoint); 
+            int bestFitIndex_temp = 0; 
+            double currBestFit_temp = std::numeric_limits<double>::max();    
+
+            // - - - finds distance between each centroid and point
+            for(int i = 0; i < k_value; i ++)
+            {
+                dataPoint<T>& currCentroid_temp = cluster_list.at(i).getCentroid_ref();
+                double distFromCent_temp = sqr_euclid_dist(data_set.at(currentPoint), currCentroid_temp);
+                
+                if(distFromCent_temp < currBestFit_temp )
+                {
+                    bestFitIndex_temp = i; 
+                }
+               
+            }
+
+            cluster_list.at(bestFitIndex_temp).assignData(currentPoint); 
             currentPoint++; 
         } 
         
     }    
-      
-    
+
+
+    // - - - - finds the iteration SSE
+    double calcIterationSSE(int k_value)
+    {
+        double totalIterationSSE = 0.0;
+        for(int i =0; i < k_value; i++)
+        {
+            cluster_list.at(i).genSSE(data_set); 
+            totalIterationSSE += currClust.getClassLevelSSE(); 
+        }
+        return totalIterationSSE; 
+    }
+   
+
+    // - - - - - - CH = (SSB / (k - 1)) / (SSW / (n - k))
+    double genCHI(double runSSE, int k_value)
+    {
+        
+        double SSB_value = 0.0; 
+        std::vector<T> meanDataVec =  (); 
+        for(int i = 0; i < k_value; i++)
+        {
+            clust<T>& currClust = cluster_list.at(i); 
+            dataPoint<T> currCent = currClust.getCentroid(); 
+
+            // gets the squared euclidean distance | (centroid - meanVec)^2
+            double pt1 = currCent.calcSquaredEuclidDist(meanDataVec); 
+
+            SSB_value += currClust.getSize() * pt1; 
+        }
+
+        double pt1 = SSB_value / (k_value - 1); 
+        double pt2 = runSSE / (data_set.size() - k_value); 
+
+        return pt1 / pt2; 
+    }
+
+
+    // - - - - - - - the total Silhouette score for the current run
+    double genShiloetteScore(int k_value)
+    {
+        double runSScore = 0.0 ;
+
+
+        for(int i = 0; i < k_value; i++)
+        {    
+            clust<T>& currClust = cluster_list.at(i); 
+            currClust.genClustSilhouetteScore(data_set, cluster_list, k_value);
+            runSScore += currClust.getSScoreContribution(); 
+        }
+        return (runSScore / data_set.size()); 
+    }
+
+
     // - - - - - - reads input file, 
     void createDataSetVector( const std::string&  data_file)
     {
@@ -348,11 +274,9 @@ class algorithm_backend
         fn.close(); 
     }
 
-
-    // =========================================================== init strategies
-   
     // - - - - random data point init
-    void forgingInit(int k_value)
+    //! - - - - - - - - - - - - - - - - - rework this | especially the random number part
+    void init_forging(int k_value)
     {
         int currentCluster = 0; 
 
@@ -387,8 +311,79 @@ class algorithm_backend
         fillClust(k_value); 
     }
 
+    // - - - - creates a new node (dataPoint) for the dataSet vector | not used outside this class
+    bool checkConvergance(dataBucket<T>& shared_data, std::vector<double>& iter_sse_vector, int current_iteration, double iterSSE)
+    {
+        bool converged = false; 
+        
+        // ---- convergence check for :: i > 0 or i == 0
+        if(current_iteration > 0)
+        { 
+            // (SSE^t-1 - SSE^t) / SSE^t-1
+            double prevSSE = iter_sse_vector.at(current_iteration - 1);
+            double currentSSE = iter_sse_vector.at(current_iteration); 
+            double convCheck = (prevSSE - currentSSE) / prevSSE;
+
+            if (convCheck < shared_data.convergence)
+            {
+                converged = true; 
+            }
+        }
+        else 
+        {
+            if(iterSSE < shared_data.convergence) 
+            {              
+                converged =  true; 
+            }
+        }
+
+        // ---- if converged, compare current iteration to algorithm's best iteration
+        if(shared_data.best_run_iter_sse > iterSSE && converged == true)
+        {
+            // sets values for the current best 'run' 
+            shared_data.best_run_iter_sse = iterSSE; 
+            shared_data.best_run_indx = shared_data.current_run; 
+
+            // deep copy best run clusters
+            shared_data.updateBestRun();
+            
+        } 
+
+        return converged; 
+    }
+   
+    // - - - -  data normalization
+    void calcNormalizedData()
+    {
+
+        // ------ goes through each feature vector
+        for(int currFeatVectIndx =0; currFeatVectIndx < data_set.size(); currFeatVectIndx++)
+        {
+            std::vector<T>& currFeatVect_temp = data_set.at(currFeatVectIndx).getFeatureVector_ref(); 
+            
+            // ----- goes through each elm in feature vector
+            for(int featureIndx = 0; featureIndx < currFeatVect_temp.size(); featureIndx++ )
+            {
+                double currFeature_temp = currFeatVect_temp.at(featureIndx); 
+                double maxVal_temp = maxDataVector.at(featureIndx); 
+                double minVal_temp = minDataVector.at(featureIndx); 
+                
+                // x' = x - min(x) / max(x) - min(x)
+                double normalizedFeature = 0.0; 
+                if((maxVal_temp - minVal_temp) != 0)
+                {
+                    normalizedFeature = (currFeature_temp - minVal_temp) / (maxVal_temp - minVal_temp);
+                }
+
+                currFeatVect_temp.at(featureIndx) = normalizedFeature; 
+            }
+            data_set.at(currFeatVectIndx).setFeatureVector(currFeatVect_temp);
+        }
+    }
+
     // - - - - random partition init
-    void randomPartition(int k_value)
+    //! - - - - - - - - - - - - - - - - - rework this | especially the random number part 
+    void init_randomPartition(int k_value)
     {
         // picks random cluster form cluster list
         std::random_device randEngine; 
@@ -399,32 +394,37 @@ class algorithm_backend
         {
             int randNum = range(randEngine);
             
-            clust<T>& randomChosenClust = cluster_list.at(randNum);
-            randomChosenClust.assignData(i);  
+            cluster_list.at(randNum).assignData(i);
         }   
 
         // ---- find mean featVec for each clust then assign as centroid
         for(int k = 0; k < k_value; k++)
         {
 
-            clust<T>& currClust = cluster_list.at(k);
-            std::vector<T> meanData_temp = currClust.genMeanDataVector(data_set);  
+            std::vector<T> meanData_temp = clust_list.at(k).genMeanDataVector(data_set);  
             
             std::string id_temp = "Mean Centroid " + std::to_string(k); 
             dataPoint<T> newPoint_temp(meanData_temp, 0.0, id_temp);
 
-            currClust.assignCentroid(newPoint_temp);
+            clust_list.at(k).assignCentroid(newPoint_temp);
         }
 
         // reassign data based off of the initial centroid
         fillClust(k_value); 
     }
 
-    h_backend(dataBucket<T>& shared_data)
+
+    algorithm_backend(dataBucket<T>& shared_data)
     : data_set(shared_data.data_set), 
       maxDataVector(shared_data.maxDataVector), 
       minDataVector(shared_data.minDataVector), 
       cluster_list(shared_data.cluster_list)
+      {}
+    algorithm_backend()
+    : data_set(), 
+      maxDataVector(), 
+      minDataVector(), 
+      cluster_list()
       {}
 };
 
