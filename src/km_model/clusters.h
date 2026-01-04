@@ -178,13 +178,6 @@ class clust
         clust_data_indicies.clear();
     }
 
-    // ! ------------------------------------------- rework all of these calculations
-
-    /* //^ repeated code that could become new methods
-         
-        & calculate the data column mean    
-    */
-
 
     // - - - - - - - - - - - - - -  - SSE calculation 
     void sumSquaredError( std::vector<dataPoint<T>>& dataSet)
@@ -211,7 +204,7 @@ class clust
 
 
     // - - - - - - finds the mean data vector
-    std::vector<T> genMeanDataVector( std::vector<dataPoint<T>>& dataSet)
+    std::vector<T> genMeanFeatVector( std::vector<dataPoint<T>>& dataSet)
     {
         
         // - - initialize variables | finalMeanVector - vector of each column's mean

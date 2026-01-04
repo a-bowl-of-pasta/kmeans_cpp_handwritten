@@ -119,8 +119,8 @@ class k_means
             
             clust<T>& currClust = shared_data.cluster_list.at(i); 
             
-            // store the mean data vector | call clust::genMeanDataVector
-            std::vector<T> meanCentroid_temp = currClust.genMeanDataVector(shared_data.data_set); 
+            // store the mean data vector | call clust::genMeanFeatVector
+            std::vector<T> meanCentroid_temp = currClust.genMeanFeatVector(shared_data.data_set); 
             std::string id_temp = "Mean Centroid " + std::to_string(i); 
 
             dataPoint<T> newPoint_temp(meanCentroid_temp, 0.0, id_temp); 

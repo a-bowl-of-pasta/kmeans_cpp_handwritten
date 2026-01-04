@@ -24,6 +24,7 @@ struct model_state
     std::vector<T> minDataVector; 
     std::vector<clust<T>> cluster_list; 
     std::vector<clust<T>> best_run_clust; 
+    std::vector<dataPoint<T>> target_values; 
 
     // ========================  basic update methods
     
@@ -80,8 +81,10 @@ struct model_state
         best_shiloette = std::numeric_limits<double>::min(); 
 
         data_set = std::vector<dataPoint<T>>{};   
+        target_values = std::vector<dataPoint<T>>{}; 
         cluster_list = std::vector<clust<T>>{};
         best_run_clust = std::vector<clust<T>>{};
+
 
         cluster_list.reserve(k_val);
         best_run_clust.reserve(k_val);

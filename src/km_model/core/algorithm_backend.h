@@ -10,64 +10,69 @@ template <class T>
 class algorithm_backend
 {
 
-    std::vector<dataPoint<T>>& data_set;  
-    std::vector<T>& maxDataVector; 
-    std::vector<T>& minDataVector; 
+    std::vector<dataPoint<T>>& data_set;
+    std::vector<dataPoint<T>>& target_values;   
+    std::vector<T>& max_data_vector; 
+    std::vector<T>& min_data_vector; 
     std::vector<clust<T>>& cluster_list; 
 
-    //! - - - - - - - - - check over this method 
     void createDataSetNode(const std::string& line, int& id, bool& firstRun)
     {           
-         // read rows element by element
+        // read rows element by element
         std::istringstream lineStream(line);
-        std::string elements; 
+        std::string features; 
         std::vector<double> featureVector_temp;
 
-        int elmNum =0; 
-        while(getline(lineStream, elements, ' '))
+        int currFeature =0; 
+        while(getline(lineStream, features, ' '))
         {
             // ---- skip empty elements 
-            if (!elements.empty())
+            if (!features.empty())
             {
-                double elmToDec = std::stod(elements); 
+                double featToDec = std::stod(features); 
+               
                 // ----- first run populates min/max vectors, other runs find min/max
                 if(firstRun == true)
                 {
-                    maxDataVector.push_back(elmToDec);
-                    minDataVector.push_back(elmToDec);
+                    maxDataVector.push_back(featToDec);
+                    minDataVector.push_back(featToDec);
                 }
                 else
                 {
                     // swap attributes if elm in vector is smaller
-                    if(maxDataVector.at(elmNum) < elmToDec)
+                    if(maxDataVector.at(currFeature) < featToDec)
                     {
-                        maxDataVector.at(elmNum) = elmToDec; 
+                        maxDataVector.at(currFeature) = featToDec; 
                     }
+                    
                     // swap attributes if elm in vector is greater
-                    if(minDataVector.at(elmNum) > elmToDec)
+                    if(minDataVector.at(currFeature) > featToDec)
                     {
-                        minDataVector.at(elmNum) = elmToDec; 
+                        minDataVector.at(currFeature) = featToDec; 
                     }
                 }
-                featureVector_temp.push_back(elmToDec);
-                elmNum++; 
+                featureVector_temp.push_back(featToDec);
+                currFeature++; 
             }
         }
 
         // ---- skip empty vectors  
         if (!featureVector_temp.empty())
         {
+            double targetValue = featureVector_temp.pop_back();
+
             std::string point_ID_temp = "dataPoint " + std::to_string(id); 
-        
-            data_set.push_back(dataPoint<T>(featureVector_temp, 0.0, point_ID_temp)); 
+            data_set.push_back(dataPoint<T>(featureVector_temp, 0.0, point_ID_temp));
+            target_values.push_back(targetValue); 
             id++; 
+
         }              
         
         if(firstRun == true) {firstRun = false; }
 
     }
     
-  
+    
     bool checkUnique(int currClustIndx, int randCentroidIndx)
     {
         const std::string& dataPointID = data_set.at(randCentroidIndx).getDataID(); 
@@ -87,7 +92,6 @@ class algorithm_backend
         return unique; 
     }
    
-
 
     public: 
 
@@ -154,8 +158,8 @@ class algorithm_backend
     // ============================================ processing 
 
     // - - - - - - -  -  assign data from  data_set to cluster 
-    // ! - - - - - - - - - - - - - - - - - rename this method 
-    void fillClust(int k_value) 
+    // ! - - - - - - - - - - - - - - - - - was nemed fillClust
+    void initClust(int k_value) 
     {
         int currentPoint = 0;
 
@@ -240,7 +244,7 @@ class algorithm_backend
 
 
     // - - - - - - reads input file, 
-    void createDataSetVector( const std::string&  data_file)
+    void loadDataSet( const std::string&  data_file, )
     {
         std::string line; 
         std::ifstream fn(data_file); 
@@ -275,19 +279,19 @@ class algorithm_backend
     }
 
     // - - - - random data point init
-    //! - - - - - - - - - - - - - - - - - rework this | especially the random number part
     void init_forging(int k_value)
     {
         int currentCluster = 0; 
 
         // ---- better random numbers
-        std::random_device randEngine; 
+        std::random_device rand_seed; 
+        std::mt19937 PRNG(rand_seed());
         std::uniform_int_distribution<int> numRange(0, data_set.size() -1); 
         
         // -------- runs until all K clusters have centroids
         while (currentCluster < k_value)
         {
-            int centroidIndx = numRange(randEngine); 
+            int centroidIndx = numRange(PRNG); 
 
             // ---- first cluster, no need to compare
             if(currentCluster == 0)
@@ -308,8 +312,9 @@ class algorithm_backend
             }
         }
 
-        fillClust(k_value); 
+        initClust(k_value); 
     }
+
 
     // - - - - creates a new node (dataPoint) for the dataSet vector | not used outside this class
     bool checkConvergance(dataBucket<T>& shared_data, std::vector<double>& iter_sse_vector, int current_iteration, double iterSSE)
@@ -352,6 +357,7 @@ class algorithm_backend
         return converged; 
     }
    
+
     // - - - -  data normalization
     void calcNormalizedData()
     {
@@ -382,17 +388,17 @@ class algorithm_backend
     }
 
     // - - - - random partition init
-    //! - - - - - - - - - - - - - - - - - rework this | especially the random number part 
     void init_randomPartition(int k_value)
     {
         // picks random cluster form cluster list
-        std::random_device randEngine; 
+        std::random_device rand_seed;
+        std::mt19937 PRNG(rand_seed());
         std::uniform_int_distribution range(0, k_value-1);
         
         // ---- assign data to rand clust
         for(int i = 0 ; i < data_set.size(); i++)
         {
-            int randNum = range(randEngine);
+            int randNum = range(PRNG);
             
             cluster_list.at(randNum).assignData(i);
         }   
@@ -401,7 +407,7 @@ class algorithm_backend
         for(int k = 0; k < k_value; k++)
         {
 
-            std::vector<T> meanData_temp = clust_list.at(k).genMeanDataVector(data_set);  
+            std::vector<T> meanData_temp = clust_list.at(k).genMeanFeatVector(data_set);  
             
             std::string id_temp = "Mean Centroid " + std::to_string(k); 
             dataPoint<T> newPoint_temp(meanData_temp, 0.0, id_temp);
@@ -410,21 +416,24 @@ class algorithm_backend
         }
 
         // reassign data based off of the initial centroid
-        fillClust(k_value); 
+        initClust(k_value); 
     }
 
 
     algorithm_backend(dataBucket<T>& shared_data)
     : data_set(shared_data.data_set), 
-      maxDataVector(shared_data.maxDataVector), 
-      minDataVector(shared_data.minDataVector), 
-      cluster_list(shared_data.cluster_list)
+      max_data_vector(shared_data.maxDataVector), 
+      min_data_vector(shared_data.minDataVector), 
+      cluster_list(shared_data.cluster_list),
+      target_values(shared_data.target_values)
       {}
+
     algorithm_backend()
     : data_set(), 
-      maxDataVector(), 
-      minDataVector(), 
-      cluster_list()
+      max_data_vector(), 
+      min_data_vector(), 
+      cluster_list(),
+      target_values() 
       {}
 };
 
