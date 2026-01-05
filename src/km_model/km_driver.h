@@ -23,7 +23,7 @@ class algorithm_io
 {
 
     public:
-    // ============================================= methods that printer to console 
+    // ============================================= basic methods that printer to console 
 
     // - - - - - simple message output
     void consoleOutput(std::string& output)
@@ -40,7 +40,7 @@ class algorithm_io
         }
     }
     
-    // ============================================= methods that log to file
+    // ============================================= basic methods that log to file
 
     // - - - - - prints iteration SSE to an output file 
     void logIterationSSE(const std::vector<double>& sse_values, std::ofstream& path_to_output)
@@ -56,6 +56,8 @@ class algorithm_io
     {
         file << output << std::endl; 
     }
+
+
 
     h_io(){}
 };
@@ -74,53 +76,24 @@ class algorithm_io
 template <class T>
 class k_means
 {
-  
+
     algorithm_io<T> io_manager;
     algorithm_backend<T> backend_manager; 
-    model_state<T> shared_data; 
+    model_state<T> current_state; 
 
-    // ================================================= core methods
-
-    // - - - - - sets the algorithm | initial set and reset between runs 
-    void setKmeans(bool isInit, bool normalize = false, const std::string& file_path = "")
-    {
-        for(int i =0; i < shared_data.k_value; i++)
-        {
-            clust<T> clust_temp; 
-            clust_temp.setID(i);  
-            shared_data.cluster_list.push_back(std::move(clust_temp));
-        }
-
-        if(isInit)
-        {
-            backend_manager.createDataSetVector(file_path);
-        }
-        // ------ initialization strategy goes here 
-    
-         backend_manager.forgingInit(shared_data.k_value); 
-        
-        // ------ if initial run : current run 0 -> 1 && decide to normalize data 
-        if(isInit)
-        {
-            if(normalize == true)
-                { backend_manager.calcNormalizedData(); }
-           
-            shared_data.current_run++;    
-        }
-    }
-    
+    // ============================================== startRun helper method
 
     // - - - - - - finds and sets cluster's mean centroids
     void setNextCentroid()
     {
         // ------ reset clusters with new centroid
-        for(int i =0; i < shared_data.k_value; i++)
+        for(int i =0; i < current_state.k_value; i++)
         {   
             
-            clust<T>& currClust = shared_data.cluster_list.at(i); 
+            clust<T>& currClust = current_state.cluster_list.at(i); 
             
             // store the mean data vector | call clust::genMeanFeatVector
-            std::vector<T> meanCentroid_temp = currClust.genMeanFeatVector(shared_data.data_set); 
+            std::vector<T> meanCentroid_temp = currClust.genMeanFeatVector(current_state.data_set); 
             std::string id_temp = "Mean Centroid " + std::to_string(i); 
 
             dataPoint<T> newPoint_temp(meanCentroid_temp, 0.0, id_temp); 
@@ -131,70 +104,94 @@ class k_means
             currClust.assignCentroid(newPoint_temp); 
         }
     }  
+   
+    // ============================================== log and regular run methods
 
+    // - - - - - same as startRun but with the logging 
+    void startLogRun( bool logRun, std::ofstream& path_to_output)
+    {  
+        int current_iteration = 0; 
+        std::vector<double> all_iteration_sse; 
+        bool hasConverged = false; 
 
-    // - - - - - - backend for print | logic for when to print and what to print 
-    void printRunDecision(bool printAllRuns, int& currentQuarter)
-    {
-          // prints all runs for small ranges of run | total_run <= 10  
-            std::string mainOutput = "\nRun " + std::to_string(shared_data.current_run);    
+        while (current_iteration < current_state.max_iterations && !hasConverged)
+        {
+            setNextCentroid(); 
+            backend_manager.initClust/(current_state.k_value); 
+            double iterationSSE = backend_manager.calcIterationSSE(current_state.k_value);
+            all_iteration_sse.push_back(iterationSSE);
             
-            if(printAllRuns == true)
-            {
-                mainOutput.append("\n--------------\n");
-                io_manager.consoleOutput(mainOutput); 
+            // ---- convergence check 
+            hasConverged = backend_manager.checkConvergance(current_state, all_iteration_sse, current_iteration, iterationSSE);
+            current_iteration++; 
+            
+        }
+        
+        double convergedSSE = all_iteration_sse.at(all_iteration_sse.size()-1); 
+        double ShiloetteScore = backend_manager.genShiloetteScore(current_state.k_value);
+        double CHI_score = backend_manager.genCHI(convergedSSE, current_state.k_value);  
 
-                startRun(printAllRuns); 
-            }
-            else // prints 6 runs for larger ranges of run | total_run > 10 
-            {
-                bool printCurrentRun = false; 
-                int Qinterval; 
+        current_state.checkBetterChi(CHI_score);
+        current_state.checkBetterShil(ShiloetteScore);
 
-                // make total_runs even & cut into quarters 
-                if (shared_data.total_runs % 2 == 0)
-                    {Qinterval = (shared_data.total_runs) / 4;}
-                
-                else 
-                    {Qinterval = (shared_data.total_runs -3) /4; }
-                
-                // varrifies that my printing interval isn't too small
-                if(Qinterval < 2) 
-                    {Qinterval == 2; }
+        if(logRun == true)
+        {
+            std::string msg =  "\nthe Shiloette Score for this run :: " + std::to_string(ShiloetteScore); 
+            msg.append( "\nthe CHI index score for this run is :: " + std::to_string(CHI_score) + "\n");
 
-                // prints 1st run | prints last run | prints quarter runs
-                if(shared_data.current_run == 1 )
-                { 
-                    mainOutput.append("\n--------------\n");
-                    io_manager.consoleOutput(mainOutput); 
-                    printCurrentRun = true; 
-                }
-
-                else if(shared_data.current_run == shared_data.total_runs)
-                {
-                    mainOutput.append(" | last Run\n-------------\n");
-                    io_manager.consoleOutput(mainOutput); 
-                    printCurrentRun = true; 
-                }
-
-                else if(shared_data.current_run % Qinterval == 0)
-                {    
-                    mainOutput.append(" | Q" + std::to_string(currentQuarter) + "\n-------------\n");
-                    io_manager.consoleOutput(mainOutput); 
-                    printCurrentRun = true; 
-                    currentQuarter++; 
-                }
-
-                // the run
-                startRun(printCurrentRun);
-            }
+            io_manager.printIterationSSE(all_iteration_sse); 
+            io_manager.logIterationSSE(all_iteration_sse, path_to_output);
+            
+            io_manager.consoleOutput(msg); 
+            io_manager.fileOutput(path_to_output, msg); 
+        }
     }
 
+    // - - - - - run without logging 
+    void startRun(bool printRun)
+    {  
+        int current_iteration = 0; 
+        std::vector<double> all_iteration_sse; 
+        bool hasConverged = false; 
+
+
+        while (current_iteration < current_state.max_iterations && !hasConverged)
+        {
+            setNextCentroid(); 
+            backend_manager.initClust(current_state.k_value); 
+
+            double iterationSSE = backend_manager.calcIterationSSE(current_state.k_value);
+            all_iteration_sse.push_back(iterationSSE);
+            
+            // ---- convergence check 
+            hasConverged = backend_manager.checkConvergance(current_state ,all_iteration_sse, current_iteration, iterationSSE);
+            current_iteration++; 
+            
+        }
+
+        double convergedSSE = all_iteration_sse.at(all_iteration_sse.size()-1); 
+        double ShiloetteScore = backend_manager.genShiloetteScore(current_state.k_value);
+        double CHI_score = backend_manager.genCHI(convergedSSE, current_state.k_value);  
+
+        current_state.checkBetterChi(CHI_score);
+        current_state.checkBetterShil(ShiloetteScore);
+
+        if(printRun == true)
+        {
+            std::string msg =  "\nthe Shiloette Score for this run :: " + std::to_string(ShiloetteScore); 
+            msg.append( "\nthe CHI index score for this run is :: " + std::to_string(CHI_score));
+
+            io_manager.printIterationSSE(all_iteration_sse); 
+            io_manager.consoleOutput(msg);
+        }
+    }
+
+    // ============================================ print decision methods
 
     // - - - - - decides what to print / log
     void logRunDecision(bool logAllRuns, int& currentQuarter, std::ofstream& outFile)
     {
-        std::string mainOutput = "Run " + std::to_string(shared_data.current_run); 
+        std::string mainOutput = "Run " + std::to_string(current_state.current_run); 
 
         // prints all runs for small ranges of run | total_run <= 10     
         if(logAllRuns == true)
@@ -213,11 +210,11 @@ class k_means
             int Qinterval; 
 
             // make total_runs even & cut into quarters 
-            if (shared_data.total_runs % 2 == 0)
-                {Qinterval = (shared_data.total_runs) / 4;}
+            if (current_state.total_runs % 2 == 0)
+                {Qinterval = (current_state.total_runs) / 4;}
     
             else 
-                {Qinterval = (shared_data.total_runs -3) /4; }
+                {Qinterval = (current_state.total_runs -3) /4; }
         
             // varrifies that my printing interval isn't too small
             if(Qinterval < 2) 
@@ -225,7 +222,7 @@ class k_means
 
 
             // prints 1st run | prints last run | prints quarter runs
-            if(shared_data.current_run == 1 )
+            if(current_state.current_run == 1 )
             { 
                 mainOutput.append(" | first Run\n-------------\n");
 
@@ -234,7 +231,7 @@ class k_means
                 printCurrentRun = true; 
             }
             
-            else if(shared_data.current_run == shared_data.total_runs)
+            else if(current_state.current_run == current_state.total_runs)
             {
                 mainOutput.append(" | last Run\n-------------\n");
                 
@@ -243,7 +240,7 @@ class k_means
                 printCurrentRun = true; 
             }
 
-            else if(shared_data.current_run % Qinterval == 0)
+            else if(current_state.current_run % Qinterval == 0)
             {    
                 mainOutput.append(" | Q" + std::to_string(currentQuarter) + "\n-------------\n");
 
@@ -259,92 +256,98 @@ class k_means
         }
     }
 
+    // - - - - - - backend for print | logic for when to print and what to print 
+    void printRunDecision(bool printAllRuns, int& currentQuarter)
+    {
+          // prints all runs for small ranges of run | total_run <= 10  
+            std::string mainOutput = "\nRun " + std::to_string(current_state.current_run);    
+            
+            if(printAllRuns == true)
+            {
+                mainOutput.append("\n--------------\n");
+                io_manager.consoleOutput(mainOutput); 
 
-    // - - - - - run without logging 
-    void startRun(bool printRun)
-    {  
-        int current_iteration = 0; 
-        std::vector<double> all_iteration_sse; 
-        bool hasConverged = false; 
+                startRun(printAllRuns); 
+            }
+            else // prints 6 runs for larger ranges of run | total_run > 10 
+            {
+                bool printCurrentRun = false; 
+                int Qinterval; 
 
+                // make total_runs even & cut into quarters 
+                if (current_state.total_runs % 2 == 0)
+                    {Qinterval = (current_state.total_runs) / 4;}
+                
+                else 
+                    {Qinterval = (current_state.total_runs -3) /4; }
+                
+                // varrifies that my printing interval isn't too small
+                if(Qinterval < 2) 
+                    {Qinterval == 2; }
 
-        while (current_iteration < shared_data.max_iterations && !hasConverged)
+                // prints 1st run | prints last run | prints quarter runs
+                if(current_state.current_run == 1 )
+                { 
+                    mainOutput.append("\n--------------\n");
+                    io_manager.consoleOutput(mainOutput); 
+                    printCurrentRun = true; 
+                }
+
+                else if(current_state.current_run == current_state.total_runs)
+                {
+                    mainOutput.append(" | last Run\n-------------\n");
+                    io_manager.consoleOutput(mainOutput); 
+                    printCurrentRun = true; 
+                }
+
+                else if(current_state.current_run % Qinterval == 0)
+                {    
+                    mainOutput.append(" | Q" + std::to_string(currentQuarter) + "\n-------------\n");
+                    io_manager.consoleOutput(mainOutput); 
+                    printCurrentRun = true; 
+                    currentQuarter++; 
+                }
+
+                // the run
+                startRun(printCurrentRun);
+            }
+    }
+
+    // ============================================== init & reset alg for next run
+    
+    // - - - - - sets the algorithm | initial set and reset between runs 
+    void setKmeans(bool isInit, bool normalize = false, const std::string& file_path = "")
+    {
+        for(int i =0; i < current_state.k_value; i++)
         {
-            setNextCentroid(); 
-            backend_manager.fillClust(shared_data.k_value); 
-
-            double iterationSSE = backend_manager.calcIterationSSE(shared_data.k_value);
-            all_iteration_sse.push_back(iterationSSE);
-            
-            // ---- convergence check 
-            hasConverged = backend_manager.checkConvergance(shared_data ,all_iteration_sse, current_iteration, iterationSSE);
-            current_iteration++; 
-            
+            clust<T> clust_temp; 
+            clust_temp.setID(i);  
+            current_state.cluster_list.push_back(std::move(clust_temp));
         }
 
-        double convergedSSE = all_iteration_sse.at(all_iteration_sse.size()-1); 
-        double ShiloetteScore = backend_manager.genShiloetteScore(shared_data.k_value);
-        double CHI_score = backend_manager.genCHI(convergedSSE, shared_data.k_value);  
-
-        shared_data.checkBetterChi(CHI_score);
-        shared_data.checkBetterShil(ShiloetteScore);
-
-        if(printRun == true)
+        if(isInit)
         {
-            std::string msg =  "\nthe Shiloette Score for this run :: " + std::to_string(ShiloetteScore); 
-            msg.append( "\nthe CHI index score for this run is :: " + std::to_string(CHI_score));
-
-            io_manager.printIterationSSE(all_iteration_sse); 
-            io_manager.consoleOutput(msg);
+            backend_manager.loadDataSet(file_path);
+        }
+        //~ ------ initialization strategy goes here 
+    
+         backend_manager.init_forging(current_state.k_value); 
+    
+        // ------ currentRun = 0 is initial run 
+        //        decide to normalize or not then increase currentRun from 0 to 1
+        if(isInit)
+        {
+            if(normalize == true)
+                { backend_manager.calcNormalizedData(); }
+           
+            current_state.current_run++;    
         }
     }
 
 
-    // - - - - - same as startRun but with the logging 
-    void startLogRun( bool logRun, std::ofstream& path_to_output)
-    {  
-        int current_iteration = 0; 
-        std::vector<double> all_iteration_sse; 
-        bool hasConverged = false; 
+    public : 
 
-        while (current_iteration < shared_data.max_iterations && !hasConverged)
-        {
-            setNextCentroid(); 
-            backend_manager.fillClust(shared_data.k_value); 
-            double iterationSSE = backend_manager.calcIterationSSE(shared_data.k_value);
-            all_iteration_sse.push_back(iterationSSE);
-            
-            // ---- convergence check 
-            hasConverged = backend_manager.checkConvergance(shared_data, all_iteration_sse, current_iteration, iterationSSE);
-            current_iteration++; 
-            
-        }
-        
-        double convergedSSE = all_iteration_sse.at(all_iteration_sse.size()-1); 
-        double ShiloetteScore = backend_manager.genShiloetteScore(shared_data.k_value);
-        double CHI_score = backend_manager.genCHI(convergedSSE, shared_data.k_value);  
-
-        shared_data.checkBetterChi(CHI_score);
-        shared_data.checkBetterShil(ShiloetteScore);
-
-        if(logRun == true)
-        {
-            std::string msg =  "\nthe Shiloette Score for this run :: " + std::to_string(ShiloetteScore); 
-            msg.append( "\nthe CHI index score for this run is :: " + std::to_string(CHI_score) + "\n");
-
-            io_manager.printIterationSSE(all_iteration_sse); 
-            io_manager.logIterationSSE(all_iteration_sse, path_to_output);
-            
-            io_manager.consoleOutput(msg); 
-            io_manager.fileOutput(path_to_output, msg); 
-        }
-    }
-
-
-    public :
-    // ================================================= User API
-
-   
+    // ============================================== API driver methods
     // - - - - - - runs the algorithm 
     void runAlg(const std::string& file_path, bool normalize_data)
     {
@@ -353,33 +356,36 @@ class k_means
         setKmeans(true, normalize_data, file_path); // current run 0 -> 1
 
         bool printAllRuns = false; 
-        if(shared_data.total_runs <= 10) {printAllRuns = true; }
+        if(current_state.total_runs <= 10) {printAllRuns = true; }
 
         int currentQuarter = 1; 
 
+        //& - - - - - - - - start of timer & main algorithm 
+
         auto start = std::chrono::high_resolution_clock::now();
-        while (shared_data.current_run <= shared_data.total_runs) // Current run starts at 1 end at total_runs
+        while (current_state.current_run <= current_state.total_runs) // Current run starts at 1 end at total_runs
         {    
             printRunDecision(printAllRuns, currentQuarter); 
 
             setKmeans(false);
         
-            shared_data.current_run++; 
+            current_state.currentRun_increase(); 
         } 
-        
         auto end = std::chrono::high_resolution_clock::now();
+
+        //& - - - - - - - - end of timer and main algorithm 
+
         std::chrono::duration<double> seconds_taken = end - start;
 
         // print best run & it's iteration SSE 
         std::cout << "-----------------------\n"
-        << "the best run iteration SSE ::\t"    << shared_data.best_run_iter_sse <<std::endl
-        << "the best CHI score ::\t\t"                        << shared_data.best_chi_score << std::endl
-        << "the best shiloette score ::\t"                  << shared_data.best_shiloette << std::endl;
+        << "the best run iteration SSE ::\t"    << current_state.best_run_iter_sse <<std::endl
+        << "the best CHI score ::\t\t"                        << current_state.best_chi_score << std::endl
+        << "the best shiloette score ::\t"                  << current_state.best_shiloette << std::endl;
         std::cout << "total time taken for algorithm :: "   << seconds_taken.count() << "s" << std::endl;
         
     }
    
-
     // - - - - - - runs algorithm and logs
     void runAndLogAlg
     (const std::string& path_to_data, const std::string& path_to_output, bool normalize_data)
@@ -388,11 +394,10 @@ class k_means
         setKmeans(true, normalize_data, path_to_data); // current run 0 -> 1
 
         bool logAllRuns = false; 
-        if(shared_data.total_runs <= 10) {logAllRuns = true; }
+        if(current_state.total_runs <= 10) {logAllRuns = true; }
 
-        
-        std::ofstream log_to_Output(path_to_output); 
-                
+        //& - - - - - - load and test output files
+        std::ofstream log_to_Output(path_to_output);         
         if(!log_to_Output.is_open())
         {
             std::string msg = "ERROR :: file is not opening"; 
@@ -406,32 +411,37 @@ class k_means
 
         int currentQuarter = 1; 
         
+        //& - - - - - - start of the timer and main algorithm 
         auto start = std::chrono::high_resolution_clock::now();
-        while (shared_data.current_run <= shared_data.total_runs) // Current run starts at 1 end at total_runs
+        while (current_state.current_run <= current_state.total_runs) // Current run starts at 1 end at total_runs
         {    
             logRunDecision(logAllRuns, currentQuarter, log_to_Output); 
 
             setKmeans(false);
         
-            shared_data.current_run++; 
+            current_state.currentRun_increase(); 
         } 
         
         auto end = std::chrono::high_resolution_clock::now();
+        //& - - - - - end of the timer and main algorithm 
+
         std::chrono::duration<double> seconds_taken = end - start;
 
+        //& - - - - - output format 
         // ---- formatting to keep it consistent with console output
         std::ostringstream oss;
 
           
         oss << "-------------------------\n" 
-        <<"the best run iteration SSE ::\t" << std::fixed << std::setprecision(4) << shared_data.best_run_iter_sse << "\n"
-        << "the best CHI score ::\t\t"            << shared_data.best_chi_score << "\n"
-        << "the best shiloette score ::\t"      << shared_data.best_shiloette << "\n"; 
+        <<"the best run iteration SSE ::\t" << std::fixed << std::setprecision(4) << current_state.best_run_iter_sse << "\n"
+        << "the best CHI score ::\t\t"            << current_state.best_chi_score << "\n"
+        << "the best shiloette score ::\t"      << current_state.best_shiloette << "\n"; 
 
                                                 
         std::string outputMessage = oss.str();
         std::string timerOutput = "total time taken for algorithm :: " + std::to_string(seconds_taken.count()) + " s"; 
         
+        //& - - - - - outputs
         // ---- outputs to console then to file
         io_manager.consoleOutput(outputMessage);
         io_manager.fileOutput(log_to_Output, outputMessage);
@@ -440,12 +450,12 @@ class k_means
         log_to_Output.close(); 
         
     }
-
+log and regular run methods
 
     // ==================================================== constructor 
     k_means(int k, int runs, int max_iterations, double convergence)
-    : shared_data(k, runs, max_iterations, convergence),
-      backend_manager(shared_data),
+    : current_state(k, runs, max_iterations, convergence),
+      backend_manager(current_state),
       io_manager()
     {
     }

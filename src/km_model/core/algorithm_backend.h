@@ -1,11 +1,14 @@
- #ifndef ALG_BACKND
-#define ALG_BACKND
-
 /*
     the h_backend class holds the backend logic for the k_means class
     it is for methods that performs calculations and data processing
     
 */
+#ifndef ALG_BACKND
+#define ALG_BACKND
+
+#include "model_state.h"
+
+
 template <class T>
 class algorithm_backend
 {
@@ -244,7 +247,7 @@ class algorithm_backend
 
 
     // - - - - - - reads input file, 
-    void loadDataSet( const std::string&  data_file, )
+    void loadDataSet( const std::string&  data_file)
     {
         std::string line; 
         std::ifstream fn(data_file); 
@@ -317,7 +320,7 @@ class algorithm_backend
 
 
     // - - - - creates a new node (dataPoint) for the dataSet vector | not used outside this class
-    bool checkConvergance(dataBucket<T>& shared_data, std::vector<double>& iter_sse_vector, int current_iteration, double iterSSE)
+    bool checkConvergance(model_state<T>& current_state, std::vector<double>& iter_sse_vector, int current_iteration, double iterSSE)
     {
         bool converged = false; 
         
@@ -329,28 +332,28 @@ class algorithm_backend
             double currentSSE = iter_sse_vector.at(current_iteration); 
             double convCheck = (prevSSE - currentSSE) / prevSSE;
 
-            if (convCheck < shared_data.convergence)
+            if (convCheck < current_state.convergence)
             {
                 converged = true; 
             }
         }
         else 
         {
-            if(iterSSE < shared_data.convergence) 
+            if(iterSSE < current_state.convergence) 
             {              
                 converged =  true; 
             }
         }
 
         // ---- if converged, compare current iteration to algorithm's best iteration
-        if(shared_data.best_run_iter_sse > iterSSE && converged == true)
+        if(current_state.best_run_iter_sse > iterSSE && converged == true)
         {
             // sets values for the current best 'run' 
-            shared_data.best_run_iter_sse = iterSSE; 
-            shared_data.best_run_indx = shared_data.current_run; 
+            current_state.best_run_iter_sse = iterSSE; 
+            current_state.best_run_indx = current_state.current_run; 
 
             // deep copy best run clusters
-            shared_data.updateBestRun();
+            current_state.updateBestRun();
             
         } 
 
@@ -420,12 +423,12 @@ class algorithm_backend
     }
 
 
-    algorithm_backend(dataBucket<T>& shared_data)
-    : data_set(shared_data.data_set), 
-      max_data_vector(shared_data.maxDataVector), 
-      min_data_vector(shared_data.minDataVector), 
-      cluster_list(shared_data.cluster_list),
-      target_values(shared_data.target_values)
+    algorithm_backend(model_state<T>& current_state)
+    : data_set(current_state.data_set), 
+      max_data_vector(current_state.maxDataVector), 
+      min_data_vector(current_state.minDataVector), 
+      cluster_list(current_state.cluster_list),
+      target_values(current_state.target_values)
       {}
 
     algorithm_backend()

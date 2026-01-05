@@ -1,10 +1,10 @@
+/*
+    model_state holds the current state of the algorithm
+    it has all the key data and passes it around 
+*/
 #ifndef MODEL_STATE
 #define MODEL_STATE
 
-/*
-    dataBucket is a storage structure, it contains
-    all the information needed throughout the algorithm
-*/
 template <class T>
 struct model_state
 {
@@ -13,7 +13,7 @@ struct model_state
     int k_value; 
     int max_iterations; 
    
-    int current_run; // potentially get rid of
+    int current_run; 
     int best_run_indx; 
     double best_run_iter_sse; 
     double best_chi_score; 
@@ -28,6 +28,10 @@ struct model_state
 
     // ========================  basic update methods
     
+    // - - - - incriment current run
+    void currentRun_increase()
+        {current_run ++;}
+
     // - - - - updates the best run
     void updateBestRun()
     {
@@ -70,7 +74,7 @@ struct model_state
         total_runs = runs; 
     }
    
-    dataBucket(int k_val, int total_runs, int max_iter, double converg)
+    model_state(int k_val, int total_runs, int max_iter, double converg)
     {
         validateData(k_val, max_iter, converg, total_runs);
         
