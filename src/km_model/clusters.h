@@ -127,11 +127,12 @@ class clust
         { clust_data_indicies.push_back(dataSetIndex);}
 
 
-    std::vector<int> getAssignedData()
+    std::vector<int> getAssignedData_copy()
         {return clust_data_indicies; }
-    //!
-    // ^ this was previously getDataIndicies
-    // !
+
+    std::vector<int>& getAssignedData_ref()
+        {return clust_data_indicies; }
+
 
     int getSize()
         {return clust_data_indicies.size();}

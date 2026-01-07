@@ -14,7 +14,7 @@ class algorithm_backend
 {
 
     std::vector<dataPoint<T>>& data_set;
-    std::vector<dataPoint<T>>& target_values;   
+    std::vector<int>& target_values;   
     std::vector<T>& max_data_vector; 
     std::vector<T>& min_data_vector; 
     std::vector<clust<T>>& cluster_list; 
@@ -62,7 +62,7 @@ class algorithm_backend
         // ---- skip empty vectors  
         if (!featureVector_temp.empty())
         {
-            double targetValue = featureVector_temp.pop_back();
+            int targetValue = (int) featureVector_temp.pop_back();
 
             std::string point_ID_temp = "dataPoint " + std::to_string(id); 
             data_set.push_back(dataPoint<T>(featureVector_temp, 0.0, point_ID_temp));
@@ -161,7 +161,6 @@ class algorithm_backend
     // ============================================ processing 
 
     // - - - - - - -  -  assign data from  data_set to cluster 
-    // ! - - - - - - - - - - - - - - - - - was nemed fillClust
     void initClust(int k_value) 
     {
         int currentPoint = 0;

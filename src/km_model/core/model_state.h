@@ -18,13 +18,15 @@ struct model_state
     double best_run_iter_sse; 
     double best_chi_score; 
     double best_shiloette; 
+    double best_jaccard_score; 
+    double best_rand_indx_score;
     
     std::vector<dataPoint<T>> data_set;  
     std::vector<T> maxDataVector; 
     std::vector<T> minDataVector; 
     std::vector<clust<T>> cluster_list; 
     std::vector<clust<T>> best_run_clust; 
-    std::vector<dataPoint<T>> target_values; 
+    std::vector<int> target_clusters; 
 
     // ========================  basic update methods
     
@@ -51,6 +53,21 @@ struct model_state
     {
         if(potential_shiloette > best_shiloette)
             best_shiloette = potential_shiloette; 
+    }
+
+    // - - - - chekcs if 'best_jaccard_indx' should be replaced
+    void checkBetterJaccard(double potential_jacc)
+    {
+        if(potential_jacc > best_jaccard_score)
+            { best_jaccard_score = potential_jacc; }
+    }
+
+    // - - - - check if 'best_rand_indx_score' should be repalced
+    void checkBetterRandIndx(double potential_rand_indx)
+    {
+        if(potential_rand_indx > best_rand_indx_score)
+            { best_rand_indx_score = potential_rand_indx; }
+
     }
 
     // ======================== other useful methods

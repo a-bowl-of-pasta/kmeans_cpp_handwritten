@@ -83,6 +83,104 @@ class k_means
 
     // ============================================== startRun helper method
 
+
+    // - - - - - extracts partition from current clustering
+    std::vector<int> labelClusterFeatures()
+    {
+        std::vector<int> finalDatasetClustering(current_state.data_set.size(), -1);
+        
+        // ------ go through each cluster
+        for(int label = 0; label < current_state.k_value; label++)
+        {
+            clust<T>& currClust = cluster_list[k];
+            std::vector<int>& clustIndicies = currClust.getAssignedData_ref();
+            
+            // -------- assign cluster label to each point in current cluster
+            for(int i = 0; i < clustIndicies.size(); i++)
+            {
+                int currFeatureIndx = indices.at(i);
+                finalDatasetClustering[currFeatureIndx] = label;
+            }
+        }
+        
+        return finalDatasetClustering;
+    }
+
+
+    // - - - - - calculates Rand Index between two partitions | good for balanced datasets - no disproportionate FN,FP,TP,TN
+    //&          (truePositives + trueNegatives) / total pairs
+    double calculateRandIndex(std::vector<int>& datasetLabels, std::vector<int>& groundTruth)
+    {
+        int totalPoints = datasetLabels.size();
+        int truePositives = 0;  // same final clust in preditction & ground truth
+        int trueNegatives = 0;  // different final clust in preditction & ground truth
+        
+        // ------ compare all pairs
+        for(int x1 = 0; x1 < totalPoints; x1++)
+        {
+            for(int x2 = x1 + 1; x2 < totalPoints; x2++)
+            {
+                bool sameInPrediction = (datasetLabels[x1] == datasetLabels[x2]);
+                bool sameInGroundTruth = (groundTruth[x1] == groundTruth[x2]);
+                
+                // correctly predicted two points in the same cluster
+                if(sameInGroundTruth && sameInPrediction)
+                    { truePositives++;}
+
+                // correctly predicted two points in different clusters
+                else if(!sameInGroundTruth && !sameInPrediction)
+                    { trueNegatives++; }
+            }
+        }
+        
+        int totalPairs = (totalPoints * (totalPoints - 1)) / 2;
+        double finalScore = (double)((truePositives + trueNegatives) / totalPairs);
+
+        return finalScore;
+    }
+
+
+    // - - - - - calculates Jaccard Index between two partitions | good for disproportionate datasets - far more TN than the rest
+    //&          true positives / (true positives + false negative + false positives)
+    double calculateJaccardIndex(std::vector<int>& datasetLabels, std::vector<int>& groundTruth)
+    {
+        int totalPoints = datasetLabels.size();
+        int truePositives = 0;  // same final clust in preditction & ground truth
+        int falsePositives = 0;  // same final clust in preditction but different in ground truth
+        int flaseNegatives = 0;  // different final clust in preditction but same in  ground truth
+        
+        // ------ compare all pairs
+        for(int x1 = 0; x1 < totalPoints; x1++)
+        {
+            for(int x2 = x1 + 1; x2 < totalPoints; x2++)
+            {
+                bool sameInPrediction = (datasetLabels[x1] == datasetLabels[x2]);
+                bool sameInGroundTruth = (groundTruth[x1] == groundTruth[x2]);
+                
+                // correctly predicted two points in same cluster
+                if(sameInPrediction && sameInGroundTruth)
+                    { truePositives++; }
+
+                // incorrectly predected two points in the same cluster
+                else if(sameInPrediction && !sameInGroundTruth)
+                    { falsePositives++; }
+
+                // 
+                else if(!sameInPrediction && sameInGroundTruth)
+                    { flaseNegatives++;}
+            }
+        }
+
+        // does not account for true negatives | more strict but better for disproportionate sets
+        //~ disproportinate where there may be 80 true positives but only 5 true negatives
+        int totalPairs = truePositives + falsePositives + flaseNegatives; 
+        double finalScore = (double)(truePositives / totalPairs); 
+        
+        return finalScore;
+    }
+     
+
+
     // - - - - - - finds and sets cluster's mean centroids
     void setNextCentroid()
     {
@@ -176,10 +274,19 @@ class k_means
         current_state.checkBetterChi(CHI_score);
         current_state.checkBetterShil(ShiloetteScore);
 
+        std::vector<int> runFinalClusterings = labelClusterFeatures(); 
+        double randIndx = calculateRandIndex(runFinalClusterings, current_state.target_clusters); 
+        double jaccardIndx = calculateJaccardIndex(runFinalClusterings, current_state.target_clusters);
+
+        current_state.checkBetterJaccard(jaccardIndx); 
+        current_state.checkBetterRandIndx(randIndx);
+
         if(printRun == true)
         {
             std::string msg =  "\nthe Shiloette Score for this run :: " + std::to_string(ShiloetteScore); 
             msg.append( "\nthe CHI index score for this run is :: " + std::to_string(CHI_score));
+            msg.append( "\nthe rand index for this run is :: " + std::to_string(randIndx));
+            msg.append( "\nthe jaccard index for this run is :: " + std::to_string(jaccardIndx)); 
 
             io_manager.printIterationSSE(all_iteration_sse); 
             io_manager.consoleOutput(msg);
@@ -379,9 +486,13 @@ class k_means
 
         // print best run & it's iteration SSE 
         std::cout << "-----------------------\n"
-        << "the best run iteration SSE ::\t"    << current_state.best_run_iter_sse <<std::endl
-        << "the best CHI score ::\t\t"                        << current_state.best_chi_score << std::endl
-        << "the best shiloette score ::\t"                  << current_state.best_shiloette << std::endl;
+        << "the best run iteration SSE ::\t"        << current_state.best_run_iter_sse << std::endl
+        << "the best CHI score ::\t\t"              << current_state.best_chi_score << std::endl
+        << "the best shiloette score ::\t"          << current_state.best_shiloette << std::endl;
+
+        std::cout << "the best rand index score ::\t"     << current_state.best_jaccard_index_score << std::endl
+                  << "the best jaccard index score ::\t"  << current_state.best_rand_indx_score << std::endl;
+
         std::cout << "total time taken for algorithm :: "   << seconds_taken.count() << "s" << std::endl;
         
     }
@@ -450,7 +561,6 @@ class k_means
         log_to_Output.close(); 
         
     }
-log and regular run methods
 
     // ==================================================== constructor 
     k_means(int k, int runs, int max_iterations, double convergence)

@@ -7,13 +7,8 @@
 void inlineRuns()
 {
 
-
-    //!!!!!!!!!!!!!!!! Current issue :: large datasets are taking too long to run. 
-    //                 go through the code, maybe things are being copied and not referenced 
-
-
     // hard coded file names for argv[1]
-    int indx_used = 4; 
+    int indx_used = 3; 
     std::string current_version_out = "v4.0_outputs";
 
     std::string default_files[] = {"ecoli", "glass", "ionosphere", "iris_bezdek", "landsat", "letter_recognition", "segmentation", "vehicle", "wine", "yeast"}; 
@@ -29,13 +24,13 @@ void inlineRuns()
     int num_of_runs = 100;                 // argv[5] 
 
     // so that you can copy and paste :: default_files[indx_used]    file_name
-    std::string path_in = "../default_data_sets/" + default_files[indx_used] + ".txt";
+    std::string path_in = "../uci_ml_datasets/with_ground_truth/" + default_files[indx_used] + ".txt";
     std::string path_out = "../outputs/"+ current_version_out +"/"+ default_files[indx_used] + "_out.txt";
 
 
     k_means<double> km_manager(k_val, num_of_runs, iterations, convergence);
-    //km_manager.runAlg(path_in, true); 
-    km_manager.runAndLogAlg(path_in, path_out, true); 
+        km_manager.runAlg(path_in, true); 
+    //  km_manager.runAndLogAlg(path_in, path_out, true); 
 
 }
 
