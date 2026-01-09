@@ -5,6 +5,8 @@
 #ifndef MODEL_STATE
 #define MODEL_STATE
 
+#include "../clusters.h"
+
 template <class T>
 struct model_state
 {
@@ -102,7 +104,7 @@ struct model_state
         best_shiloette = std::numeric_limits<double>::min(); 
 
         data_set = std::vector<dataPoint<T>>{};   
-        target_values = std::vector<dataPoint<T>>{}; 
+        target_clusters = std::vector<int>{}; 
         cluster_list = std::vector<clust<T>>{};
         best_run_clust = std::vector<clust<T>>{};
 

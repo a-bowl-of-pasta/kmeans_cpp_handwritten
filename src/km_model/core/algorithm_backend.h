@@ -7,7 +7,7 @@
 #define ALG_BACKND
 
 #include "model_state.h"
-
+#include "../clusters.h"
 
 template <class T>
 class algorithm_backend
@@ -37,21 +37,21 @@ class algorithm_backend
                 // ----- first run populates min/max vectors, other runs find min/max
                 if(firstRun == true)
                 {
-                    maxDataVector.push_back(featToDec);
-                    minDataVector.push_back(featToDec);
+                    max_data_vector.push_back(featToDec);
+                    min_data_vector.push_back(featToDec);
                 }
                 else
                 {
                     // swap attributes if elm in vector is smaller
-                    if(maxDataVector.at(currFeature) < featToDec)
+                    if(max_data_vector.at(currFeature) < featToDec)
                     {
-                        maxDataVector.at(currFeature) = featToDec; 
+                        max_data_vector.at(currFeature) = featToDec; 
                     }
                     
                     // swap attributes if elm in vector is greater
-                    if(minDataVector.at(currFeature) > featToDec)
+                    if(min_data_vector.at(currFeature) > featToDec)
                     {
-                        minDataVector.at(currFeature) = featToDec; 
+                        min_data_vector.at(currFeature) = featToDec; 
                     }
                 }
                 featureVector_temp.push_back(featToDec);
@@ -65,7 +65,7 @@ class algorithm_backend
             int targetValue = (int) featureVector_temp.pop_back();
 
             std::string point_ID_temp = "dataPoint " + std::to_string(id); 
-            data_set.push_back(dataPoint<T>(featureVector_temp, 0.0, point_ID_temp));
+            data_set.push_back(dataPoint<T>(featureVector_temp, point_ID_temp));
             target_values.push_back(targetValue); 
             id++; 
 
@@ -95,6 +95,40 @@ class algorithm_backend
         return unique; 
     }
    
+    // - - - - - - gets me the mean vector for the whole dataSet
+    std::vector<T> meanFeatureVector_dataSet()
+    {
+        dataPoint<T>& temp = data_set.at(0); 
+        int featureDimensions = temp.getFeatureDimensions(); 
+    
+        std::vector<double> meanFeatureVector(featureDimensions, 0.0); 
+    
+        int sizeOfData = data_set.size();  
+
+        // ------ go through each data vector
+        for(int currFeatureVector = 0; currFeatureVector < sizeOfData; currFeatureVector++)
+        {
+            std::vector<T>& featVector_temp = data_set.at(currFeatureVector).getFeatureVector_ref(); 
+            
+            // -------- calculate the sum of each feature
+           for(int feature = 0; feature < featVector_temp.size(); feature++  )
+            {
+                meanFeatureVector.at(feature) += featVector_temp.at(feature); 
+            }
+
+        }
+
+        // ------- divide each feature's sum by total dataPoints
+        // ------- this creates a vector of means
+        for(int i =0; i < meanFeatureVector.size(); i++)
+        {
+            meanFeatureVector.at(i) = meanFeatureVector.at(i) / sizeOfData; 
+        }
+
+        // ---- return new centroid's dataVector
+        return meanFeatureVector; 
+
+    }
 
     public: 
 
@@ -107,11 +141,11 @@ class algorithm_backend
         double finalDistance = 0.0; 
            
         // - - - - loop through x2 features 
-        for(int i =0; i < x1_features.size(); i++)
+        for(int i =0; i < x1_feature_vector.size(); i++)
         {
             // get the features out of the vector 
-            T x2_feature = x2_features.at(i); 
-            T x1_feature = x1_features.at(i); 
+            T x2_feature = x2_feature_vector.at(i); 
+            T x1_feature = x1_feature_vector.at(i); 
 
             // residual = x1 - x2 
             double curr_sqr_residual = x1_feature - x2_feature; 
@@ -141,11 +175,11 @@ class algorithm_backend
         double finalDistance = 0.0; 
            
         // - - - - loop through x2 features 
-        for(int i =0; i < x1_features.size(); i++)
+        for(int i =0; i < x1_feature_vector.size(); i++)
         {
             // get the features out of the vector 
-            T x2_feature = x2_features.at(i); 
-            T x1_feature = x1_features.at(i); 
+            T x2_feature = x2_feature_vector.at(i); 
+            T x1_feature = x1_feature_vector.at(i); 
 
             // residual = |x1 - x2|
             double curr_abs_residual = std::abs(x1_feature - x2_feature); 
@@ -198,8 +232,8 @@ class algorithm_backend
         double totalIterationSSE = 0.0;
         for(int i =0; i < k_value; i++)
         {
-            cluster_list.at(i).genSSE(data_set); 
-            totalIterationSSE += currClust.getClassLevelSSE(); 
+            cluster_list.at(i).sumSquaredError(data_set); 
+            totalIterationSSE += cluster_list.at(i).getClassLevelSSE(); 
         }
         return totalIterationSSE; 
     }
@@ -210,7 +244,7 @@ class algorithm_backend
     {
         
         double SSB_value = 0.0; 
-        std::vector<T> meanDataVec =  (); 
+        std::vector<T> meanDataVec =  meanFeatureVector_dataSet(); 
         for(int i = 0; i < k_value; i++)
         {
             clust<T>& currClust = cluster_list.at(i); 
@@ -232,16 +266,16 @@ class algorithm_backend
     // - - - - - - - the total Silhouette score for the current run
     double genShiloetteScore(int k_value)
     {
-        double runSScore = 0.0 ;
-
+        double individualClustSScore = 0.0 ;
 
         for(int i = 0; i < k_value; i++)
         {    
             clust<T>& currClust = cluster_list.at(i); 
-            currClust.genClustSilhouetteScore(data_set, cluster_list, k_value);
-            runSScore += currClust.getSScoreContribution(); 
+            
+            individualClustSScore += currClust.silhouette_score(data_set, cluster_list);
+            
         }
-        return (runSScore / data_set.size()); 
+        return (individualClustSScore / k_value); 
     }
 
 
@@ -299,7 +333,7 @@ class algorithm_backend
             if(currentCluster == 0)
             {
                 clust<T>& currClust = cluster_list.at(currentCluster);                 
-                currClust.assignCentroid(data_set.at(centroidIndx)); 
+                currClust.setCentroid(data_set.at(centroidIndx)); 
                 currentCluster++; 
             }
             else // ---- compare with other clusters, no repeated centroids 
@@ -373,8 +407,8 @@ class algorithm_backend
             for(int featureIndx = 0; featureIndx < currFeatVect_temp.size(); featureIndx++ )
             {
                 double currFeature_temp = currFeatVect_temp.at(featureIndx); 
-                double maxVal_temp = maxDataVector.at(featureIndx); 
-                double minVal_temp = minDataVector.at(featureIndx); 
+                double maxVal_temp = max_data_vector.at(featureIndx); 
+                double minVal_temp = min_data_vector.at(featureIndx); 
                 
                 // x' = x - min(x) / max(x) - min(x)
                 double normalizedFeature = 0.0; 
@@ -409,7 +443,7 @@ class algorithm_backend
         for(int k = 0; k < k_value; k++)
         {
 
-            std::vector<T> meanData_temp = clust_list.at(k).genMeanFeatVector(data_set);  
+            std::vector<T> meanData_temp = cluster_list.at(k).genMeanFeatVector(data_set);  
             
             std::string id_temp = "Mean Centroid " + std::to_string(k); 
             dataPoint<T> newPoint_temp(meanData_temp, 0.0, id_temp);
@@ -427,7 +461,7 @@ class algorithm_backend
       max_data_vector(current_state.maxDataVector), 
       min_data_vector(current_state.minDataVector), 
       cluster_list(current_state.cluster_list),
-      target_values(current_state.target_values)
+      target_values(current_state.target_clusters)
       {}
 
     algorithm_backend()

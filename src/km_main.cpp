@@ -9,7 +9,7 @@ void inlineRuns()
 
     // hard coded file names for argv[1]
     int indx_used = 3; 
-    std::string current_version_out = "v4.0_outputs";
+    std::string current_version_out = "v8.0_outputs";
 
     std::string default_files[] = {"ecoli", "glass", "ionosphere", "iris_bezdek", "landsat", "letter_recognition", "segmentation", "vehicle", "wine", "yeast"}; 
     int default_Kvals[] = {8,6,2,3,6,26,7,4,3,10};

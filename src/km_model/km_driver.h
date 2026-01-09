@@ -59,7 +59,7 @@ class algorithm_io
 
 
 
-    h_io(){}
+    algorithm_io(){}
 };
 
 
@@ -92,13 +92,13 @@ class k_means
         // ------ go through each cluster
         for(int label = 0; label < current_state.k_value; label++)
         {
-            clust<T>& currClust = cluster_list[k];
+            clust<T>& currClust = current_state.cluster_list[label];
             std::vector<int>& clustIndicies = currClust.getAssignedData_ref();
             
             // -------- assign cluster label to each point in current cluster
             for(int i = 0; i < clustIndicies.size(); i++)
             {
-                int currFeatureIndx = indices.at(i);
+                int currFeatureIndx = clustIndicies.at(i);
                 finalDatasetClustering[currFeatureIndx] = label;
             }
         }
@@ -194,12 +194,12 @@ class k_means
             std::vector<T> meanCentroid_temp = currClust.genMeanFeatVector(current_state.data_set); 
             std::string id_temp = "Mean Centroid " + std::to_string(i); 
 
-            dataPoint<T> newPoint_temp(meanCentroid_temp, 0.0, id_temp); 
+            dataPoint<T> newPoint_temp(meanCentroid_temp, id_temp); 
 
             // reset cluster and assign next centroid 
             currClust.resetCluster(); 
 
-            currClust.assignCentroid(newPoint_temp); 
+            currClust.setCentroid(newPoint_temp); 
         }
     }  
    
@@ -490,7 +490,7 @@ class k_means
         << "the best CHI score ::\t\t"              << current_state.best_chi_score << std::endl
         << "the best shiloette score ::\t"          << current_state.best_shiloette << std::endl;
 
-        std::cout << "the best rand index score ::\t"     << current_state.best_jaccard_index_score << std::endl
+        std::cout << "the best rand index score ::\t"     << current_state.best_jaccard_score << std::endl
                   << "the best jaccard index score ::\t"  << current_state.best_rand_indx_score << std::endl;
 
         std::cout << "total time taken for algorithm :: "   << seconds_taken.count() << "s" << std::endl;
